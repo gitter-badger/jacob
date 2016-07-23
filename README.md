@@ -1,4 +1,3 @@
-# Just A Collection Of Benchmarks
 [![Build Status](https://travis-ci.org/wallerlab/jacob.svg?branch=master)](https://travis-ci.org/wallerlab/jacob)
 [![Coverage Status](https://coveralls.io/repos/github/wallerlab/jacob/badge.svg?branch=master)](https://coveralls.io/github/wallerlab/jacob?branch=master)
 

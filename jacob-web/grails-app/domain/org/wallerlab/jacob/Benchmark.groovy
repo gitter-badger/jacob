@@ -24,15 +24,18 @@ class Benchmark {
 
 	static searchable = true
 
-	@Override
-	public String toString() {
-		return "Benchmark [name=" + name + ", referenceArticle=" + referenceArticle  + " datasets= " + dataset + "]";
-	}
 
 	static constraints = {
 		name(unique:true,nullable:false)
 		referenceArticle(nullable:true)
 	}
+
+	@Override
+	public String toString() {
+		return "Benchmark [name=" + name + ", referenceArticle=" + referenceArticle  + " datasets= " + dataset + "]";
+	}
+
+
 
 	static mapping = {
 		dataset sort: "datasetName"

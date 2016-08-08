@@ -6,35 +6,28 @@ import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 
-
-@XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "", propOrder = ["molecules","methods","referenceResult"])
 class System {
 
-	@XmlAttribute(name = "Name")
 	String systemName //name
 	
-	@XmlElement(name = "ReferenceResult", required = true)
 	Float referenceValue
 	
 	Float meanAbsoluteDeviation
 
 	Dataset dataset
 	
-	@XmlElement(name = "Methods", required = true)
     Method method
 	
-	@XmlElement(name = "Molecules", required = true)
 	Molecule molecule
 	
 	static belongsTo = [Dataset, Benchmark]
 	
 	static hasMany = [methods:Method, molecules:Molecule]
-	
+
+	//Throws error
 	//static embedded = ['methods', 'molecules']
 
 	static searchable = true
-
 	
 	static constraints = {
 		systemName(nullable:false)

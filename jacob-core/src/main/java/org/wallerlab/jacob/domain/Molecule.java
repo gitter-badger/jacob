@@ -17,4 +17,22 @@ public class Molecule {
 		this.name = name;
 		this.smiles = smiles;
 	}
+
+	public String getName() {
+		return name;
+	}
+
+	public String getSmiles() {
+		return smiles;
+	}
+
+
+	@Override
+	public String toString() {
+		return "Molecule{" +
+				"id=" + id +
+				", name='" + name + '\'' +
+				", smiles='" + smiles + '\'' +
+				'}';
+	}
 }

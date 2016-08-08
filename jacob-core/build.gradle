@@ -47,8 +47,8 @@ dependencyManagement {
 
 dependencies {
 
-    compile('org.springframework.boot:spring-boot-starter')
-    compile("org.springframework.boot:spring-boot-starter-batch")
+    compile 'org.springframework.boot:spring-boot-starter'
+    compile 'org.springframework.boot:spring-boot-starter-batch'
     compile 'org.springframework:spring-oxm'
     compile 'org.springframework.data:spring-data-neo4j:4.2.0.BUILD-SNAPSHOT'
 
@@ -56,7 +56,13 @@ dependencies {
     compile 'org.neo4j:neo4j-ogm-embedded-driver:2.0.4'
     compile group: 'org.neo4j', name: 'neo4j-ogm-http-driver', version: '2.0.4'
 
-    testCompile('org.springframework.boot:spring-boot-starter-test')
+
+    testCompile 'org.spockframework:spock-core:1.1-groovy-2.4-rc-1'
+    testCompile 'org.springframework:spring-test'
+    testCompile 'org.spockframework:spock-spring:1.1-groovy-2.4-rc-1'
+    testCompile 'org.springframework.boot:spring-boot-starter-test'
+    testCompile 'org.codehaus.groovy:groovy-all:2.4.7'
+    testCompile 'junit:junit'
 }
 
 task wrapper(type: Wrapper) {

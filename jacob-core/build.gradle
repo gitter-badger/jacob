@@ -16,6 +16,7 @@ group = 'org.wallerlab'
 
 
 apply plugin: 'java'
+apply plugin: 'groovy'
 apply plugin: 'eclipse'
 apply plugin: 'idea'
 apply plugin: 'spring-boot'
@@ -47,6 +48,9 @@ dependencyManagement {
 
 dependencies {
 
+    compile 'org.codehaus.groovy:groovy-all:2.4.7'
+
+
     compile 'org.springframework.boot:spring-boot-starter'
     compile 'org.springframework.boot:spring-boot-starter-batch'
     compile 'org.springframework:spring-oxm'
@@ -61,7 +65,6 @@ dependencies {
     testCompile 'org.springframework:spring-test'
     testCompile 'org.spockframework:spock-spring:1.1-groovy-2.4-rc-1'
     testCompile 'org.springframework.boot:spring-boot-starter-test'
-    testCompile 'org.codehaus.groovy:groovy-all:2.4.7'
     testCompile 'junit:junit'
 }
 

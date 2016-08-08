@@ -3,8 +3,8 @@ package org.wallerlab.jacob
 import grails.test.mixin.*
 import spock.lang.*
 
-@TestFor(BasisController)
-@Mock(Basis)
+//@TestFor(BasisController)
+//@Mock(Basis)
 class BasisControllerSpec extends Specification {
 
     def populateValidParams(params) {

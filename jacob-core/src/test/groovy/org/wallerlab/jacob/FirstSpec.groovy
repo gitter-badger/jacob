@@ -7,7 +7,7 @@ class FirstSpec extends Specification{
 
     def "Molecule domain model"(){
         expect:
-       2 == 1+3
+       2 == 1+1
     }
 
 }

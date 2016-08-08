@@ -1,4 +1,4 @@
-Welcome to neo jacob
+Welcome to NeoJacob
 
 The old code for jacob was too complex.
 

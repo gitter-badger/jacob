@@ -1,0 +1,465 @@
+<Jacob Version='0.1'>
+  <Benchmark Name='GNCSB' ReferenceArticle='J. Chem. Theory Comput., 2011, 7 (3), 658.' />
+  <Dataset Name='HalBenzene_Complexes' ReferenceArticle='PLUHACKOVA,K;JURECKA,P;HOBZA,PPhys.Chem.Chem.Phys.,2007,9,755'>
+    <System Name='benzene_hexabromobenzene'>
+      <Molecules>
+        <Molecule Name='benzene_hexabromobenzene' SmileString='c1ccccc1.c1(c(c(c(c(c1Br)Br)Br)Br)Br)Br&#09;'>
+          <atomArray>
+            <atom id='a1' elementType='C' x3='-1.203100' y3='0.694600' z3='2.942200' />
+            <atom id='a2' elementType='C' x3='-1.203100' y3='-0.694600' z3='2.942200' />
+            <atom id='a3' elementType='C' x3='0.000000' y3='-1.389200' z3='2.942200' />
+            <atom id='a4' elementType='C' x3='1.203100' y3='-0.694600' z3='2.942200' />
+            <atom id='a5' elementType='C' x3='1.203100' y3='0.694600' z3='2.942200' />
+            <atom id='a6' elementType='C' x3='0.000000' y3='1.389200' z3='2.942200' />
+            <atom id='a7' elementType='H' x3='-2.135700' y3='1.233000' z3='2.944900' />
+            <atom id='a8' elementType='H' x3='-2.135700' y3='-1.233000' z3='2.944900' />
+            <atom id='a9' elementType='H' x3='0.000000' y3='-2.466100' z3='2.944900' />
+            <atom id='a10' elementType='H' x3='2.135700' y3='-1.233000' z3='2.944900' />
+            <atom id='a11' elementType='H' x3='2.135700' y3='1.233000' z3='2.944900' />
+            <atom id='a12' elementType='H' x3='0.000000' y3='2.466100' z3='2.944900' />
+            <atom id='a13' elementType='C' x3='-1.208500' y3='0.697700' z3='-0.437800' />
+            <atom id='a14' elementType='C' x3='-1.208500' y3='-0.697700' z3='-0.437800' />
+            <atom id='a15' elementType='C' x3='0.000000' y3='-1.395400' z3='-0.437800' />
+            <atom id='a16' elementType='C' x3='1.208500' y3='-0.697700' z3='-0.437800' />
+            <atom id='a17' elementType='C' x3='1.208500' y3='0.697700' z3='-0.437800' />
+            <atom id='a18' elementType='C' x3='0.000000' y3='1.395400' z3='-0.437800' />
+            <atom id='a19' elementType='Br' x3='-2.817900' y3='1.626900' z3='-0.413600' />
+            <atom id='a20' elementType='Br' x3='-2.817900' y3='-1.626900' z3='-0.413600' />
+            <atom id='a21' elementType='Br' x3='0.000000' y3='-3.253800' z3='-0.413600' />
+            <atom id='a22' elementType='Br' x3='2.817900' y3='-1.626900' z3='-0.413600' />
+            <atom id='a23' elementType='Br' x3='2.817900' y3='1.626900' z3='-0.413600' />
+            <atom id='a24' elementType='Br' x3='0.000000' y3='3.253800' z3='-0.413600' />
+          </atomArray>
+          <bondArray>
+            <bond atomRefs2='a1 a7' order='1' />
+            <bond atomRefs2='a1 a2' order='1' />
+            <bond atomRefs2='a1 a6' order='2' />
+            <bond atomRefs2='a2 a8' order='1' />
+            <bond atomRefs2='a2 a3' order='2' />
+            <bond atomRefs2='a3 a9' order='1' />
+            <bond atomRefs2='a3 a4' order='1' />
+            <bond atomRefs2='a4 a10' order='1' />
+            <bond atomRefs2='a4 a5' order='2' />
+            <bond atomRefs2='a5 a11' order='1' />
+            <bond atomRefs2='a5 a6' order='1' />
+            <bond atomRefs2='a6 a12' order='1' />
+            <bond atomRefs2='a13 a18' order='2' />
+            <bond atomRefs2='a13 a19' order='1' />
+            <bond atomRefs2='a13 a14' order='1' />
+            <bond atomRefs2='a14 a15' order='2' />
+            <bond atomRefs2='a14 a20' order='1' />
+            <bond atomRefs2='a15 a16' order='1' />
+            <bond atomRefs2='a15 a21' order='1' />
+            <bond atomRefs2='a16 a22' order='1' />
+            <bond atomRefs2='a16 a17' order='2' />
+            <bond atomRefs2='a17 a18' order='1' />
+            <bond atomRefs2='a17 a23' order='1' />
+            <bond atomRefs2='a18 a24' order='1' />
+          </bondArray>
+        </Molecule>
+      </Molecules>
+      <Methods>
+        <Method Hamiltonian='B3LYP' CategoryOfHamiltonian='hybrid-GGA' Basis='LACVP*' CategoryOfBasis='unclassified' CounterpoiseCorrection='CP'>
+          <Result CalculatedValue='5.10052' />
+        </Method>
+        <Method Hamiltonian='B3LYP' CategoryOfHamiltonian='hybrid-GGA' Basis='aug-cc-pVDZ' CategoryOfBasis='Dunnings' CounterpoiseCorrection='CP'>
+          <Result CalculatedValue='4.96119' />
+        </Method>
+        <Method Hamiltonian='M06-2X' CategoryOfHamiltonian='meta-GGA' Basis='aug-cc-pVDZ' CategoryOfBasis='Dunnings' CounterpoiseCorrection='CP'>
+          <Result CalculatedValue='-8.23762' />
+        </Method>
+        <Method Hamiltonian='M06-2X' CategoryOfHamiltonian='meta-GGA' Basis='LACVP*' CategoryOfBasis='unclassified' CounterpoiseCorrection='CP'>
+          <Result CalculatedValue='-7.74232' />
+        </Method>
+        <Method Hamiltonian='B3LYP' CategoryOfHamiltonian='hybrid-GGA' Basis='aug-cc-pVDZ' CategoryOfBasis='Dunnings' CounterpoiseCorrection='noCP'>
+          <Result CalculatedValue='3.9201' />
+        </Method>
+        <Method Hamiltonian='B3LYP' CategoryOfHamiltonian='hybrid-GGA' Basis='LACVP*' CategoryOfBasis='unclassified' CounterpoiseCorrection='noCP'>
+          <Result CalculatedValue='3.09307' />
+        </Method>
+        <Method Hamiltonian='B3LYP-D3' CategoryOfHamiltonian='hybrid-GGA' Basis='aug-cc-pVDZ' CategoryOfBasis='Dunnings' CounterpoiseCorrection='noCP'>
+          <Result CalculatedValue='-9.5109' />
+        </Method>
+        <Method Hamiltonian='M06-2X' CategoryOfHamiltonian='meta-GGA' Basis='aug-cc-pVDZ' CategoryOfBasis='Dunnings' CounterpoiseCorrection='noCP'>
+          <Result CalculatedValue='-9.23059' />
+        </Method>
+        <Method Hamiltonian='M06-2X' CategoryOfHamiltonian='meta-GGA' Basis='LACVP*' CategoryOfBasis='unclassified' CounterpoiseCorrection='noCP'>
+          <Result CalculatedValue='-9.278' />
+        </Method>
+        <Method Hamiltonian='B3LYP-D3' CategoryOfHamiltonian='hybrid-GGA' Basis='aug-cc-pVDZ' CategoryOfBasis='Dunnings' CounterpoiseCorrection='CP'>
+          <Result CalculatedValue='-8.46981' />
+        </Method>
+        <Method Hamiltonian='B3LYP-MM' CategoryOfHamiltonian='hybrid-GGA' Basis='aug-cc-pVDZ' CategoryOfBasis='Dunnings' CounterpoiseCorrection='noCP'>
+          <Result CalculatedValue='0' />
+        </Method>
+        <Method Hamiltonian='B3LYP-MM' CategoryOfHamiltonian='hybrid-GGA' Basis='LACVP*' CategoryOfBasis='unclassified' CounterpoiseCorrection='noCP'>
+          <Result CalculatedValue='0' />
+        </Method>
+        <Method Hamiltonian='B3LYP-D3' CategoryOfHamiltonian='hybrid-GGA' Basis='LACVP*' CategoryOfBasis='unclassified' CounterpoiseCorrection='noCP'>
+          <Result CalculatedValue='-10.3379' />
+        </Method>
+        <Method Hamiltonian='B3LYP-MM' CategoryOfHamiltonian='hybrid-GGA' Basis='aug-cc-pVDZ' CategoryOfBasis='Dunnings' CounterpoiseCorrection='CP'>
+          <Result CalculatedValue='0' />
+        </Method>
+        <Method Hamiltonian='B3LYP-MM' CategoryOfHamiltonian='hybrid-GGA' Basis='LACVP*' CategoryOfBasis='unclassified' CounterpoiseCorrection='CP'>
+          <Result CalculatedValue='0' />
+        </Method>
+        <Method Hamiltonian='B3LYP-D3' CategoryOfHamiltonian='hybrid-GGA' Basis='LACVP*' CategoryOfBasis='unclassified' CounterpoiseCorrection='CP'>
+          <Result CalculatedValue='-8.33048' />
+        </Method>
+      </Methods>
+      <ReferenceResult>
+        <ReferenceMethod Hamiltonian='CCSD(T)' CategoryOfHamiltonian='wavefunction' Basis='CBS' CategoryOfBasis='unclassified' CounterpoiseCorrection='CP' />
+        <ReferenceValue Value='-8.05' />
+      </ReferenceResult>
+    </System>
+    <System Name='benzene_hexachlorobenzene'>
+      <Molecules>
+        <Molecule Name='benzene_hexachlorobenzene' SmileString='c1ccccc1.c1(c(c(c(c(c1Cl)Cl)Cl)Cl)Cl)Cl&#09;'>
+          <atomArray>
+            <atom id='a1' elementType='C' x3='-1.207900' y3='-0.697400' z3='-2.636000' />
+            <atom id='a2' elementType='C' x3='-1.207900' y3='0.697400' z3='-2.636000' />
+            <atom id='a3' elementType='C' x3='0.000000' y3='1.394800' z3='-2.636000' />
+            <atom id='a4' elementType='C' x3='1.207900' y3='0.697400' z3='-2.636000' />
+            <atom id='a5' elementType='C' x3='1.207900' y3='-0.697400' z3='-2.636000' />
+            <atom id='a6' elementType='C' x3='0.000000' y3='-1.394800' z3='-2.636000' />
+            <atom id='a7' elementType='H' x3='-2.144700' y3='-1.238200' z3='-2.636900' />
+            <atom id='a8' elementType='H' x3='-2.144700' y3='1.238200' z3='-2.636900' />
+            <atom id='a9' elementType='H' x3='0.000000' y3='2.476500' z3='-2.636900' />
+            <atom id='a10' elementType='H' x3='2.144700' y3='1.238200' z3='-2.636900' />
+            <atom id='a11' elementType='H' x3='2.144700' y3='-1.238200' z3='-2.636900' />
+            <atom id='a12' elementType='H' x3='0.000000' y3='-2.476500' z3='-2.636900' />
+            <atom id='a13' elementType='C' x3='-1.212600' y3='-0.700100' z3='0.746000' />
+            <atom id='a14' elementType='C' x3='-1.212600' y3='0.700100' z3='0.746000' />
+            <atom id='a15' elementType='C' x3='0.000000' y3='1.400200' z3='0.746000' />
+            <atom id='a16' elementType='C' x3='1.212600' y3='0.700100' z3='0.746000' />
+            <atom id='a17' elementType='C' x3='1.212600' y3='-0.700100' z3='0.746000' />
+            <atom id='a18' elementType='C' x3='0.000000' y3='-1.400200' z3='0.746000' />
+            <atom id='a19' elementType='Cl' x3='-2.695300' y3='-1.556100' z3='0.715300' />
+            <atom id='a20' elementType='Cl' x3='-2.695300' y3='1.556100' z3='0.715300' />
+            <atom id='a21' elementType='Cl' x3='0.000000' y3='3.112200' z3='0.715300' />
+            <atom id='a22' elementType='Cl' x3='2.695300' y3='1.556100' z3='0.715300' />
+            <atom id='a23' elementType='Cl' x3='2.695300' y3='-1.556100' z3='0.715300' />
+            <atom id='a24' elementType='Cl' x3='0.000000' y3='-3.112200' z3='0.715300' />
+          </atomArray>
+          <bondArray>
+            <bond atomRefs2='a1 a7' order='1' />
+            <bond atomRefs2='a1 a2' order='2' />
+            <bond atomRefs2='a1 a6' order='1' />
+            <bond atomRefs2='a2 a8' order='1' />
+            <bond atomRefs2='a2 a3' order='1' />
+            <bond atomRefs2='a3 a9' order='1' />
+            <bond atomRefs2='a3 a4' order='2' />
+            <bond atomRefs2='a4 a10' order='1' />
+            <bond atomRefs2='a4 a5' order='1' />
+            <bond atomRefs2='a5 a11' order='1' />
+            <bond atomRefs2='a5 a6' order='2' />
+            <bond atomRefs2='a6 a12' order='1' />
+            <bond atomRefs2='a13 a14' order='2' />
+            <bond atomRefs2='a13 a18' order='1' />
+            <bond atomRefs2='a13 a19' order='1' />
+            <bond atomRefs2='a14 a15' order='1' />
+            <bond atomRefs2='a14 a20' order='1' />
+            <bond atomRefs2='a15 a21' order='1' />
+            <bond atomRefs2='a15 a16' order='2' />
+            <bond atomRefs2='a16 a17' order='1' />
+            <bond atomRefs2='a16 a22' order='1' />
+            <bond atomRefs2='a17 a18' order='2' />
+            <bond atomRefs2='a17 a23' order='1' />
+            <bond atomRefs2='a18 a24' order='1' />
+          </bondArray>
+        </Molecule>
+      </Molecules>
+      <Methods>
+        <Method Hamiltonian='B3LYP' CategoryOfHamiltonian='hybrid-GGA' Basis='LACVP*' CategoryOfBasis='unclassified' CounterpoiseCorrection='CP'>
+          <Result CalculatedValue='4.92915' />
+        </Method>
+        <Method Hamiltonian='B3LYP' CategoryOfHamiltonian='hybrid-GGA' Basis='aug-cc-pVDZ' CategoryOfBasis='Dunnings' CounterpoiseCorrection='CP'>
+          <Result CalculatedValue='4.38894' />
+        </Method>
+        <Method Hamiltonian='M06-2X' CategoryOfHamiltonian='meta-GGA' Basis='aug-cc-pVDZ' CategoryOfBasis='Dunnings' CounterpoiseCorrection='CP'>
+          <Result CalculatedValue='-7.44981' />
+        </Method>
+        <Method Hamiltonian='M06-2X' CategoryOfHamiltonian='meta-GGA' Basis='LACVP*' CategoryOfBasis='unclassified' CounterpoiseCorrection='CP'>
+          <Result CalculatedValue='-5.76364' />
+        </Method>
+        <Method Hamiltonian='B3LYP' CategoryOfHamiltonian='hybrid-GGA' Basis='aug-cc-pVDZ' CategoryOfBasis='Dunnings' CounterpoiseCorrection='noCP'>
+          <Result CalculatedValue='2.97441' />
+        </Method>
+        <Method Hamiltonian='B3LYP' CategoryOfHamiltonian='hybrid-GGA' Basis='LACVP*' CategoryOfBasis='unclassified' CounterpoiseCorrection='noCP'>
+          <Result CalculatedValue='2.18118' />
+        </Method>
+        <Method Hamiltonian='B3LYP-D3' CategoryOfHamiltonian='hybrid-GGA' Basis='aug-cc-pVDZ' CategoryOfBasis='Dunnings' CounterpoiseCorrection='noCP'>
+          <Result CalculatedValue='-8.71629' />
+        </Method>
+        <Method Hamiltonian='M06-2X' CategoryOfHamiltonian='meta-GGA' Basis='aug-cc-pVDZ' CategoryOfBasis='Dunnings' CounterpoiseCorrection='noCP'>
+          <Result CalculatedValue='-8.82087' />
+        </Method>
+        <Method Hamiltonian='M06-2X' CategoryOfHamiltonian='meta-GGA' Basis='LACVP*' CategoryOfBasis='unclassified' CounterpoiseCorrection='noCP'>
+          <Result CalculatedValue='-7.92852' />
+        </Method>
+        <Method Hamiltonian='B3LYP-D3' CategoryOfHamiltonian='hybrid-GGA' Basis='aug-cc-pVDZ' CategoryOfBasis='Dunnings' CounterpoiseCorrection='CP'>
+          <Result CalculatedValue='-7.30176' />
+        </Method>
+        <Method Hamiltonian='B3LYP-MM' CategoryOfHamiltonian='hybrid-GGA' Basis='aug-cc-pVDZ' CategoryOfBasis='Dunnings' CounterpoiseCorrection='noCP'>
+          <Result CalculatedValue='-6.77003' />
+        </Method>
+        <Method Hamiltonian='B3LYP-MM' CategoryOfHamiltonian='hybrid-GGA' Basis='LACVP*' CategoryOfBasis='unclassified' CounterpoiseCorrection='noCP'>
+          <Result CalculatedValue='-7.92279' />
+        </Method>
+        <Method Hamiltonian='B3LYP-D3' CategoryOfHamiltonian='hybrid-GGA' Basis='LACVP*' CategoryOfBasis='unclassified' CounterpoiseCorrection='noCP'>
+          <Result CalculatedValue='-9.50952' />
+        </Method>
+        <Method Hamiltonian='B3LYP-MM' CategoryOfHamiltonian='hybrid-GGA' Basis='aug-cc-pVDZ' CategoryOfBasis='Dunnings' CounterpoiseCorrection='CP'>
+          <Result CalculatedValue='-7.08013' />
+        </Method>
+        <Method Hamiltonian='B3LYP-MM' CategoryOfHamiltonian='hybrid-GGA' Basis='LACVP*' CategoryOfBasis='unclassified' CounterpoiseCorrection='CP'>
+          <Result CalculatedValue='-8.53423' />
+        </Method>
+        <Method Hamiltonian='B3LYP-D3' CategoryOfHamiltonian='hybrid-GGA' Basis='LACVP*' CategoryOfBasis='unclassified' CounterpoiseCorrection='CP'>
+          <Result CalculatedValue='-6.76155' />
+        </Method>
+      </Methods>
+      <ReferenceResult>
+        <ReferenceMethod Hamiltonian='CCSD(T)' CategoryOfHamiltonian='wavefunction' Basis='CBS' CategoryOfBasis='unclassified' CounterpoiseCorrection='CP' />
+        <ReferenceValue Value='-8.68' />
+      </ReferenceResult>
+    </System>
+    <System Name='benzene_hexafluorobenzene'>
+      <Molecules>
+        <Molecule Name='benzene_hexafluorobenzene' SmileString='c1ccccc1.c1(c(c(c(c(c1F)F)F)F)F)F&#09;'>
+          <atomArray>
+            <atom id='a1' elementType='C' x3='-1.207900' y3='-0.697400' z3='-2.332500' />
+            <atom id='a2' elementType='C' x3='-1.207900' y3='0.697400' z3='-2.332500' />
+            <atom id='a3' elementType='C' x3='0.000000' y3='1.394800' z3='-2.332500' />
+            <atom id='a4' elementType='C' x3='1.207900' y3='0.697400' z3='-2.332500' />
+            <atom id='a5' elementType='C' x3='1.207900' y3='-0.697400' z3='-2.332500' />
+            <atom id='a6' elementType='C' x3='0.000000' y3='-1.394800' z3='-2.332500' />
+            <atom id='a7' elementType='H' x3='-2.144700' y3='-1.238300' z3='-2.330500' />
+            <atom id='a8' elementType='H' x3='-2.144700' y3='1.238300' z3='-2.330500' />
+            <atom id='a9' elementType='H' x3='0.000000' y3='2.476500' z3='-2.330500' />
+            <atom id='a10' elementType='H' x3='2.144700' y3='1.238300' z3='-2.330500' />
+            <atom id='a11' elementType='H' x3='2.144700' y3='-1.238300' z3='-2.330500' />
+            <atom id='a12' elementType='H' x3='0.000000' y3='-2.476500' z3='-2.330500' />
+            <atom id='a13' elementType='C' x3='-1.202400' y3='-0.694200' z3='1.010100' />
+            <atom id='a14' elementType='C' x3='-1.202400' y3='0.694200' z3='1.010100' />
+            <atom id='a15' elementType='C' x3='0.000000' y3='1.388400' z3='1.010100' />
+            <atom id='a16' elementType='C' x3='1.202400' y3='0.694200' z3='1.010100' />
+            <atom id='a17' elementType='C' x3='1.202400' y3='-0.694200' z3='1.010100' />
+            <atom id='a18' elementType='C' x3='0.000000' y3='-1.388400' z3='1.010100' />
+            <atom id='a19' elementType='F' x3='-2.353000' y3='-1.358500' z3='0.959700' />
+            <atom id='a20' elementType='F' x3='-2.353000' y3='1.358500' z3='0.959700' />
+            <atom id='a21' elementType='F' x3='0.000000' y3='2.717000' z3='0.959700' />
+            <atom id='a22' elementType='F' x3='2.353000' y3='1.358500' z3='0.959700' />
+            <atom id='a23' elementType='F' x3='2.353000' y3='-1.358500' z3='0.959700' />
+            <atom id='a24' elementType='F' x3='0.000000' y3='-2.717000' z3='0.959700' />
+          </atomArray>
+          <bondArray>
+            <bond atomRefs2='a1 a7' order='1' />
+            <bond atomRefs2='a1 a2' order='1' />
+            <bond atomRefs2='a1 a6' order='2' />
+            <bond atomRefs2='a2 a8' order='1' />
+            <bond atomRefs2='a2 a3' order='2' />
+            <bond atomRefs2='a3 a9' order='1' />
+            <bond atomRefs2='a3 a4' order='1' />
+            <bond atomRefs2='a4 a10' order='1' />
+            <bond atomRefs2='a4 a5' order='2' />
+            <bond atomRefs2='a5 a11' order='1' />
+            <bond atomRefs2='a5 a6' order='1' />
+            <bond atomRefs2='a6 a12' order='1' />
+            <bond atomRefs2='a13 a19' order='1' />
+            <bond atomRefs2='a13 a14' order='2' />
+            <bond atomRefs2='a13 a18' order='1' />
+            <bond atomRefs2='a14 a20' order='1' />
+            <bond atomRefs2='a14 a15' order='1' />
+            <bond atomRefs2='a15 a21' order='1' />
+            <bond atomRefs2='a15 a16' order='2' />
+            <bond atomRefs2='a16 a22' order='1' />
+            <bond atomRefs2='a16 a17' order='1' />
+            <bond atomRefs2='a17 a23' order='1' />
+            <bond atomRefs2='a17 a18' order='2' />
+            <bond atomRefs2='a18 a24' order='1' />
+          </bondArray>
+        </Molecule>
+      </Molecules>
+      <Methods>
+        <Method Hamiltonian='B3LYP' CategoryOfHamiltonian='hybrid-GGA' Basis='LACVP*' CategoryOfBasis='unclassified' CounterpoiseCorrection='CP'>
+          <Result CalculatedValue='3.95906' />
+        </Method>
+        <Method Hamiltonian='B3LYP' CategoryOfHamiltonian='hybrid-GGA' Basis='aug-cc-pVDZ' CategoryOfBasis='Dunnings' CounterpoiseCorrection='CP'>
+          <Result CalculatedValue='3.11037' />
+        </Method>
+        <Method Hamiltonian='M06-2X' CategoryOfHamiltonian='meta-GGA' Basis='aug-cc-pVDZ' CategoryOfBasis='Dunnings' CounterpoiseCorrection='CP'>
+          <Result CalculatedValue='-4.87421' />
+        </Method>
+        <Method Hamiltonian='M06-2X' CategoryOfHamiltonian='meta-GGA' Basis='LACVP*' CategoryOfBasis='unclassified' CounterpoiseCorrection='CP'>
+          <Result CalculatedValue='-3.35151' />
+        </Method>
+        <Method Hamiltonian='B3LYP' CategoryOfHamiltonian='hybrid-GGA' Basis='aug-cc-pVDZ' CategoryOfBasis='Dunnings' CounterpoiseCorrection='noCP'>
+          <Result CalculatedValue='1.88552' />
+        </Method>
+        <Method Hamiltonian='B3LYP' CategoryOfHamiltonian='hybrid-GGA' Basis='LACVP*' CategoryOfBasis='unclassified' CounterpoiseCorrection='noCP'>
+          <Result CalculatedValue='1.42034' />
+        </Method>
+        <Method Hamiltonian='B3LYP-D3' CategoryOfHamiltonian='hybrid-GGA' Basis='aug-cc-pVDZ' CategoryOfBasis='Dunnings' CounterpoiseCorrection='noCP'>
+          <Result CalculatedValue='-6.15578' />
+        </Method>
+        <Method Hamiltonian='M06-2X' CategoryOfHamiltonian='meta-GGA' Basis='aug-cc-pVDZ' CategoryOfBasis='Dunnings' CounterpoiseCorrection='noCP'>
+          <Result CalculatedValue='-6.36184' />
+        </Method>
+        <Method Hamiltonian='M06-2X' CategoryOfHamiltonian='meta-GGA' Basis='LACVP*' CategoryOfBasis='unclassified' CounterpoiseCorrection='noCP'>
+          <Result CalculatedValue='-5.41491' />
+        </Method>
+        <Method Hamiltonian='B3LYP-D3' CategoryOfHamiltonian='hybrid-GGA' Basis='aug-cc-pVDZ' CategoryOfBasis='Dunnings' CounterpoiseCorrection='CP'>
+          <Result CalculatedValue='-4.93093' />
+        </Method>
+        <Method Hamiltonian='B3LYP-MM' CategoryOfHamiltonian='hybrid-GGA' Basis='aug-cc-pVDZ' CategoryOfBasis='Dunnings' CounterpoiseCorrection='noCP'>
+          <Result CalculatedValue='-6.29218' />
+        </Method>
+        <Method Hamiltonian='B3LYP-MM' CategoryOfHamiltonian='hybrid-GGA' Basis='LACVP*' CategoryOfBasis='unclassified' CounterpoiseCorrection='noCP'>
+          <Result CalculatedValue='-4.69773' />
+        </Method>
+        <Method Hamiltonian='B3LYP-D3' CategoryOfHamiltonian='hybrid-GGA' Basis='LACVP*' CategoryOfBasis='unclassified' CounterpoiseCorrection='noCP'>
+          <Result CalculatedValue='-6.62096' />
+        </Method>
+        <Method Hamiltonian='B3LYP-MM' CategoryOfHamiltonian='hybrid-GGA' Basis='aug-cc-pVDZ' CategoryOfBasis='Dunnings' CounterpoiseCorrection='CP'>
+          <Result CalculatedValue='-6.27464' />
+        </Method>
+        <Method Hamiltonian='B3LYP-MM' CategoryOfHamiltonian='hybrid-GGA' Basis='LACVP*' CategoryOfBasis='unclassified' CounterpoiseCorrection='CP'>
+          <Result CalculatedValue='-6.45219' />
+        </Method>
+        <Method Hamiltonian='B3LYP-D3' CategoryOfHamiltonian='hybrid-GGA' Basis='LACVP*' CategoryOfBasis='unclassified' CounterpoiseCorrection='CP'>
+          <Result CalculatedValue='-4.08224' />
+        </Method>
+      </Methods>
+      <ReferenceResult>
+        <ReferenceMethod Hamiltonian='CCSD(T)' CategoryOfHamiltonian='wavefunction' Basis='CBS' CategoryOfBasis='unclassified' CounterpoiseCorrection='CP' />
+        <ReferenceValue Value='-6.24' />
+      </ReferenceResult>
+    </System>
+    <System Name='benzene_hexacyanobenzene'>
+      <Molecules>
+        <Molecule Name='benzene_hexacyanobenzene' SmileString='c1(C#N)c(c(c(c(c1C#N)C#N)C#N)C#N)C#N.c1ccccc1&#09;'>
+          <atomArray>
+            <atom id='a1' elementType='C' x3='1.215800' y3='-0.701900' z3='-0.904200' />
+            <atom id='a2' elementType='C' x3='2.447000' y3='-1.412800' z3='-0.848900' />
+            <atom id='a3' elementType='C' x3='1.215800' y3='0.701900' z3='-0.904200' />
+            <atom id='a4' elementType='C' x3='0.000000' y3='1.403900' z3='-0.904200' />
+            <atom id='a5' elementType='C' x3='-1.215800' y3='0.701900' z3='-0.904200' />
+            <atom id='a6' elementType='C' x3='-1.215800' y3='-0.701900' z3='-0.904200' />
+            <atom id='a7' elementType='C' x3='0.000000' y3='-1.403900' z3='-0.904200' />
+            <atom id='a8' elementType='C' x3='2.447000' y3='1.412800' z3='-0.848900' />
+            <atom id='a9' elementType='C' x3='0.000000' y3='2.825600' z3='-0.848900' />
+            <atom id='a10' elementType='C' x3='-2.447000' y3='1.412800' z3='-0.848900' />
+            <atom id='a11' elementType='C' x3='-2.447000' y3='-1.412800' z3='-0.848900' />
+            <atom id='a12' elementType='C' x3='0.000000' y3='-2.825600' z3='-0.848900' />
+            <atom id='a13' elementType='N' x3='0.000000' y3='3.999900' z3='-0.789300' />
+            <atom id='a14' elementType='N' x3='-3.464000' y3='2.000000' z3='-0.789300' />
+            <atom id='a15' elementType='N' x3='-3.464000' y3='-2.000000' z3='-0.789300' />
+            <atom id='a16' elementType='N' x3='0.000000' y3='-3.999900' z3='-0.789300' />
+            <atom id='a17' elementType='N' x3='3.464000' y3='-2.000000' z3='-0.789300' />
+            <atom id='a18' elementType='N' x3='3.464000' y3='2.000000' z3='-0.789300' />
+            <atom id='a19' elementType='C' x3='1.208800' y3='-0.697900' z3='2.465400' />
+            <atom id='a20' elementType='C' x3='1.208800' y3='0.697900' z3='2.465400' />
+            <atom id='a21' elementType='C' x3='0.000000' y3='1.395800' z3='2.465400' />
+            <atom id='a22' elementType='C' x3='-1.208800' y3='0.697900' z3='2.465400' />
+            <atom id='a23' elementType='C' x3='-1.208800' y3='-0.697900' z3='2.465400' />
+            <atom id='a24' elementType='C' x3='0.000000' y3='-1.395800' z3='2.465400' />
+            <atom id='a25' elementType='H' x3='2.146000' y3='-1.239000' z3='2.480600' />
+            <atom id='a26' elementType='H' x3='2.146000' y3='1.239000' z3='2.480600' />
+            <atom id='a27' elementType='H' x3='0.000000' y3='2.478000' z3='2.480600' />
+            <atom id='a28' elementType='H' x3='-2.146000' y3='1.239000' z3='2.480600' />
+            <atom id='a29' elementType='H' x3='-2.146000' y3='-1.239000' z3='2.480600' />
+            <atom id='a30' elementType='H' x3='0.000000' y3='-2.478000' z3='2.480600' />
+          </atomArray>
+          <bondArray>
+            <bond atomRefs2='a1 a7' order='2' />
+            <bond atomRefs2='a1 a2' order='1' />
+            <bond atomRefs2='a1 a3' order='1' />
+            <bond atomRefs2='a2 a17' order='3' />
+            <bond atomRefs2='a3 a4' order='2' />
+            <bond atomRefs2='a3 a8' order='1' />
+            <bond atomRefs2='a4 a5' order='1' />
+            <bond atomRefs2='a4 a9' order='1' />
+            <bond atomRefs2='a5 a6' order='2' />
+            <bond atomRefs2='a5 a10' order='1' />
+            <bond atomRefs2='a6 a7' order='1' />
+            <bond atomRefs2='a6 a11' order='1' />
+            <bond atomRefs2='a7 a12' order='1' />
+            <bond atomRefs2='a8 a18' order='3' />
+            <bond atomRefs2='a9 a13' order='3' />
+            <bond atomRefs2='a10 a14' order='3' />
+            <bond atomRefs2='a11 a15' order='3' />
+            <bond atomRefs2='a12 a16' order='3' />
+            <bond atomRefs2='a19 a25' order='1' />
+            <bond atomRefs2='a19 a20' order='2' />
+            <bond atomRefs2='a19 a24' order='1' />
+            <bond atomRefs2='a20 a26' order='1' />
+            <bond atomRefs2='a20 a21' order='1' />
+            <bond atomRefs2='a21 a27' order='1' />
+            <bond atomRefs2='a21 a22' order='2' />
+            <bond atomRefs2='a22 a28' order='1' />
+            <bond atomRefs2='a22 a23' order='1' />
+            <bond atomRefs2='a23 a29' order='1' />
+            <bond atomRefs2='a23 a24' order='2' />
+            <bond atomRefs2='a24 a30' order='1' />
+          </bondArray>
+        </Molecule>
+      </Molecules>
+      <Methods>
+        <Method Hamiltonian='B3LYP' CategoryOfHamiltonian='hybrid-GGA' Basis='LACVP*' CategoryOfBasis='unclassified' CounterpoiseCorrection='CP'>
+          <Result CalculatedValue='1.88335' />
+        </Method>
+        <Method Hamiltonian='B3LYP' CategoryOfHamiltonian='hybrid-GGA' Basis='aug-cc-pVDZ' CategoryOfBasis='Dunnings' CounterpoiseCorrection='CP'>
+          <Result CalculatedValue='1.19049' />
+        </Method>
+        <Method Hamiltonian='M06-2X' CategoryOfHamiltonian='meta-GGA' Basis='aug-cc-pVDZ' CategoryOfBasis='Dunnings' CounterpoiseCorrection='CP'>
+          <Result CalculatedValue='-10.095' />
+        </Method>
+        <Method Hamiltonian='M06-2X' CategoryOfHamiltonian='meta-GGA' Basis='LACVP*' CategoryOfBasis='unclassified' CounterpoiseCorrection='CP'>
+          <Result CalculatedValue='-7.59582' />
+        </Method>
+        <Method Hamiltonian='B3LYP' CategoryOfHamiltonian='hybrid-GGA' Basis='aug-cc-pVDZ' CategoryOfBasis='Dunnings' CounterpoiseCorrection='noCP'>
+          <Result CalculatedValue='0.609734' />
+        </Method>
+        <Method Hamiltonian='B3LYP' CategoryOfHamiltonian='hybrid-GGA' Basis='LACVP*' CategoryOfBasis='unclassified' CounterpoiseCorrection='noCP'>
+          <Result CalculatedValue='-0.718513' />
+        </Method>
+        <Method Hamiltonian='B3LYP-D3' CategoryOfHamiltonian='hybrid-GGA' Basis='aug-cc-pVDZ' CategoryOfBasis='Dunnings' CounterpoiseCorrection='noCP'>
+          <Result CalculatedValue='-10.4841' />
+        </Method>
+        <Method Hamiltonian='M06-2X' CategoryOfHamiltonian='meta-GGA' Basis='aug-cc-pVDZ' CategoryOfBasis='Dunnings' CounterpoiseCorrection='noCP'>
+          <Result CalculatedValue='0' />
+        </Method>
+        <Method Hamiltonian='M06-2X' CategoryOfHamiltonian='meta-GGA' Basis='LACVP*' CategoryOfBasis='unclassified' CounterpoiseCorrection='noCP'>
+          <Result CalculatedValue='-9.68416' />
+        </Method>
+        <Method Hamiltonian='B3LYP-D3' CategoryOfHamiltonian='hybrid-GGA' Basis='aug-cc-pVDZ' CategoryOfBasis='Dunnings' CounterpoiseCorrection='CP'>
+          <Result CalculatedValue='-9.90331' />
+        </Method>
+        <Method Hamiltonian='B3LYP-MM' CategoryOfHamiltonian='hybrid-GGA' Basis='aug-cc-pVDZ' CategoryOfBasis='Dunnings' CounterpoiseCorrection='noCP'>
+          <Result CalculatedValue='-10.9003' />
+        </Method>
+        <Method Hamiltonian='B3LYP-MM' CategoryOfHamiltonian='hybrid-GGA' Basis='LACVP*' CategoryOfBasis='unclassified' CounterpoiseCorrection='noCP'>
+          <Result CalculatedValue='-10.8372' />
+        </Method>
+        <Method Hamiltonian='B3LYP-D3' CategoryOfHamiltonian='hybrid-GGA' Basis='LACVP*' CategoryOfBasis='unclassified' CounterpoiseCorrection='noCP'>
+          <Result CalculatedValue='-11.8123' />
+        </Method>
+        <Method Hamiltonian='B3LYP-MM' CategoryOfHamiltonian='hybrid-GGA' Basis='aug-cc-pVDZ' CategoryOfBasis='Dunnings' CounterpoiseCorrection='CP'>
+          <Result CalculatedValue='-10.9722' />
+        </Method>
+        <Method Hamiltonian='B3LYP-MM' CategoryOfHamiltonian='hybrid-GGA' Basis='LACVP*' CategoryOfBasis='unclassified' CounterpoiseCorrection='CP'>
+          <Result CalculatedValue='-11.731' />
+        </Method>
+        <Method Hamiltonian='B3LYP-D3' CategoryOfHamiltonian='hybrid-GGA' Basis='LACVP*' CategoryOfBasis='unclassified' CounterpoiseCorrection='CP'>
+          <Result CalculatedValue='-9.21045' />
+        </Method>
+      </Methods>
+      <ReferenceResult>
+        <ReferenceMethod Hamiltonian='CCSD(T)' CategoryOfHamiltonian='wavefunction' Basis='CBS' CategoryOfBasis='unclassified' CounterpoiseCorrection='CP' />
+        <ReferenceValue Value='-10.71' />
+      </ReferenceResult>
+    </System>
+  </Dataset>
+</Jacob>

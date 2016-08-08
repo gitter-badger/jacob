@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="Jacob">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Benchmark"/>
+        <xs:element ref="Dataset"/>
+      </xs:sequence>
+      <xs:attribute name="Version" use="required" type="xs:decimal"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Benchmark">
+    <xs:complexType>
+      <xs:attribute name="Name" use="required" type="xs:NCName"/>
+      <xs:attribute name="ReferenceArticle" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Dataset">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="System"/>
+      </xs:sequence>
+      <xs:attribute name="Name" use="required" type="xs:NCName"/>
+      <xs:attribute name="ReferenceArticle" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="System">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Molecules"/>
+        <xs:element ref="Methods"/>
+        <xs:element ref="ReferenceResult"/>
+      </xs:sequence>
+      <xs:attribute name="Name" use="required" type="xs:NMTOKEN"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Molecules">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Molecule"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Molecule">
+    <xs:complexType>
+      <xs:sequence minOccurs="0">
+        <xs:element ref="atomArray"/>
+        <xs:element ref="bondArray"/>
+      </xs:sequence>
+      <xs:attribute name="Name" use="required" type="xs:NMTOKEN"/>
+      <xs:attribute name="SmileString" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="atomArray">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="atom"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="atom">
+    <xs:complexType>
+      <xs:attribute name="elementType" use="required" type="xs:NCName"/>
+      <xs:attribute name="id" use="required" type="xs:NCName"/>
+      <xs:attribute name="x3" use="required" type="xs:decimal"/>
+      <xs:attribute name="y3" use="required" type="xs:decimal"/>
+      <xs:attribute name="z3" use="required" type="xs:decimal"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="bondArray">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="bond"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="bond">
+    <xs:complexType>
+      <xs:attribute name="atomRefs2" use="required"/>
+      <xs:attribute name="order" use="required" type="xs:integer"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Methods">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="Method"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Method">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Result"/>
+      </xs:sequence>
+      <xs:attribute name="Basis" use="required" type="xs:NCName"/>
+      <xs:attribute name="CategoryOfBasis" use="required" type="xs:NCName"/>
+      <xs:attribute name="CategoryOfHamiltonian" use="required" type="xs:NCName"/>
+      <xs:attribute name="CounterpoiseCorrection" use="required" type="xs:NCName"/>
+      <xs:attribute name="Hamiltonian" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Result">
+    <xs:complexType>
+      <xs:attribute name="CalculatedValue" use="required" type="xs:decimal"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ReferenceResult">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="ReferenceMethod"/>
+        <xs:element ref="ReferenceValue"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ReferenceMethod">
+    <xs:complexType>
+      <xs:attribute name="Basis" use="required" type="xs:NCName"/>
+      <xs:attribute name="CategoryOfBasis" use="required" type="xs:NCName"/>
+      <xs:attribute name="CategoryOfHamiltonian" use="required" type="xs:NCName"/>
+      <xs:attribute name="CounterpoiseCorrection" use="required" type="xs:NCName"/>
+      <xs:attribute name="Hamiltonian" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ReferenceValue">
+    <xs:complexType>
+      <xs:attribute name="Value" use="required" type="xs:decimal"/>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

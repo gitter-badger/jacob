@@ -1,0 +1,2549 @@
+<Jacob Version="0.1">
+  <Benchmark Name="GMTKN30" ReferenceArticle="L. Goerigk and S. Grimme, J. Chem. Theory Comput. 2011, 7, 291"/>
+  <Dataset Name="AL2X" ReferenceArticle="Johnson, E.R.; Mori-Sanchez, P.; Cohen, A.J.; Yang, W.J. Chem. Phys. 2008, 129, 204112.">
+    <System Name="al2h6 alh3     ">
+      <Molecules>
+        <Molecule Name="al2h6" SmileString="[AlH4].[AlH2]">
+          <atomArray>
+            <atom id="a1" elementType="Al" x3="0.000000" y3="0.000000" z3="1.306600"/>
+            <atom id="a2" elementType="Al" x3="0.000000" y3="0.000000" z3="-1.306600"/>
+            <atom id="a3" elementType="H" x3="0.000000" y3="1.145500" z3="0.000000"/>
+            <atom id="a4" elementType="H" x3="0.000000" y3="-1.145500" z3="0.000000"/>
+            <atom id="a5" elementType="H" x3="-1.410700" y3="0.000000" z3="1.996800"/>
+            <atom id="a6" elementType="H" x3="1.410700" y3="0.000000" z3="1.996800"/>
+            <atom id="a7" elementType="H" x3="1.410700" y3="0.000000" z3="-1.996800"/>
+            <atom id="a8" elementType="H" x3="-1.410700" y3="0.000000" z3="-1.996800"/>
+          </atomArray>
+          <bondArray>
+            <bond atomRefs2="a3 a1" order="1"/>
+            <bond atomRefs2="a4 a1" order="1"/>
+            <bond atomRefs2="a1 a5" order="1"/>
+            <bond atomRefs2="a1 a6" order="1"/>
+            <bond atomRefs2="a7 a2" order="1"/>
+            <bond atomRefs2="a8 a2" order="1"/>
+          </bondArray>
+        </Molecule>
+        <Molecule Name="alh3" SmileString="[AlH3]">
+          <atomArray>
+            <atom id="a1" elementType="Al" x3="0.000000" y3="0.000000" z3="0.000000"/>
+            <atom id="a2" elementType="H" x3="0.789300" y3="1.367000" z3="0.000000"/>
+            <atom id="a3" elementType="H" x3="0.789300" y3="-1.367000" z3="0.000000"/>
+            <atom id="a4" elementType="H" x3="-1.578500" y3="0.000000" z3="0.000000"/>
+          </atomArray>
+          <bondArray>
+            <bond atomRefs2="a1 a2" order="1"/>
+            <bond atomRefs2="a1 a3" order="1"/>
+            <bond atomRefs2="a1 a4" order="1"/>
+          </bondArray>
+        </Molecule>
+      </Molecules>
+      <Methods>
+        <Method Hamiltonian="SPW92" CategoryOfHamiltonian="LDA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="46.69"/>
+        </Method>
+        <Method Hamiltonian="SVWN" CategoryOfHamiltonian="LDA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="46.72"/>
+        </Method>
+        <Method Hamiltonian="B97" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="31.61"/>
+        </Method>
+        <Method Hamiltonian="B97-D3" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="33.3"/>
+        </Method>
+        <Method Hamiltonian="BP86" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="36.52"/>
+        </Method>
+        <Method Hamiltonian="BP86-D3" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="37.89"/>
+        </Method>
+        <Method Hamiltonian="BOP" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="30.12"/>
+        </Method>
+        <Method Hamiltonian="BOP-D3" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="32.33"/>
+        </Method>
+        <Method Hamiltonian="BLYP" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="31.92"/>
+        </Method>
+        <Method Hamiltonian="BLYP-D3" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="33.43"/>
+        </Method>
+        <Method Hamiltonian="mPWLYP" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="33.29"/>
+        </Method>
+        <Method Hamiltonian="mPWLYP-D3" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="34.1"/>
+        </Method>
+        <Method Hamiltonian="OLYP" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="30.23"/>
+        </Method>
+        <Method Hamiltonian="OLYP-D3" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="32.63"/>
+        </Method>
+        <Method Hamiltonian="PBE" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="38.57"/>
+        </Method>
+        <Method Hamiltonian="PBE-D3" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="39.2"/>
+        </Method>
+        <Method Hamiltonian="PBEsol" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="42.64"/>
+        </Method>
+        <Method Hamiltonian="PBEsol-D3" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="43.07"/>
+        </Method>
+        <Method Hamiltonian="revPBE" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="34.55"/>
+        </Method>
+        <Method Hamiltonian="revPBE-D3" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="36.21"/>
+        </Method>
+        <Method Hamiltonian="OPBE" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="34.66"/>
+        </Method>
+        <Method Hamiltonian="OPBE-D3" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="37.14"/>
+        </Method>
+        <Method Hamiltonian="BPBE" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="36.12"/>
+        </Method>
+        <Method Hamiltonian="BPBE-D3" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="37.86"/>
+        </Method>
+        <Method Hamiltonian="rPW86PBE" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="35.89"/>
+        </Method>
+        <Method Hamiltonian="rPW86PBE-D3" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="36.61"/>
+        </Method>
+        <Method Hamiltonian="SSB" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="37.66"/>
+        </Method>
+        <Method Hamiltonian="SSB-D3" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="38.26"/>
+        </Method>
+        <Method Hamiltonian="revSSB" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="39.11"/>
+        </Method>
+        <Method Hamiltonian="revSSB-D3" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="39.64"/>
+        </Method>
+        <Method Hamiltonian="TPSS" CategoryOfHamiltonian="meta-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="38.81"/>
+        </Method>
+        <Method Hamiltonian="TPSS-D3" CategoryOfHamiltonian="meta-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="39.76"/>
+        </Method>
+        <Method Hamiltonian="oTPSS" CategoryOfHamiltonian="meta-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="37.84"/>
+        </Method>
+        <Method Hamiltonian="oTPSS-D3" CategoryOfHamiltonian="meta-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="39.13"/>
+        </Method>
+        <Method Hamiltonian="M06L" CategoryOfHamiltonian="meta-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="38.81"/>
+        </Method>
+        <Method Hamiltonian="M06L-D3" CategoryOfHamiltonian="meta-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="38.84"/>
+        </Method>
+        <Method Hamiltonian="B3LYP" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="33.47"/>
+        </Method>
+        <Method Hamiltonian="B3LYP-D3" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="34.59"/>
+        </Method>
+        <Method Hamiltonian="B3PW91" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="36.52"/>
+        </Method>
+        <Method Hamiltonian="B3PW91-D3" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="37.84"/>
+        </Method>
+        <Method Hamiltonian="BHLYP" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="34.33"/>
+        </Method>
+        <Method Hamiltonian="BHLYP-D3" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="35.22"/>
+        </Method>
+        <Method Hamiltonian="PBE0" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="38.88"/>
+        </Method>
+        <Method Hamiltonian="PBE0-D3" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="39.53"/>
+        </Method>
+        <Method Hamiltonian="PBE38" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="39.09"/>
+        </Method>
+        <Method Hamiltonian="PBE38-D3" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="39.75"/>
+        </Method>
+        <Method Hamiltonian="revPBE0" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="35.89"/>
+        </Method>
+        <Method Hamiltonian="revPBE0-D3" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="37.36"/>
+        </Method>
+        <Method Hamiltonian="revPBE38" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="36.61"/>
+        </Method>
+        <Method Hamiltonian="revPBE38-D3" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="37.9"/>
+        </Method>
+        <Method Hamiltonian="TPSSh" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="38.85"/>
+        </Method>
+        <Method Hamiltonian="TPSSh-D3" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="39.75"/>
+        </Method>
+        <Method Hamiltonian="TPSS0" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="38.96"/>
+        </Method>
+        <Method Hamiltonian="TPSS0-D3" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="39.83"/>
+        </Method>
+        <Method Hamiltonian="PW6B95" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="38.38"/>
+        </Method>
+        <Method Hamiltonian="PW6B95-D3" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="38.91"/>
+        </Method>
+        <Method Hamiltonian="MPW1B95" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="39.12"/>
+        </Method>
+        <Method Hamiltonian="MPW1B95-D3" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="39.78"/>
+        </Method>
+        <Method Hamiltonian="PWB6K" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="39.57"/>
+        </Method>
+        <Method Hamiltonian="PWB6K-D3" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="39.9"/>
+        </Method>
+        <Method Hamiltonian="MPWB1K" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="39.55"/>
+        </Method>
+        <Method Hamiltonian="MPWB1K-D3" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="40.17"/>
+        </Method>
+        <Method Hamiltonian="B1B95" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="38.01"/>
+        </Method>
+        <Method Hamiltonian="B1B95-D3" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="39.1"/>
+        </Method>
+        <Method Hamiltonian="BMK" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="37.85"/>
+        </Method>
+        <Method Hamiltonian="BMK-D3" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="39.1"/>
+        </Method>
+        <Method Hamiltonian="M05" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="31.96"/>
+        </Method>
+        <Method Hamiltonian="M05-D3" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="32.37"/>
+        </Method>
+        <Method Hamiltonian="M052X" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="38.72"/>
+        </Method>
+        <Method Hamiltonian="M052X-D3" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="38.77"/>
+        </Method>
+        <Method Hamiltonian="M06" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="35.72"/>
+        </Method>
+        <Method Hamiltonian="M06-D3" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="35.82"/>
+        </Method>
+        <Method Hamiltonian="M062X" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="39.26"/>
+        </Method>
+        <Method Hamiltonian="M062X-D3" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="39.28"/>
+        </Method>
+        <Method Hamiltonian="M06HF" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="42.74"/>
+        </Method>
+        <Method Hamiltonian="M06HF-D3" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="42.78"/>
+        </Method>
+        <Method Hamiltonian="CAM-B3LYP" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="35.04"/>
+        </Method>
+        <Method Hamiltonian="CAM-B3LYP-D3" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="35.8"/>
+        </Method>
+        <Method Hamiltonian="LC-wPBE" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="38.2"/>
+        </Method>
+        <Method Hamiltonian="LC-wPBE-D3" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="39.01"/>
+        </Method>
+        <Method Hamiltonian="wB97X-D" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="36.45"/>
+        </Method>
+        <Method Hamiltonian="B2PLYP" CategoryOfHamiltonian="double-hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="35.67"/>
+        </Method>
+        <Method Hamiltonian="B2PLYP-D3" CategoryOfHamiltonian="double-hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="36.29"/>
+        </Method>
+        <Method Hamiltonian="XYG3" CategoryOfHamiltonian="double-hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="37.61"/>
+        </Method>
+        <Method Hamiltonian="B2GPPLYP" CategoryOfHamiltonian="double-hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="36.48"/>
+        </Method>
+        <Method Hamiltonian="B2GPPLYP-D3" CategoryOfHamiltonian="double-hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="36.93"/>
+        </Method>
+        <Method Hamiltonian="PTPSS" CategoryOfHamiltonian="double-hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="38.4"/>
+        </Method>
+        <Method Hamiltonian="PTPSS-D3" CategoryOfHamiltonian="double-hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="38.92"/>
+        </Method>
+        <Method Hamiltonian="PWPB95" CategoryOfHamiltonian="double-hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="38.33"/>
+        </Method>
+        <Method Hamiltonian="PWPB95-D3" CategoryOfHamiltonian="double-hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="38.76"/>
+        </Method>
+        <Method Hamiltonian="DSD-BLYP" CategoryOfHamiltonian="double-hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="36.43"/>
+        </Method>
+        <Method Hamiltonian="DSD-BLYP-D3" CategoryOfHamiltonian="double-hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="36.85"/>
+        </Method>
+        <Method Hamiltonian="HF" CategoryOfHamiltonian="wavefunction" Basis="CBS" CategoryOfBasis="CBS" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="28.79"/>
+        </Method>
+        <Method Hamiltonian="HF-D3" CategoryOfHamiltonian="wavefunction" Basis="CBS" CategoryOfBasis="CBS" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="30.14"/>
+        </Method>
+        <Method Hamiltonian="HF-D3(BJ)" CategoryOfHamiltonian="wavefunction" Basis="CBS" CategoryOfBasis="CBS" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="39.27"/>
+        </Method>
+        <Method Hamiltonian="MP2" CategoryOfHamiltonian="wavefunction" Basis="CBS" CategoryOfBasis="CBS" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="38.92"/>
+        </Method>
+        <Method Hamiltonian="SCS-MP2" CategoryOfHamiltonian="wavefunction" Basis="CBS" CategoryOfBasis="CBS" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="36.79"/>
+        </Method>
+        <Method Hamiltonian="S2-MP2" CategoryOfHamiltonian="wavefunction" Basis="CBS" CategoryOfBasis="CBS" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="38.52"/>
+        </Method>
+        <Method Hamiltonian="SOS-MP2" CategoryOfHamiltonian="wavefunction" Basis="CBS" CategoryOfBasis="CBS" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="35.73"/>
+        </Method>
+      </Methods>
+      <ReferenceResult>
+        <ReferenceMethod Hamiltonian="" CategoryOfHamiltonian="" Basis="" CategoryOfBasis="" CounterpoiseCorrection="noCP"/>
+        <ReferenceValue Value="35.8"/>
+      </ReferenceResult>
+    </System>
+    <System Name="al2f6 alf3     ">
+      <Molecules>
+        <Molecule Name="al2f6" SmileString="[Al](F)(F)(F)F.[Al](F)F">
+          <atomArray>
+            <atom id="a1" elementType="Al" x3="0.000000" y3="0.000000" z3="1.376900"/>
+            <atom id="a2" elementType="Al" x3="0.000000" y3="0.000000" z3="-1.376900"/>
+            <atom id="a3" elementType="F" x3="0.000000" y3="1.168000" z3="0.000000"/>
+            <atom id="a4" elementType="F" x3="0.000000" y3="-1.168000" z3="0.000000"/>
+            <atom id="a5" elementType="F" x3="-1.441500" y3="0.000000" z3="2.146000"/>
+            <atom id="a6" elementType="F" x3="1.441500" y3="0.000000" z3="2.146000"/>
+            <atom id="a7" elementType="F" x3="1.441500" y3="0.000000" z3="-2.146000"/>
+            <atom id="a8" elementType="F" x3="-1.441500" y3="0.000000" z3="-2.146000"/>
+          </atomArray>
+          <bondArray>
+            <bond atomRefs2="a3 a1" order="1"/>
+            <bond atomRefs2="a4 a1" order="1"/>
+            <bond atomRefs2="a1 a5" order="1"/>
+            <bond atomRefs2="a1 a6" order="1"/>
+            <bond atomRefs2="a7 a2" order="1"/>
+            <bond atomRefs2="a8 a2" order="1"/>
+          </bondArray>
+        </Molecule>
+        <Molecule Name="alf3" SmileString="[Al](F)(F)F">
+          <atomArray>
+            <atom id="a1" elementType="Al" x3="0.000000" y3="0.000000" z3="0.000000"/>
+            <atom id="a2" elementType="F" x3="0.817600" y3="1.416100" z3="0.000000"/>
+            <atom id="a3" elementType="F" x3="0.817600" y3="-1.416100" z3="0.000000"/>
+            <atom id="a4" elementType="F" x3="-1.635200" y3="0.000000" z3="0.000000"/>
+          </atomArray>
+          <bondArray>
+            <bond atomRefs2="a1 a2" order="1"/>
+            <bond atomRefs2="a1 a3" order="1"/>
+            <bond atomRefs2="a1 a4" order="1"/>
+          </bondArray>
+        </Molecule>
+      </Molecules>
+      <Methods>
+        <Method Hamiltonian="SPW92" CategoryOfHamiltonian="LDA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="55.13"/>
+        </Method>
+        <Method Hamiltonian="SVWN" CategoryOfHamiltonian="LDA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="55.17"/>
+        </Method>
+        <Method Hamiltonian="B97" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="38.18"/>
+        </Method>
+        <Method Hamiltonian="B97-D3" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="40.5"/>
+        </Method>
+        <Method Hamiltonian="BP86" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="42.71"/>
+        </Method>
+        <Method Hamiltonian="BP86-D3" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="44.71"/>
+        </Method>
+        <Method Hamiltonian="BOP" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="36.52"/>
+        </Method>
+        <Method Hamiltonian="BOP-D3" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="39.58"/>
+        </Method>
+        <Method Hamiltonian="BLYP" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="40.31"/>
+        </Method>
+        <Method Hamiltonian="BLYP-D3" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="42.49"/>
+        </Method>
+        <Method Hamiltonian="mPWLYP" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="42.25"/>
+        </Method>
+        <Method Hamiltonian="mPWLYP-D3" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="43.46"/>
+        </Method>
+        <Method Hamiltonian="OLYP" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="34.87"/>
+        </Method>
+        <Method Hamiltonian="OLYP-D3" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="38.3"/>
+        </Method>
+        <Method Hamiltonian="PBE" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="44.15"/>
+        </Method>
+        <Method Hamiltonian="PBE-D3" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="45.09"/>
+        </Method>
+        <Method Hamiltonian="PBEsol" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="48.37"/>
+        </Method>
+        <Method Hamiltonian="PBEsol-D3" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="49.02"/>
+        </Method>
+        <Method Hamiltonian="revPBE" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="38.82"/>
+        </Method>
+        <Method Hamiltonian="revPBE-D3" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="41.1"/>
+        </Method>
+        <Method Hamiltonian="OPBE" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="35.15"/>
+        </Method>
+        <Method Hamiltonian="OPBE-D3" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="38.66"/>
+        </Method>
+        <Method Hamiltonian="BPBE" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="40.78"/>
+        </Method>
+        <Method Hamiltonian="BPBE-D3" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="43.28"/>
+        </Method>
+        <Method Hamiltonian="rPW86PBE" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="43.23"/>
+        </Method>
+        <Method Hamiltonian="rPW86PBE-D3" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="44.31"/>
+        </Method>
+        <Method Hamiltonian="SSB" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="41.84"/>
+        </Method>
+        <Method Hamiltonian="SSB-D3" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="42.74"/>
+        </Method>
+        <Method Hamiltonian="revSSB" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="43.78"/>
+        </Method>
+        <Method Hamiltonian="revSSB-D3" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="44.59"/>
+        </Method>
+        <Method Hamiltonian="TPSS" CategoryOfHamiltonian="meta-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="45.29"/>
+        </Method>
+        <Method Hamiltonian="TPSS-D3" CategoryOfHamiltonian="meta-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="46.71"/>
+        </Method>
+        <Method Hamiltonian="oTPSS" CategoryOfHamiltonian="meta-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="42.83"/>
+        </Method>
+        <Method Hamiltonian="oTPSS-D3" CategoryOfHamiltonian="meta-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="44.72"/>
+        </Method>
+        <Method Hamiltonian="M06L" CategoryOfHamiltonian="meta-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="51.46"/>
+        </Method>
+        <Method Hamiltonian="M06L-D3" CategoryOfHamiltonian="meta-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="51.5"/>
+        </Method>
+        <Method Hamiltonian="B3LYP" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="44.86"/>
+        </Method>
+        <Method Hamiltonian="B3LYP-D3" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="46.53"/>
+        </Method>
+        <Method Hamiltonian="B3PW91" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="44.9"/>
+        </Method>
+        <Method Hamiltonian="B3PW91-D3" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="46.84"/>
+        </Method>
+        <Method Hamiltonian="BHLYP" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="50"/>
+        </Method>
+        <Method Hamiltonian="BHLYP-D3" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="51.31"/>
+        </Method>
+        <Method Hamiltonian="PBE0" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="47.93"/>
+        </Method>
+        <Method Hamiltonian="PBE0-D3" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="48.91"/>
+        </Method>
+        <Method Hamiltonian="PBE38" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="49.64"/>
+        </Method>
+        <Method Hamiltonian="PBE38-D3" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="50.61"/>
+        </Method>
+        <Method Hamiltonian="revPBE0" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="43.99"/>
+        </Method>
+        <Method Hamiltonian="revPBE0-D3" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="45.99"/>
+        </Method>
+        <Method Hamiltonian="revPBE38" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="46.37"/>
+        </Method>
+        <Method Hamiltonian="revPBE38-D3" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="48.16"/>
+        </Method>
+        <Method Hamiltonian="TPSSh" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="46.58"/>
+        </Method>
+        <Method Hamiltonian="TPSSh-D3" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="47.92"/>
+        </Method>
+        <Method Hamiltonian="TPSS0" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="48.42"/>
+        </Method>
+        <Method Hamiltonian="TPSS0-D3" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="49.72"/>
+        </Method>
+        <Method Hamiltonian="PW6B95" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="49.18"/>
+        </Method>
+        <Method Hamiltonian="PW6B95-D3" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="49.95"/>
+        </Method>
+        <Method Hamiltonian="MPW1B95" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="49.65"/>
+        </Method>
+        <Method Hamiltonian="MPW1B95-D3" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="50.62"/>
+        </Method>
+        <Method Hamiltonian="PWB6K" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="52.35"/>
+        </Method>
+        <Method Hamiltonian="PWB6K-D3" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="52.84"/>
+        </Method>
+        <Method Hamiltonian="MPWB1K" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="51.56"/>
+        </Method>
+        <Method Hamiltonian="MPWB1K-D3" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="52.47"/>
+        </Method>
+        <Method Hamiltonian="B1B95" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="47.75"/>
+        </Method>
+        <Method Hamiltonian="B1B95-D3" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="49.34"/>
+        </Method>
+        <Method Hamiltonian="BMK" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="50.65"/>
+        </Method>
+        <Method Hamiltonian="BMK-D3" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="52.47"/>
+        </Method>
+        <Method Hamiltonian="M05" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="45.06"/>
+        </Method>
+        <Method Hamiltonian="M05-D3" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="45.67"/>
+        </Method>
+        <Method Hamiltonian="M052X" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="54.42"/>
+        </Method>
+        <Method Hamiltonian="M052X-D3" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="54.5"/>
+        </Method>
+        <Method Hamiltonian="M06" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="48.43"/>
+        </Method>
+        <Method Hamiltonian="M06-D3" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="48.58"/>
+        </Method>
+        <Method Hamiltonian="M062X" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="55.05"/>
+        </Method>
+        <Method Hamiltonian="M062X-D3" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="55.08"/>
+        </Method>
+        <Method Hamiltonian="M06HF" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="58.4"/>
+        </Method>
+        <Method Hamiltonian="M06HF-D3" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="58.47"/>
+        </Method>
+        <Method Hamiltonian="CAM-B3LYP" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="48.78"/>
+        </Method>
+        <Method Hamiltonian="CAM-B3LYP-D3" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="49.9"/>
+        </Method>
+        <Method Hamiltonian="LC-wPBE" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="47.59"/>
+        </Method>
+        <Method Hamiltonian="LC-wPBE-D3" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="48.78"/>
+        </Method>
+        <Method Hamiltonian="wB97X-D" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="47.62"/>
+        </Method>
+        <Method Hamiltonian="B2PLYP" CategoryOfHamiltonian="double-hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="47.96"/>
+        </Method>
+        <Method Hamiltonian="B2PLYP-D3" CategoryOfHamiltonian="double-hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="48.86"/>
+        </Method>
+        <Method Hamiltonian="XYG3" CategoryOfHamiltonian="double-hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="51.23"/>
+        </Method>
+        <Method Hamiltonian="B2GPPLYP" CategoryOfHamiltonian="double-hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="49.57"/>
+        </Method>
+        <Method Hamiltonian="B2GPPLYP-D3" CategoryOfHamiltonian="double-hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="50.23"/>
+        </Method>
+        <Method Hamiltonian="PTPSS" CategoryOfHamiltonian="double-hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="49.98"/>
+        </Method>
+        <Method Hamiltonian="PTPSS-D3" CategoryOfHamiltonian="double-hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="50.74"/>
+        </Method>
+        <Method Hamiltonian="PWPB95" CategoryOfHamiltonian="double-hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="49.95"/>
+        </Method>
+        <Method Hamiltonian="PWPB95-D3" CategoryOfHamiltonian="double-hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="50.58"/>
+        </Method>
+        <Method Hamiltonian="DSD-BLYP" CategoryOfHamiltonian="double-hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="49.38"/>
+        </Method>
+        <Method Hamiltonian="DSD-BLYP-D3" CategoryOfHamiltonian="double-hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="49.99"/>
+        </Method>
+        <Method Hamiltonian="HF" CategoryOfHamiltonian="wavefunction" Basis="CBS" CategoryOfBasis="CBS" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="48.7"/>
+        </Method>
+        <Method Hamiltonian="HF-D3" CategoryOfHamiltonian="wavefunction" Basis="CBS" CategoryOfBasis="CBS" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="50.68"/>
+        </Method>
+        <Method Hamiltonian="HF-D3(BJ)" CategoryOfHamiltonian="wavefunction" Basis="CBS" CategoryOfBasis="CBS" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="60.09"/>
+        </Method>
+        <Method Hamiltonian="MP2" CategoryOfHamiltonian="wavefunction" Basis="CBS" CategoryOfBasis="CBS" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="50.97"/>
+        </Method>
+        <Method Hamiltonian="SCS-MP2" CategoryOfHamiltonian="wavefunction" Basis="CBS" CategoryOfBasis="CBS" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="50.12"/>
+        </Method>
+        <Method Hamiltonian="S2-MP2" CategoryOfHamiltonian="wavefunction" Basis="CBS" CategoryOfBasis="CBS" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="50.71"/>
+        </Method>
+        <Method Hamiltonian="SOS-MP2" CategoryOfHamiltonian="wavefunction" Basis="CBS" CategoryOfBasis="CBS" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="49.69"/>
+        </Method>
+      </Methods>
+      <ReferenceResult>
+        <ReferenceMethod Hamiltonian="" CategoryOfHamiltonian="" Basis="" CategoryOfBasis="" CounterpoiseCorrection="noCP"/>
+        <ReferenceValue Value="52.6"/>
+      </ReferenceResult>
+    </System>
+    <System Name="al2cl6 alcl3     ">
+      <Molecules>
+        <Molecule Name="al2cl6" SmileString="[Al](Cl)(Cl)(Cl)Cl.[Al](Cl)Cl">
+          <atomArray>
+            <atom id="a1" elementType="Al" x3="0.000000" y3="0.000000" z3="1.595400"/>
+            <atom id="a2" elementType="Al" x3="0.000000" y3="0.000000" z3="-1.595400"/>
+            <atom id="a3" elementType="Cl" x3="0.000000" y3="1.623100" z3="0.000000"/>
+            <atom id="a4" elementType="Cl" x3="0.000000" y3="-1.623100" z3="0.000000"/>
+            <atom id="a5" elementType="Cl" x3="-1.821200" y3="0.000000" z3="2.604300"/>
+            <atom id="a6" elementType="Cl" x3="1.821200" y3="0.000000" z3="2.604300"/>
+            <atom id="a7" elementType="Cl" x3="1.821200" y3="0.000000" z3="-2.604300"/>
+            <atom id="a8" elementType="Cl" x3="-1.821200" y3="0.000000" z3="-2.604300"/>
+          </atomArray>
+          <bondArray>
+            <bond atomRefs2="a3 a1" order="1"/>
+            <bond atomRefs2="a4 a1" order="1"/>
+            <bond atomRefs2="a1 a5" order="1"/>
+            <bond atomRefs2="a1 a6" order="1"/>
+            <bond atomRefs2="a7 a2" order="1"/>
+            <bond atomRefs2="a8 a2" order="1"/>
+          </bondArray>
+        </Molecule>
+        <Molecule Name="alcl3" SmileString="[Al](Cl)(Cl)Cl">
+          <atomArray>
+            <atom id="a1" elementType="Al" x3="0.000000" y3="0.000000" z3="0.000000"/>
+            <atom id="a2" elementType="Cl" x3="1.038100" y3="1.798000" z3="0.000000"/>
+            <atom id="a3" elementType="Cl" x3="1.038100" y3="-1.798000" z3="0.000000"/>
+            <atom id="a4" elementType="Cl" x3="-2.076200" y3="0.000000" z3="0.000000"/>
+          </atomArray>
+          <bondArray>
+            <bond atomRefs2="a1 a2" order="1"/>
+            <bond atomRefs2="a1 a3" order="1"/>
+            <bond atomRefs2="a1 a4" order="1"/>
+          </bondArray>
+        </Molecule>
+      </Molecules>
+      <Methods>
+        <Method Hamiltonian="SPW92" CategoryOfHamiltonian="LDA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="37.07"/>
+        </Method>
+        <Method Hamiltonian="SVWN" CategoryOfHamiltonian="LDA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="37.1"/>
+        </Method>
+        <Method Hamiltonian="B97" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="18.5"/>
+        </Method>
+        <Method Hamiltonian="B97-D3" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="24.35"/>
+        </Method>
+        <Method Hamiltonian="BP86" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="24.16"/>
+        </Method>
+        <Method Hamiltonian="BP86-D3" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="29.13"/>
+        </Method>
+        <Method Hamiltonian="BOP" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="15.88"/>
+        </Method>
+        <Method Hamiltonian="BOP-D3" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="23.76"/>
+        </Method>
+        <Method Hamiltonian="BLYP" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="18.45"/>
+        </Method>
+        <Method Hamiltonian="BLYP-D3" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="23.76"/>
+        </Method>
+        <Method Hamiltonian="mPWLYP" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="20.37"/>
+        </Method>
+        <Method Hamiltonian="mPWLYP-D3" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="23.49"/>
+        </Method>
+        <Method Hamiltonian="OLYP" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="15.81"/>
+        </Method>
+        <Method Hamiltonian="OLYP-D3" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="24.76"/>
+        </Method>
+        <Method Hamiltonian="PBE" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="26.65"/>
+        </Method>
+        <Method Hamiltonian="PBE-D3" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="28.98"/>
+        </Method>
+        <Method Hamiltonian="PBEsol" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="31.78"/>
+        </Method>
+        <Method Hamiltonian="PBEsol-D3" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="33.5"/>
+        </Method>
+        <Method Hamiltonian="revPBE" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="21.4"/>
+        </Method>
+        <Method Hamiltonian="revPBE-D3" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="27.11"/>
+        </Method>
+        <Method Hamiltonian="OPBE" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="20.48"/>
+        </Method>
+        <Method Hamiltonian="OPBE-D3" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="29.67"/>
+        </Method>
+        <Method Hamiltonian="BPBE" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="23.28"/>
+        </Method>
+        <Method Hamiltonian="BPBE-D3" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="29.47"/>
+        </Method>
+        <Method Hamiltonian="rPW86PBE" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="23.43"/>
+        </Method>
+        <Method Hamiltonian="rPW86PBE-D3" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="26.15"/>
+        </Method>
+        <Method Hamiltonian="SSB" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="24.06"/>
+        </Method>
+        <Method Hamiltonian="SSB-D3" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="26.26"/>
+        </Method>
+        <Method Hamiltonian="revSSB" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="25.98"/>
+        </Method>
+        <Method Hamiltonian="revSSB-D3" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="27.92"/>
+        </Method>
+        <Method Hamiltonian="TPSS" CategoryOfHamiltonian="meta-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="27.59"/>
+        </Method>
+        <Method Hamiltonian="TPSS-D3" CategoryOfHamiltonian="meta-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="31.06"/>
+        </Method>
+        <Method Hamiltonian="oTPSS" CategoryOfHamiltonian="meta-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="24.11"/>
+        </Method>
+        <Method Hamiltonian="oTPSS-D3" CategoryOfHamiltonian="meta-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="28.72"/>
+        </Method>
+        <Method Hamiltonian="M06L" CategoryOfHamiltonian="meta-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="30.18"/>
+        </Method>
+        <Method Hamiltonian="M06L-D3" CategoryOfHamiltonian="meta-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="30.27"/>
+        </Method>
+        <Method Hamiltonian="B3LYP" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="21.67"/>
+        </Method>
+        <Method Hamiltonian="B3LYP-D3" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="26.12"/>
+        </Method>
+        <Method Hamiltonian="B3PW91" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="25.09"/>
+        </Method>
+        <Method Hamiltonian="B3PW91-D3" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="30.07"/>
+        </Method>
+        <Method Hamiltonian="BHLYP" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="24.43"/>
+        </Method>
+        <Method Hamiltonian="BHLYP-D3" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="28.04"/>
+        </Method>
+        <Method Hamiltonian="PBE0" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="28.47"/>
+        </Method>
+        <Method Hamiltonian="PBE0-D3" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="31.06"/>
+        </Method>
+        <Method Hamiltonian="PBE38" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="29.38"/>
+        </Method>
+        <Method Hamiltonian="PBE38-D3" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="32.02"/>
+        </Method>
+        <Method Hamiltonian="revPBE0" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="24.54"/>
+        </Method>
+        <Method Hamiltonian="revPBE0-D3" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="29.42"/>
+        </Method>
+        <Method Hamiltonian="revPBE38" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="26.1"/>
+        </Method>
+        <Method Hamiltonian="revPBE38-D3" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="30.24"/>
+        </Method>
+        <Method Hamiltonian="TPSSh" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="28.16"/>
+        </Method>
+        <Method Hamiltonian="TPSSh-D3" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="31.62"/>
+        </Method>
+        <Method Hamiltonian="TPSS0" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="28.96"/>
+        </Method>
+        <Method Hamiltonian="TPSS0-D3" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="32.38"/>
+        </Method>
+        <Method Hamiltonian="PW6B95" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="28.91"/>
+        </Method>
+        <Method Hamiltonian="PW6B95-D3" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="31.03"/>
+        </Method>
+        <Method Hamiltonian="MPW1B95" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="29.86"/>
+        </Method>
+        <Method Hamiltonian="MPW1B95-D3" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="32.53"/>
+        </Method>
+        <Method Hamiltonian="PWB6K" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="31.22"/>
+        </Method>
+        <Method Hamiltonian="PWB6K-D3" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="32.55"/>
+        </Method>
+        <Method Hamiltonian="MPWB1K" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="31.04"/>
+        </Method>
+        <Method Hamiltonian="MPWB1K-D3" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="33.57"/>
+        </Method>
+        <Method Hamiltonian="B1B95" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="28.17"/>
+        </Method>
+        <Method Hamiltonian="B1B95-D3" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="32.59"/>
+        </Method>
+        <Method Hamiltonian="BMK" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="26.86"/>
+        </Method>
+        <Method Hamiltonian="BMK-D3" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="31.92"/>
+        </Method>
+        <Method Hamiltonian="M05" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="22.42"/>
+        </Method>
+        <Method Hamiltonian="M05-D3" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="24.05"/>
+        </Method>
+        <Method Hamiltonian="M052X" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="32.34"/>
+        </Method>
+        <Method Hamiltonian="M052X-D3" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="32.54"/>
+        </Method>
+        <Method Hamiltonian="M06" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="27.99"/>
+        </Method>
+        <Method Hamiltonian="M06-D3" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="28.33"/>
+        </Method>
+        <Method Hamiltonian="M062X" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="31.92"/>
+        </Method>
+        <Method Hamiltonian="M062X-D3" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="32"/>
+        </Method>
+        <Method Hamiltonian="M06HF" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="37.57"/>
+        </Method>
+        <Method Hamiltonian="M06HF-D3" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="37.75"/>
+        </Method>
+        <Method Hamiltonian="CAM-B3LYP" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="25.17"/>
+        </Method>
+        <Method Hamiltonian="CAM-B3LYP-D3" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="28.25"/>
+        </Method>
+        <Method Hamiltonian="LC-wPBE" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="29.63"/>
+        </Method>
+        <Method Hamiltonian="LC-wPBE-D3" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="32.89"/>
+        </Method>
+        <Method Hamiltonian="wB97X-D" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="27.11"/>
+        </Method>
+        <Method Hamiltonian="B2PLYP" CategoryOfHamiltonian="double-hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="27.08"/>
+        </Method>
+        <Method Hamiltonian="B2PLYP-D3" CategoryOfHamiltonian="double-hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="29.58"/>
+        </Method>
+        <Method Hamiltonian="XYG3" CategoryOfHamiltonian="double-hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="31.18"/>
+        </Method>
+        <Method Hamiltonian="B2GPPLYP" CategoryOfHamiltonian="double-hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="29.01"/>
+        </Method>
+        <Method Hamiltonian="B2GPPLYP-D3" CategoryOfHamiltonian="double-hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="30.82"/>
+        </Method>
+        <Method Hamiltonian="PTPSS" CategoryOfHamiltonian="double-hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="29.96"/>
+        </Method>
+        <Method Hamiltonian="PTPSS-D3" CategoryOfHamiltonian="double-hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="32.08"/>
+        </Method>
+        <Method Hamiltonian="PWPB95" CategoryOfHamiltonian="double-hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="30.61"/>
+        </Method>
+        <Method Hamiltonian="PWPB95-D3" CategoryOfHamiltonian="double-hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="32.32"/>
+        </Method>
+        <Method Hamiltonian="DSD-BLYP" CategoryOfHamiltonian="double-hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="29.37"/>
+        </Method>
+        <Method Hamiltonian="DSD-BLYP-D3" CategoryOfHamiltonian="double-hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="31.06"/>
+        </Method>
+        <Method Hamiltonian="HF" CategoryOfHamiltonian="wavefunction" Basis="CBS" CategoryOfBasis="CBS" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="19.8"/>
+        </Method>
+        <Method Hamiltonian="HF-D3" CategoryOfHamiltonian="wavefunction" Basis="CBS" CategoryOfBasis="CBS" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="24.8"/>
+        </Method>
+        <Method Hamiltonian="HF-D3(BJ)" CategoryOfHamiltonian="wavefunction" Basis="CBS" CategoryOfBasis="CBS" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="40.79"/>
+        </Method>
+        <Method Hamiltonian="MP2" CategoryOfHamiltonian="wavefunction" Basis="CBS" CategoryOfBasis="CBS" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="34.35"/>
+        </Method>
+        <Method Hamiltonian="SCS-MP2" CategoryOfHamiltonian="wavefunction" Basis="CBS" CategoryOfBasis="CBS" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="31.32"/>
+        </Method>
+        <Method Hamiltonian="S2-MP2" CategoryOfHamiltonian="wavefunction" Basis="CBS" CategoryOfBasis="CBS" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="33.79"/>
+        </Method>
+        <Method Hamiltonian="SOS-MP2" CategoryOfHamiltonian="wavefunction" Basis="CBS" CategoryOfBasis="CBS" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="29.81"/>
+        </Method>
+      </Methods>
+      <ReferenceResult>
+        <ReferenceMethod Hamiltonian="" CategoryOfHamiltonian="" Basis="" CategoryOfBasis="" CounterpoiseCorrection="noCP"/>
+        <ReferenceValue Value="31.4"/>
+      </ReferenceResult>
+    </System>
+    <System Name="al2br6 albr3     ">
+      <Molecules>
+        <Molecule Name="al2br6" SmileString="[Al](Br)(Br)(Br)Br.[Al](Br)Br">
+          <atomArray>
+            <atom id="a1" elementType="Al" x3="0.000000" y3="0.000000" z3="1.679700"/>
+            <atom id="a2" elementType="Al" x3="0.000000" y3="0.000000" z3="-1.679700"/>
+            <atom id="a3" elementType="Br" x3="0.000000" y3="1.775500" z3="0.000000"/>
+            <atom id="a4" elementType="Br" x3="0.000000" y3="-1.775500" z3="0.000000"/>
+            <atom id="a5" elementType="Br" x3="-1.960700" y3="0.000000" z3="2.778800"/>
+            <atom id="a6" elementType="Br" x3="1.960700" y3="0.000000" z3="2.778800"/>
+            <atom id="a7" elementType="Br" x3="1.960700" y3="0.000000" z3="-2.778800"/>
+            <atom id="a8" elementType="Br" x3="-1.960700" y3="0.000000" z3="-2.778800"/>
+          </atomArray>
+          <bondArray>
+            <bond atomRefs2="a3 a1" order="1"/>
+            <bond atomRefs2="a4 a1" order="1"/>
+            <bond atomRefs2="a1 a5" order="1"/>
+            <bond atomRefs2="a1 a6" order="1"/>
+            <bond atomRefs2="a7 a2" order="1"/>
+            <bond atomRefs2="a8 a2" order="1"/>
+          </bondArray>
+        </Molecule>
+        <Molecule Name="albr3" SmileString="[Al](Br)(Br)Br">
+          <atomArray>
+            <atom id="a1" elementType="Al" x3="0.000000" y3="0.000000" z3="0.000000"/>
+            <atom id="a2" elementType="Br" x3="1.118900" y3="1.938000" z3="0.000000"/>
+            <atom id="a3" elementType="Br" x3="1.118900" y3="-1.938000" z3="0.000000"/>
+            <atom id="a4" elementType="Br" x3="-2.237800" y3="0.000000" z3="0.000000"/>
+          </atomArray>
+          <bondArray>
+            <bond atomRefs2="a1 a2" order="1"/>
+            <bond atomRefs2="a1 a3" order="1"/>
+            <bond atomRefs2="a1 a4" order="1"/>
+          </bondArray>
+        </Molecule>
+      </Molecules>
+      <Methods>
+        <Method Hamiltonian="SPW92" CategoryOfHamiltonian="LDA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="33.91"/>
+        </Method>
+        <Method Hamiltonian="SVWN" CategoryOfHamiltonian="LDA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="33.94"/>
+        </Method>
+        <Method Hamiltonian="B97" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="14.82"/>
+        </Method>
+        <Method Hamiltonian="B97-D3" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="22.26"/>
+        </Method>
+        <Method Hamiltonian="BP86" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="20.84"/>
+        </Method>
+        <Method Hamiltonian="BP86-D3" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="27.63"/>
+        </Method>
+        <Method Hamiltonian="BOP" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="12.04"/>
+        </Method>
+        <Method Hamiltonian="BOP-D3" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="22.42"/>
+        </Method>
+        <Method Hamiltonian="BLYP" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="14.18"/>
+        </Method>
+        <Method Hamiltonian="BLYP-D3" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="21.32"/>
+        </Method>
+        <Method Hamiltonian="mPWLYP" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="16.09"/>
+        </Method>
+        <Method Hamiltonian="mPWLYP-D3" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="20.45"/>
+        </Method>
+        <Method Hamiltonian="OLYP" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="12.43"/>
+        </Method>
+        <Method Hamiltonian="OLYP-D3" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="24.36"/>
+        </Method>
+        <Method Hamiltonian="PBE" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="23.69"/>
+        </Method>
+        <Method Hamiltonian="PBE-D3" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="26.89"/>
+        </Method>
+        <Method Hamiltonian="PBEsol" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="29.04"/>
+        </Method>
+        <Method Hamiltonian="PBEsol-D3" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="31.47"/>
+        </Method>
+        <Method Hamiltonian="revPBE" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="18.48"/>
+        </Method>
+        <Method Hamiltonian="revPBE-D3" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="25.76"/>
+        </Method>
+        <Method Hamiltonian="OPBE" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="18.52"/>
+        </Method>
+        <Method Hamiltonian="OPBE-D3" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="30.72"/>
+        </Method>
+        <Method Hamiltonian="BPBE" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="20.36"/>
+        </Method>
+        <Method Hamiltonian="BPBE-D3" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="28.72"/>
+        </Method>
+        <Method Hamiltonian="rPW86PBE" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="19.64"/>
+        </Method>
+        <Method Hamiltonian="rPW86PBE-D3" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="23.4"/>
+        </Method>
+        <Method Hamiltonian="SSB" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="21.26"/>
+        </Method>
+        <Method Hamiltonian="SSB-D3" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="24.28"/>
+        </Method>
+        <Method Hamiltonian="revSSB" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="23.16"/>
+        </Method>
+        <Method Hamiltonian="revSSB-D3" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="25.8"/>
+        </Method>
+        <Method Hamiltonian="TPSS" CategoryOfHamiltonian="meta-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="24.17"/>
+        </Method>
+        <Method Hamiltonian="TPSS-D3" CategoryOfHamiltonian="meta-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="28.88"/>
+        </Method>
+        <Method Hamiltonian="oTPSS" CategoryOfHamiltonian="meta-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="20.32"/>
+        </Method>
+        <Method Hamiltonian="oTPSS-D3" CategoryOfHamiltonian="meta-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="26.56"/>
+        </Method>
+        <Method Hamiltonian="M06L" CategoryOfHamiltonian="meta-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="25.55"/>
+        </Method>
+        <Method Hamiltonian="M06L-D3" CategoryOfHamiltonian="meta-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="25.66"/>
+        </Method>
+        <Method Hamiltonian="B3LYP" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="17.23"/>
+        </Method>
+        <Method Hamiltonian="B3LYP-D3" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="23.51"/>
+        </Method>
+        <Method Hamiltonian="B3PW91" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="21.69"/>
+        </Method>
+        <Method Hamiltonian="B3PW91-D3" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="28.57"/>
+        </Method>
+        <Method Hamiltonian="BHLYP" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="19.49"/>
+        </Method>
+        <Method Hamiltonian="BHLYP-D3" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="24.63"/>
+        </Method>
+        <Method Hamiltonian="PBE0" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="25.2"/>
+        </Method>
+        <Method Hamiltonian="PBE0-D3" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="28.83"/>
+        </Method>
+        <Method Hamiltonian="PBE38" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="25.99"/>
+        </Method>
+        <Method Hamiltonian="PBE38-D3" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="29.73"/>
+        </Method>
+        <Method Hamiltonian="revPBE0" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="21.3"/>
+        </Method>
+        <Method Hamiltonian="revPBE0-D3" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="27.43"/>
+        </Method>
+        <Method Hamiltonian="revPBE38" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="22.75"/>
+        </Method>
+        <Method Hamiltonian="revPBE38-D3" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="27.99"/>
+        </Method>
+        <Method Hamiltonian="TPSSh" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="24.59"/>
+        </Method>
+        <Method Hamiltonian="TPSSh-D3" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="29.42"/>
+        </Method>
+        <Method Hamiltonian="TPSS0" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="25.34"/>
+        </Method>
+        <Method Hamiltonian="TPSS0-D3" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="30.13"/>
+        </Method>
+        <Method Hamiltonian="PW6B95" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="25.28"/>
+        </Method>
+        <Method Hamiltonian="PW6B95-D3" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="28.29"/>
+        </Method>
+        <Method Hamiltonian="MPW1B95" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="26.4"/>
+        </Method>
+        <Method Hamiltonian="MPW1B95-D3" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="30.2"/>
+        </Method>
+        <Method Hamiltonian="PWB6K" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="27.5"/>
+        </Method>
+        <Method Hamiltonian="PWB6K-D3" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="29.39"/>
+        </Method>
+        <Method Hamiltonian="MPWB1K" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="27.48"/>
+        </Method>
+        <Method Hamiltonian="MPWB1K-D3" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="31.07"/>
+        </Method>
+        <Method Hamiltonian="B1B95" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="24.75"/>
+        </Method>
+        <Method Hamiltonian="B1B95-D3" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="31.03"/>
+        </Method>
+        <Method Hamiltonian="BMK" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="22.53"/>
+        </Method>
+        <Method Hamiltonian="BMK-D3" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="29.73"/>
+        </Method>
+        <Method Hamiltonian="M05" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="18.93"/>
+        </Method>
+        <Method Hamiltonian="M05-D3" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="21.25"/>
+        </Method>
+        <Method Hamiltonian="M052X" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="28.62"/>
+        </Method>
+        <Method Hamiltonian="M052X-D3" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="28.89"/>
+        </Method>
+        <Method Hamiltonian="M06" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="25.66"/>
+        </Method>
+        <Method Hamiltonian="M06-D3" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="26.11"/>
+        </Method>
+        <Method Hamiltonian="M062X" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="27.8"/>
+        </Method>
+        <Method Hamiltonian="M062X-D3" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="27.89"/>
+        </Method>
+        <Method Hamiltonian="M06HF" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="35.26"/>
+        </Method>
+        <Method Hamiltonian="M06HF-D3" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="35.48"/>
+        </Method>
+        <Method Hamiltonian="CAM-B3LYP" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="20.54"/>
+        </Method>
+        <Method Hamiltonian="CAM-B3LYP-D3" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="24.91"/>
+        </Method>
+        <Method Hamiltonian="LC-wPBE" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="26.66"/>
+        </Method>
+        <Method Hamiltonian="LC-wPBE-D3" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="31.29"/>
+        </Method>
+        <Method Hamiltonian="wB97X-D" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="24.22"/>
+        </Method>
+        <Method Hamiltonian="B2PLYP" CategoryOfHamiltonian="double-hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="23.39"/>
+        </Method>
+        <Method Hamiltonian="B2PLYP-D3" CategoryOfHamiltonian="double-hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="26.94"/>
+        </Method>
+        <Method Hamiltonian="XYG3" CategoryOfHamiltonian="double-hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="27.75"/>
+        </Method>
+        <Method Hamiltonian="B2GPPLYP" CategoryOfHamiltonian="double-hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="25.52"/>
+        </Method>
+        <Method Hamiltonian="B2GPPLYP-D3" CategoryOfHamiltonian="double-hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="28.09"/>
+        </Method>
+        <Method Hamiltonian="PTPSS" CategoryOfHamiltonian="double-hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="26.32"/>
+        </Method>
+        <Method Hamiltonian="PTPSS-D3" CategoryOfHamiltonian="double-hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="29.33"/>
+        </Method>
+        <Method Hamiltonian="PWPB95" CategoryOfHamiltonian="double-hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="27.31"/>
+        </Method>
+        <Method Hamiltonian="PWPB95-D3" CategoryOfHamiltonian="double-hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="29.75"/>
+        </Method>
+        <Method Hamiltonian="DSD-BLYP" CategoryOfHamiltonian="double-hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="26.07"/>
+        </Method>
+        <Method Hamiltonian="DSD-BLYP-D3" CategoryOfHamiltonian="double-hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="28.46"/>
+        </Method>
+        <Method Hamiltonian="HF" CategoryOfHamiltonian="wavefunction" Basis="CBS" CategoryOfBasis="CBS" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="14.25"/>
+        </Method>
+        <Method Hamiltonian="HF-D3" CategoryOfHamiltonian="wavefunction" Basis="CBS" CategoryOfBasis="CBS" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="21.13"/>
+        </Method>
+        <Method Hamiltonian="HF-D3(BJ)" CategoryOfHamiltonian="wavefunction" Basis="CBS" CategoryOfBasis="CBS" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="37.35"/>
+        </Method>
+        <Method Hamiltonian="MP2" CategoryOfHamiltonian="wavefunction" Basis="CBS" CategoryOfBasis="CBS" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="33.84"/>
+        </Method>
+        <Method Hamiltonian="SCS-MP2" CategoryOfHamiltonian="wavefunction" Basis="CBS" CategoryOfBasis="CBS" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="29.94"/>
+        </Method>
+        <Method Hamiltonian="S2-MP2" CategoryOfHamiltonian="wavefunction" Basis="CBS" CategoryOfBasis="CBS" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="33.17"/>
+        </Method>
+        <Method Hamiltonian="SOS-MP2" CategoryOfHamiltonian="wavefunction" Basis="CBS" CategoryOfBasis="CBS" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="27.99"/>
+        </Method>
+      </Methods>
+      <ReferenceResult>
+        <ReferenceMethod Hamiltonian="" CategoryOfHamiltonian="" Basis="" CategoryOfBasis="" CounterpoiseCorrection="noCP"/>
+        <ReferenceValue Value="28.4"/>
+      </ReferenceResult>
+    </System>
+    <System Name="al2me4 alme2     ">
+      <Molecules>
+        <Molecule Name="al2me4" SmileString="C[AlH2]C.[Al](C)C">
+          <atomArray>
+            <atom id="a1" elementType="C" x3="1.758500" y3="0.000000" z3="2.192200"/>
+            <atom id="a2" elementType="Al" x3="0.000000" y3="0.000000" z3="1.313700"/>
+            <atom id="a3" elementType="C" x3="-1.758500" y3="0.000000" z3="2.192200"/>
+            <atom id="a4" elementType="H" x3="0.000000" y3="1.148100" z3="0.000000"/>
+            <atom id="a5" elementType="Al" x3="0.000000" y3="0.000000" z3="-1.313700"/>
+            <atom id="a6" elementType="C" x3="1.758500" y3="0.000000" z3="-2.192200"/>
+            <atom id="a7" elementType="H" x3="0.000000" y3="-1.148100" z3="0.000000"/>
+            <atom id="a8" elementType="C" x3="-1.758500" y3="0.000000" z3="-2.192200"/>
+            <atom id="a9" elementType="H" x3="-1.880500" y3="-0.877800" z3="-2.830500"/>
+            <atom id="a10" elementType="H" x3="-2.579700" y3="0.000000" z3="-1.473800"/>
+            <atom id="a11" elementType="H" x3="-1.880500" y3="0.877800" z3="-2.830500"/>
+            <atom id="a12" elementType="H" x3="1.880500" y3="-0.877800" z3="-2.830500"/>
+            <atom id="a13" elementType="H" x3="1.880500" y3="0.877800" z3="-2.830500"/>
+            <atom id="a14" elementType="H" x3="2.579700" y3="0.000000" z3="-1.473800"/>
+            <atom id="a15" elementType="H" x3="-1.880500" y3="-0.877800" z3="2.830500"/>
+            <atom id="a16" elementType="H" x3="-1.880500" y3="0.877800" z3="2.830500"/>
+            <atom id="a17" elementType="H" x3="-2.579700" y3="0.000000" z3="1.473800"/>
+            <atom id="a18" elementType="H" x3="1.880500" y3="-0.877800" z3="2.830500"/>
+            <atom id="a19" elementType="H" x3="2.579700" y3="0.000000" z3="1.473800"/>
+            <atom id="a20" elementType="H" x3="1.880500" y3="0.877800" z3="2.830500"/>
+          </atomArray>
+          <bondArray>
+            <bond atomRefs2="a2 a1" order="1"/>
+            <bond atomRefs2="a19 a1" order="1"/>
+            <bond atomRefs2="a1 a18" order="1"/>
+            <bond atomRefs2="a1 a20" order="1"/>
+            <bond atomRefs2="a4 a2" order="1"/>
+            <bond atomRefs2="a7 a2" order="1"/>
+            <bond atomRefs2="a2 a3" order="1"/>
+            <bond atomRefs2="a17 a3" order="1"/>
+            <bond atomRefs2="a3 a15" order="1"/>
+            <bond atomRefs2="a3 a16" order="1"/>
+            <bond atomRefs2="a6 a5" order="1"/>
+            <bond atomRefs2="a8 a5" order="1"/>
+            <bond atomRefs2="a12 a6" order="1"/>
+            <bond atomRefs2="a13 a6" order="1"/>
+            <bond atomRefs2="a6 a14" order="1"/>
+            <bond atomRefs2="a9 a8" order="1"/>
+            <bond atomRefs2="a11 a8" order="1"/>
+            <bond atomRefs2="a8 a10" order="1"/>
+          </bondArray>
+        </Molecule>
+        <Molecule Name="alme2" SmileString="C[AlH]C">
+          <atomArray>
+            <atom id="a1" elementType="C" x3="0.000000" y3="-1.730000" z3="0.242600"/>
+            <atom id="a2" elementType="Al" x3="0.000000" y3="0.000000" z3="-0.697400"/>
+            <atom id="a3" elementType="C" x3="0.000000" y3="1.730000" z3="0.242600"/>
+            <atom id="a4" elementType="H" x3="0.000000" y3="0.000000" z3="-2.285400"/>
+            <atom id="a5" elementType="H" x3="0.000000" y3="-1.634000" z3="1.328400"/>
+            <atom id="a6" elementType="H" x3="0.873400" y3="-2.323800" z3="-0.039800"/>
+            <atom id="a7" elementType="H" x3="-0.873400" y3="-2.323800" z3="-0.039800"/>
+            <atom id="a8" elementType="H" x3="-0.873400" y3="2.323800" z3="-0.039800"/>
+            <atom id="a9" elementType="H" x3="0.873400" y3="2.323800" z3="-0.039800"/>
+            <atom id="a10" elementType="H" x3="0.000000" y3="1.634000" z3="1.328400"/>
+          </atomArray>
+          <bondArray>
+            <bond atomRefs2="a2 a1" order="1"/>
+            <bond atomRefs2="a6 a1" order="1"/>
+            <bond atomRefs2="a7 a1" order="1"/>
+            <bond atomRefs2="a1 a5" order="1"/>
+            <bond atomRefs2="a4 a2" order="1"/>
+            <bond atomRefs2="a2 a3" order="1"/>
+            <bond atomRefs2="a8 a3" order="1"/>
+            <bond atomRefs2="a9 a3" order="1"/>
+            <bond atomRefs2="a3 a10" order="1"/>
+          </bondArray>
+        </Molecule>
+      </Molecules>
+      <Methods>
+        <Method Hamiltonian="SPW92" CategoryOfHamiltonian="LDA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="44.05"/>
+        </Method>
+        <Method Hamiltonian="SVWN" CategoryOfHamiltonian="LDA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="44.08"/>
+        </Method>
+        <Method Hamiltonian="B97" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="28.79"/>
+        </Method>
+        <Method Hamiltonian="B97-D3" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="32.85"/>
+        </Method>
+        <Method Hamiltonian="BP86" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="33.59"/>
+        </Method>
+        <Method Hamiltonian="BP86-D3" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="37.5"/>
+        </Method>
+        <Method Hamiltonian="BOP" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="27.03"/>
+        </Method>
+        <Method Hamiltonian="BOP-D3" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="32.48"/>
+        </Method>
+        <Method Hamiltonian="BLYP" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="28.91"/>
+        </Method>
+        <Method Hamiltonian="BLYP-D3" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="33.09"/>
+        </Method>
+        <Method Hamiltonian="mPWLYP" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="30.5"/>
+        </Method>
+        <Method Hamiltonian="mPWLYP-D3" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="33.11"/>
+        </Method>
+        <Method Hamiltonian="OLYP" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="27.14"/>
+        </Method>
+        <Method Hamiltonian="OLYP-D3" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="32.69"/>
+        </Method>
+        <Method Hamiltonian="PBE" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="35.93"/>
+        </Method>
+        <Method Hamiltonian="PBE-D3" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="38.1"/>
+        </Method>
+        <Method Hamiltonian="PBEsol" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="39.91"/>
+        </Method>
+        <Method Hamiltonian="PBEsol-D3" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="41.47"/>
+        </Method>
+        <Method Hamiltonian="revPBE" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="31.71"/>
+        </Method>
+        <Method Hamiltonian="revPBE-D3" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="35.81"/>
+        </Method>
+        <Method Hamiltonian="OPBE" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="31.57"/>
+        </Method>
+        <Method Hamiltonian="OPBE-D3" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="37.43"/>
+        </Method>
+        <Method Hamiltonian="BPBE" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="33.12"/>
+        </Method>
+        <Method Hamiltonian="BPBE-D3" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="37.83"/>
+        </Method>
+        <Method Hamiltonian="rPW86PBE" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="33.29"/>
+        </Method>
+        <Method Hamiltonian="rPW86PBE-D3" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="35.68"/>
+        </Method>
+        <Method Hamiltonian="SSB" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="35.1"/>
+        </Method>
+        <Method Hamiltonian="SSB-D3" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="37.19"/>
+        </Method>
+        <Method Hamiltonian="revSSB" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="36.55"/>
+        </Method>
+        <Method Hamiltonian="revSSB-D3" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="38.47"/>
+        </Method>
+        <Method Hamiltonian="TPSS" CategoryOfHamiltonian="meta-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="36.68"/>
+        </Method>
+        <Method Hamiltonian="TPSS-D3" CategoryOfHamiltonian="meta-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="39.63"/>
+        </Method>
+        <Method Hamiltonian="oTPSS" CategoryOfHamiltonian="meta-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="35.15"/>
+        </Method>
+        <Method Hamiltonian="oTPSS-D3" CategoryOfHamiltonian="meta-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="38.86"/>
+        </Method>
+        <Method Hamiltonian="M06L" CategoryOfHamiltonian="meta-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="37.73"/>
+        </Method>
+        <Method Hamiltonian="M06L-D3" CategoryOfHamiltonian="meta-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="37.99"/>
+        </Method>
+        <Method Hamiltonian="B3LYP" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="31.02"/>
+        </Method>
+        <Method Hamiltonian="B3LYP-D3" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="34.4"/>
+        </Method>
+        <Method Hamiltonian="B3PW91" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="34.09"/>
+        </Method>
+        <Method Hamiltonian="B3PW91-D3" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="37.94"/>
+        </Method>
+        <Method Hamiltonian="BHLYP" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="32.58"/>
+        </Method>
+        <Method Hamiltonian="BHLYP-D3" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="35.25"/>
+        </Method>
+        <Method Hamiltonian="PBE0" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="36.78"/>
+        </Method>
+        <Method Hamiltonian="PBE0-D3" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="38.97"/>
+        </Method>
+        <Method Hamiltonian="PBE38" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="37.24"/>
+        </Method>
+        <Method Hamiltonian="PBE38-D3" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="39.38"/>
+        </Method>
+        <Method Hamiltonian="revPBE0" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="33.64"/>
+        </Method>
+        <Method Hamiltonian="revPBE0-D3" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="37.32"/>
+        </Method>
+        <Method Hamiltonian="revPBE38" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="34.63"/>
+        </Method>
+        <Method Hamiltonian="revPBE38-D3" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="38.06"/>
+        </Method>
+        <Method Hamiltonian="TPSSh" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="36.86"/>
+        </Method>
+        <Method Hamiltonian="TPSSh-D3" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="39.71"/>
+        </Method>
+        <Method Hamiltonian="TPSS0" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="37.18"/>
+        </Method>
+        <Method Hamiltonian="TPSS0-D3" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="39.95"/>
+        </Method>
+        <Method Hamiltonian="PW6B95" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="36.62"/>
+        </Method>
+        <Method Hamiltonian="PW6B95-D3" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="38.17"/>
+        </Method>
+        <Method Hamiltonian="MPW1B95" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="37.3"/>
+        </Method>
+        <Method Hamiltonian="MPW1B95-D3" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="39.12"/>
+        </Method>
+        <Method Hamiltonian="PWB6K" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="38.2"/>
+        </Method>
+        <Method Hamiltonian="PWB6K-D3" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="39.17"/>
+        </Method>
+        <Method Hamiltonian="MPWB1K" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="38"/>
+        </Method>
+        <Method Hamiltonian="MPWB1K-D3" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="39.69"/>
+        </Method>
+        <Method Hamiltonian="B1B95" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="35.96"/>
+        </Method>
+        <Method Hamiltonian="B1B95-D3" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="38.84"/>
+        </Method>
+        <Method Hamiltonian="BMK" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="35.85"/>
+        </Method>
+        <Method Hamiltonian="BMK-D3" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="39.01"/>
+        </Method>
+        <Method Hamiltonian="M05" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="30.43"/>
+        </Method>
+        <Method Hamiltonian="M05-D3" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="31.89"/>
+        </Method>
+        <Method Hamiltonian="M052X" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="37.74"/>
+        </Method>
+        <Method Hamiltonian="M052X-D3" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="38.25"/>
+        </Method>
+        <Method Hamiltonian="M06" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="34.64"/>
+        </Method>
+        <Method Hamiltonian="M06-D3" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="35.39"/>
+        </Method>
+        <Method Hamiltonian="M062X" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="38.19"/>
+        </Method>
+        <Method Hamiltonian="M062X-D3" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="38.41"/>
+        </Method>
+        <Method Hamiltonian="M06HF" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="42.87"/>
+        </Method>
+        <Method Hamiltonian="M06HF-D3" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="43.32"/>
+        </Method>
+        <Method Hamiltonian="CAM-B3LYP" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="33.01"/>
+        </Method>
+        <Method Hamiltonian="CAM-B3LYP-D3" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="35.34"/>
+        </Method>
+        <Method Hamiltonian="LC-wPBE" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="36.57"/>
+        </Method>
+        <Method Hamiltonian="LC-wPBE-D3" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="39.05"/>
+        </Method>
+        <Method Hamiltonian="wB97X-D" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="36.24"/>
+        </Method>
+        <Method Hamiltonian="B2PLYP" CategoryOfHamiltonian="double-hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="34.34"/>
+        </Method>
+        <Method Hamiltonian="B2PLYP-D3" CategoryOfHamiltonian="double-hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="36.11"/>
+        </Method>
+        <Method Hamiltonian="XYG3" CategoryOfHamiltonian="double-hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="37.14"/>
+        </Method>
+        <Method Hamiltonian="B2GPPLYP" CategoryOfHamiltonian="double-hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="35.52"/>
+        </Method>
+        <Method Hamiltonian="B2GPPLYP-D3" CategoryOfHamiltonian="double-hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="36.74"/>
+        </Method>
+        <Method Hamiltonian="PTPSS" CategoryOfHamiltonian="double-hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="37.19"/>
+        </Method>
+        <Method Hamiltonian="PTPSS-D3" CategoryOfHamiltonian="double-hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="38.66"/>
+        </Method>
+        <Method Hamiltonian="PWPB95" CategoryOfHamiltonian="double-hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="37.18"/>
+        </Method>
+        <Method Hamiltonian="PWPB95-D3" CategoryOfHamiltonian="double-hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="38.41"/>
+        </Method>
+        <Method Hamiltonian="DSD-BLYP" CategoryOfHamiltonian="double-hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="35.62"/>
+        </Method>
+        <Method Hamiltonian="DSD-BLYP-D3" CategoryOfHamiltonian="double-hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="36.76"/>
+        </Method>
+        <Method Hamiltonian="HF" CategoryOfHamiltonian="wavefunction" Basis="CBS" CategoryOfBasis="CBS" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="27.65"/>
+        </Method>
+        <Method Hamiltonian="HF-D3" CategoryOfHamiltonian="wavefunction" Basis="CBS" CategoryOfBasis="CBS" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="31.55"/>
+        </Method>
+        <Method Hamiltonian="HF-D3(BJ)" CategoryOfHamiltonian="wavefunction" Basis="CBS" CategoryOfBasis="CBS" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="40.62"/>
+        </Method>
+        <Method Hamiltonian="MP2" CategoryOfHamiltonian="wavefunction" Basis="CBS" CategoryOfBasis="CBS" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="38.97"/>
+        </Method>
+        <Method Hamiltonian="SCS-MP2" CategoryOfHamiltonian="wavefunction" Basis="CBS" CategoryOfBasis="CBS" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="36.66"/>
+        </Method>
+        <Method Hamiltonian="S2-MP2" CategoryOfHamiltonian="wavefunction" Basis="CBS" CategoryOfBasis="CBS" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="38.56"/>
+        </Method>
+        <Method Hamiltonian="SOS-MP2" CategoryOfHamiltonian="wavefunction" Basis="CBS" CategoryOfBasis="CBS" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="35.51"/>
+        </Method>
+      </Methods>
+      <ReferenceResult>
+        <ReferenceMethod Hamiltonian="" CategoryOfHamiltonian="" Basis="" CategoryOfBasis="" CounterpoiseCorrection="noCP"/>
+        <ReferenceValue Value="37.8"/>
+      </ReferenceResult>
+    </System>
+    <System Name="al2me5 alme2 alme3    ">
+      <Molecules>
+        <Molecule Name="al2me5" SmileString="C[AlH](C)C.[Al](C)C">
+          <atomArray>
+            <atom id="a1" elementType="C" x3="0.368600" y3="1.702100" z3="2.278900"/>
+            <atom id="a2" elementType="Al" x3="0.243900" y3="-0.006300" z3="1.311400"/>
+            <atom id="a3" elementType="C" x3="0.270500" y3="-1.791800" z3="2.140300"/>
+            <atom id="a4" elementType="C" x3="-1.459700" y3="0.195400" z3="0.000000"/>
+            <atom id="a5" elementType="Al" x3="0.243900" y3="-0.006300" z3="-1.311400"/>
+            <atom id="a6" elementType="C" x3="0.368600" y3="1.702100" z3="-2.278900"/>
+            <atom id="a7" elementType="H" x3="1.372200" y3="-0.009900" z3="0.000000"/>
+            <atom id="a8" elementType="C" x3="0.270500" y3="-1.791800" z3="-2.140300"/>
+            <atom id="a9" elementType="H" x3="1.216600" y3="-1.980400" z3="-2.652600"/>
+            <atom id="a10" elementType="H" x3="0.133400" y3="-2.591000" z3="-1.409100"/>
+            <atom id="a11" elementType="H" x3="-0.519700" y3="-1.895600" z3="-2.888400"/>
+            <atom id="a12" elementType="H" x3="1.273600" y3="1.752800" z3="-2.888200"/>
+            <atom id="a13" elementType="H" x3="-0.478400" y3="1.835400" z3="-2.956700"/>
+            <atom id="a14" elementType="H" x3="0.382000" y3="2.558700" z3="-1.602200"/>
+            <atom id="a15" elementType="H" x3="1.216600" y3="-1.980400" z3="2.652600"/>
+            <atom id="a16" elementType="H" x3="-0.519700" y3="-1.895600" z3="2.888400"/>
+            <atom id="a17" elementType="H" x3="0.133400" y3="-2.591000" z3="1.409100"/>
+            <atom id="a18" elementType="H" x3="1.273600" y3="1.752800" z3="2.888200"/>
+            <atom id="a19" elementType="H" x3="0.382000" y3="2.558700" z3="1.602200"/>
+            <atom id="a20" elementType="H" x3="-0.478400" y3="1.835400" z3="2.956700"/>
+            <atom id="a21" elementType="H" x3="-1.958600" y3="-0.295800" z3="0.845400"/>
+            <atom id="a22" elementType="H" x3="-1.776200" y3="1.238200" z3="0.000000"/>
+            <atom id="a23" elementType="H" x3="-1.958600" y3="-0.295800" z3="-0.845400"/>
+          </atomArray>
+          <bondArray>
+            <bond atomRefs2="a2 a1" order="1"/>
+            <bond atomRefs2="a19 a1" order="1"/>
+            <bond atomRefs2="a1 a18" order="1"/>
+            <bond atomRefs2="a1 a20" order="1"/>
+            <bond atomRefs2="a7 a2" order="1"/>
+            <bond atomRefs2="a4 a2" order="1"/>
+            <bond atomRefs2="a2 a3" order="1"/>
+            <bond atomRefs2="a17 a3" order="1"/>
+            <bond atomRefs2="a3 a15" order="1"/>
+            <bond atomRefs2="a3 a16" order="1"/>
+            <bond atomRefs2="a23 a4" order="1"/>
+            <bond atomRefs2="a4 a22" order="1"/>
+            <bond atomRefs2="a4 a21" order="1"/>
+            <bond atomRefs2="a6 a5" order="1"/>
+            <bond atomRefs2="a8 a5" order="1"/>
+            <bond atomRefs2="a13 a6" order="1"/>
+            <bond atomRefs2="a12 a6" order="1"/>
+            <bond atomRefs2="a6 a14" order="1"/>
+            <bond atomRefs2="a11 a8" order="1"/>
+            <bond atomRefs2="a9 a8" order="1"/>
+            <bond atomRefs2="a8 a10" order="1"/>
+          </bondArray>
+        </Molecule>
+        <Molecule Name="alme2" SmileString="C[AlH]C">
+          <atomArray>
+            <atom id="a1" elementType="C" x3="0.000000" y3="-1.730000" z3="0.242600"/>
+            <atom id="a2" elementType="Al" x3="0.000000" y3="0.000000" z3="-0.697400"/>
+            <atom id="a3" elementType="C" x3="0.000000" y3="1.730000" z3="0.242600"/>
+            <atom id="a4" elementType="H" x3="0.000000" y3="0.000000" z3="-2.285400"/>
+            <atom id="a5" elementType="H" x3="0.000000" y3="-1.634000" z3="1.328400"/>
+            <atom id="a6" elementType="H" x3="0.873400" y3="-2.323800" z3="-0.039800"/>
+            <atom id="a7" elementType="H" x3="-0.873400" y3="-2.323800" z3="-0.039800"/>
+            <atom id="a8" elementType="H" x3="-0.873400" y3="2.323800" z3="-0.039800"/>
+            <atom id="a9" elementType="H" x3="0.873400" y3="2.323800" z3="-0.039800"/>
+            <atom id="a10" elementType="H" x3="0.000000" y3="1.634000" z3="1.328400"/>
+          </atomArray>
+          <bondArray>
+            <bond atomRefs2="a2 a1" order="1"/>
+            <bond atomRefs2="a6 a1" order="1"/>
+            <bond atomRefs2="a7 a1" order="1"/>
+            <bond atomRefs2="a1 a5" order="1"/>
+            <bond atomRefs2="a4 a2" order="1"/>
+            <bond atomRefs2="a2 a3" order="1"/>
+            <bond atomRefs2="a8 a3" order="1"/>
+            <bond atomRefs2="a9 a3" order="1"/>
+            <bond atomRefs2="a3 a10" order="1"/>
+          </bondArray>
+        </Molecule>
+        <Molecule Name="alme3" SmileString="C[Al](C)C">
+          <atomArray>
+            <atom id="a1" elementType="C" x3="-0.044900" y3="1.972500" z3="0.000000"/>
+            <atom id="a2" elementType="Al" x3="0.000000" y3="0.000000" z3="0.000000"/>
+            <atom id="a3" elementType="C" x3="1.730700" y3="-0.947400" z3="0.000000"/>
+            <atom id="a4" elementType="C" x3="-1.685800" y3="-1.025100" z3="0.000000"/>
+            <atom id="a5" elementType="H" x3="0.944900" y3="2.430200" z3="0.000000"/>
+            <atom id="a6" elementType="H" x3="-0.584200" y3="2.349200" z3="0.873500"/>
+            <atom id="a7" elementType="H" x3="-0.584200" y3="2.349200" z3="-0.873500"/>
+            <atom id="a8" elementType="H" x3="2.326600" y3="-0.668700" z3="-0.873500"/>
+            <atom id="a9" elementType="H" x3="2.326600" y3="-0.668700" z3="0.873500"/>
+            <atom id="a10" elementType="H" x3="1.632200" y3="-2.033400" z3="0.000000"/>
+            <atom id="a11" elementType="H" x3="-2.577100" y3="-0.396900" z3="0.000000"/>
+            <atom id="a12" elementType="H" x3="-1.742400" y3="-1.680500" z3="0.873500"/>
+            <atom id="a13" elementType="H" x3="-1.742400" y3="-1.680500" z3="-0.873500"/>
+          </atomArray>
+          <bondArray>
+            <bond atomRefs2="a7 a1" order="1"/>
+            <bond atomRefs2="a1 a2" order="1"/>
+            <bond atomRefs2="a1 a5" order="1"/>
+            <bond atomRefs2="a1 a6" order="1"/>
+            <bond atomRefs2="a2 a3" order="1"/>
+            <bond atomRefs2="a2 a4" order="1"/>
+            <bond atomRefs2="a8 a3" order="1"/>
+            <bond atomRefs2="a3 a10" order="1"/>
+            <bond atomRefs2="a3 a9" order="1"/>
+            <bond atomRefs2="a13 a4" order="1"/>
+            <bond atomRefs2="a4 a11" order="1"/>
+            <bond atomRefs2="a4 a12" order="1"/>
+          </bondArray>
+        </Molecule>
+      </Molecules>
+      <Methods>
+        <Method Hamiltonian="SPW92" CategoryOfHamiltonian="LDA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="37.71"/>
+        </Method>
+        <Method Hamiltonian="SVWN" CategoryOfHamiltonian="LDA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="37.75"/>
+        </Method>
+        <Method Hamiltonian="B97" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="17.74"/>
+        </Method>
+        <Method Hamiltonian="B97-D3" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="24.29"/>
+        </Method>
+        <Method Hamiltonian="BP86" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="24.04"/>
+        </Method>
+        <Method Hamiltonian="BP86-D3" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="30.07"/>
+        </Method>
+        <Method Hamiltonian="BOP" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="15.48"/>
+        </Method>
+        <Method Hamiltonian="BOP-D3" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="24.17"/>
+        </Method>
+        <Method Hamiltonian="BLYP" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="17.91"/>
+        </Method>
+        <Method Hamiltonian="BLYP-D3" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="24.35"/>
+        </Method>
+        <Method Hamiltonian="mPWLYP" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="19.9"/>
+        </Method>
+        <Method Hamiltonian="mPWLYP-D3" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="23.86"/>
+        </Method>
+        <Method Hamiltonian="OLYP" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="16.38"/>
+        </Method>
+        <Method Hamiltonian="OLYP-D3" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="25.31"/>
+        </Method>
+        <Method Hamiltonian="PBE" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="27.13"/>
+        </Method>
+        <Method Hamiltonian="PBE-D3" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="30.39"/>
+        </Method>
+        <Method Hamiltonian="PBEsol" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="32.41"/>
+        </Method>
+        <Method Hamiltonian="PBEsol-D3" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="34.73"/>
+        </Method>
+        <Method Hamiltonian="revPBE" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="21.82"/>
+        </Method>
+        <Method Hamiltonian="revPBE-D3" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="28.39"/>
+        </Method>
+        <Method Hamiltonian="OPBE" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="22.13"/>
+        </Method>
+        <Method Hamiltonian="OPBE-D3" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="31.55"/>
+        </Method>
+        <Method Hamiltonian="BPBE" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="23.49"/>
+        </Method>
+        <Method Hamiltonian="BPBE-D3" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="30.79"/>
+        </Method>
+        <Method Hamiltonian="rPW86PBE" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="23.21"/>
+        </Method>
+        <Method Hamiltonian="rPW86PBE-D3" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="26.83"/>
+        </Method>
+        <Method Hamiltonian="SSB" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="26.34"/>
+        </Method>
+        <Method Hamiltonian="SSB-D3" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="29.49"/>
+        </Method>
+        <Method Hamiltonian="revSSB" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="28.05"/>
+        </Method>
+        <Method Hamiltonian="revSSB-D3" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="30.93"/>
+        </Method>
+        <Method Hamiltonian="TPSS" CategoryOfHamiltonian="meta-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="27.11"/>
+        </Method>
+        <Method Hamiltonian="TPSS-D3" CategoryOfHamiltonian="meta-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="31.62"/>
+        </Method>
+        <Method Hamiltonian="oTPSS" CategoryOfHamiltonian="meta-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="25.46"/>
+        </Method>
+        <Method Hamiltonian="oTPSS-D3" CategoryOfHamiltonian="meta-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="31.16"/>
+        </Method>
+        <Method Hamiltonian="M06L" CategoryOfHamiltonian="meta-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="30.49"/>
+        </Method>
+        <Method Hamiltonian="M06L-D3" CategoryOfHamiltonian="meta-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="30.83"/>
+        </Method>
+        <Method Hamiltonian="B3LYP" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="20.69"/>
+        </Method>
+        <Method Hamiltonian="B3LYP-D3" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="25.87"/>
+        </Method>
+        <Method Hamiltonian="B3PW91" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="24.74"/>
+        </Method>
+        <Method Hamiltonian="B3PW91-D3" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="30.66"/>
+        </Method>
+        <Method Hamiltonian="BHLYP" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="22.76"/>
+        </Method>
+        <Method Hamiltonian="BHLYP-D3" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="26.83"/>
+        </Method>
+        <Method Hamiltonian="PBE0" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="28.34"/>
+        </Method>
+        <Method Hamiltonian="PBE0-D3" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="31.64"/>
+        </Method>
+        <Method Hamiltonian="PBE38" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="28.96"/>
+        </Method>
+        <Method Hamiltonian="PBE38-D3" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="32.19"/>
+        </Method>
+        <Method Hamiltonian="revPBE0" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="24.37"/>
+        </Method>
+        <Method Hamiltonian="revPBE0-D3" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="30.25"/>
+        </Method>
+        <Method Hamiltonian="revPBE38" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="25.66"/>
+        </Method>
+        <Method Hamiltonian="revPBE38-D3" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="31.01"/>
+        </Method>
+        <Method Hamiltonian="TPSSh" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="27.5"/>
+        </Method>
+        <Method Hamiltonian="TPSSh-D3" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="31.84"/>
+        </Method>
+        <Method Hamiltonian="TPSS0" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="28.13"/>
+        </Method>
+        <Method Hamiltonian="TPSS0-D3" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="32.33"/>
+        </Method>
+        <Method Hamiltonian="PW6B95" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="28.39"/>
+        </Method>
+        <Method Hamiltonian="PW6B95-D3" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="30.75"/>
+        </Method>
+        <Method Hamiltonian="MPW1B95" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="29.45"/>
+        </Method>
+        <Method Hamiltonian="MPW1B95-D3" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="32.26"/>
+        </Method>
+        <Method Hamiltonian="PWB6K" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="30.48"/>
+        </Method>
+        <Method Hamiltonian="PWB6K-D3" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="31.96"/>
+        </Method>
+        <Method Hamiltonian="MPWB1K" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="30.38"/>
+        </Method>
+        <Method Hamiltonian="MPWB1K-D3" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="32.99"/>
+        </Method>
+        <Method Hamiltonian="B1B95" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="27.75"/>
+        </Method>
+        <Method Hamiltonian="B1B95-D3" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="32.22"/>
+        </Method>
+        <Method Hamiltonian="BMK" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="27.01"/>
+        </Method>
+        <Method Hamiltonian="BMK-D3" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="31.95"/>
+        </Method>
+        <Method Hamiltonian="M05" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="23.25"/>
+        </Method>
+        <Method Hamiltonian="M05-D3" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="25.42"/>
+        </Method>
+        <Method Hamiltonian="M052X" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="30.79"/>
+        </Method>
+        <Method Hamiltonian="M052X-D3" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="31.47"/>
+        </Method>
+        <Method Hamiltonian="M06" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="28.59"/>
+        </Method>
+        <Method Hamiltonian="M06-D3" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="29.62"/>
+        </Method>
+        <Method Hamiltonian="M062X" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="31.11"/>
+        </Method>
+        <Method Hamiltonian="M062X-D3" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="31.4"/>
+        </Method>
+        <Method Hamiltonian="M06HF" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="34.59"/>
+        </Method>
+        <Method Hamiltonian="M06HF-D3" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="35.19"/>
+        </Method>
+        <Method Hamiltonian="CAM-B3LYP" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="23.77"/>
+        </Method>
+        <Method Hamiltonian="CAM-B3LYP-D3" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="27.31"/>
+        </Method>
+        <Method Hamiltonian="LC-wPBE" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="28.97"/>
+        </Method>
+        <Method Hamiltonian="LC-wPBE-D3" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="32.73"/>
+        </Method>
+        <Method Hamiltonian="wB97X-D" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="28.92"/>
+        </Method>
+        <Method Hamiltonian="B2PLYP" CategoryOfHamiltonian="double-hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="25.46"/>
+        </Method>
+        <Method Hamiltonian="B2PLYP-D3" CategoryOfHamiltonian="double-hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="28.16"/>
+        </Method>
+        <Method Hamiltonian="XYG3" CategoryOfHamiltonian="double-hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="29.2"/>
+        </Method>
+        <Method Hamiltonian="B2GPPLYP" CategoryOfHamiltonian="double-hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="27.11"/>
+        </Method>
+        <Method Hamiltonian="B2GPPLYP-D3" CategoryOfHamiltonian="double-hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="29"/>
+        </Method>
+        <Method Hamiltonian="PTPSS" CategoryOfHamiltonian="double-hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="28.88"/>
+        </Method>
+        <Method Hamiltonian="PTPSS-D3" CategoryOfHamiltonian="double-hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="31.14"/>
+        </Method>
+        <Method Hamiltonian="PWPB95" CategoryOfHamiltonian="double-hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="29.51"/>
+        </Method>
+        <Method Hamiltonian="PWPB95-D3" CategoryOfHamiltonian="double-hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="31.4"/>
+        </Method>
+        <Method Hamiltonian="DSD-BLYP" CategoryOfHamiltonian="double-hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="27.37"/>
+        </Method>
+        <Method Hamiltonian="DSD-BLYP-D3" CategoryOfHamiltonian="double-hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="29.13"/>
+        </Method>
+        <Method Hamiltonian="HF" CategoryOfHamiltonian="wavefunction" Basis="CBS" CategoryOfBasis="CBS" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="16.89"/>
+        </Method>
+        <Method Hamiltonian="HF-D3" CategoryOfHamiltonian="wavefunction" Basis="CBS" CategoryOfBasis="CBS" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="22.89"/>
+        </Method>
+        <Method Hamiltonian="HF-D3(BJ)" CategoryOfHamiltonian="wavefunction" Basis="CBS" CategoryOfBasis="CBS" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="35.23"/>
+        </Method>
+        <Method Hamiltonian="MP2" CategoryOfHamiltonian="wavefunction" Basis="CBS" CategoryOfBasis="CBS" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="32.39"/>
+        </Method>
+        <Method Hamiltonian="SCS-MP2" CategoryOfHamiltonian="wavefunction" Basis="CBS" CategoryOfBasis="CBS" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="29.25"/>
+        </Method>
+        <Method Hamiltonian="S2-MP2" CategoryOfHamiltonian="wavefunction" Basis="CBS" CategoryOfBasis="CBS" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="31.83"/>
+        </Method>
+        <Method Hamiltonian="SOS-MP2" CategoryOfHamiltonian="wavefunction" Basis="CBS" CategoryOfBasis="CBS" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="27.68"/>
+        </Method>
+      </Methods>
+      <ReferenceResult>
+        <ReferenceMethod Hamiltonian="" CategoryOfHamiltonian="" Basis="" CategoryOfBasis="" CounterpoiseCorrection="noCP"/>
+        <ReferenceValue Value="30"/>
+      </ReferenceResult>
+    </System>
+    <System Name="al2me6 alme3     ">
+      <Molecules>
+        <Molecule Name="al2me6" SmileString="C[Al](C)(C)([Al](C)C)C">
+          <atomArray>
+            <atom id="a1" elementType="C" x3="0.000000" y3="2.412300" z3="1.620800"/>
+            <atom id="a2" elementType="Al" x3="0.000000" y3="1.307600" z3="-0.009400"/>
+            <atom id="a3" elementType="C" x3="0.000000" y3="2.058500" z3="-1.833200"/>
+            <atom id="a4" elementType="C" x3="1.692300" y3="0.000000" z3="0.223000"/>
+            <atom id="a5" elementType="Al" x3="0.000000" y3="-1.307600" z3="-0.009400"/>
+            <atom id="a6" elementType="C" x3="0.000000" y3="-2.412300" z3="1.620800"/>
+            <atom id="a7" elementType="C" x3="-1.692300" y3="0.000000" z3="0.223000"/>
+            <atom id="a8" elementType="C" x3="0.000000" y3="-2.058500" z3="-1.833200"/>
+            <atom id="a9" elementType="H" x3="-0.876500" y3="-2.688500" z3="-2.007100"/>
+            <atom id="a10" elementType="H" x3="0.000000" y3="-1.288100" z3="-2.607300"/>
+            <atom id="a11" elementType="H" x3="0.876500" y3="-2.688500" z3="-2.007100"/>
+            <atom id="a12" elementType="H" x3="-0.877200" y3="-3.062900" z3="1.664500"/>
+            <atom id="a13" elementType="H" x3="0.877200" y3="-3.062900" z3="1.664500"/>
+            <atom id="a14" elementType="H" x3="0.000000" y3="-1.807500" z3="2.530400"/>
+            <atom id="a15" elementType="H" x3="-0.876500" y3="2.688500" z3="-2.007100"/>
+            <atom id="a16" elementType="H" x3="0.876500" y3="2.688500" z3="-2.007100"/>
+            <atom id="a17" elementType="H" x3="0.000000" y3="1.288100" z3="-2.607300"/>
+            <atom id="a18" elementType="H" x3="-0.877200" y3="3.062900" z3="1.664500"/>
+            <atom id="a19" elementType="H" x3="0.000000" y3="1.807500" z3="2.530400"/>
+            <atom id="a20" elementType="H" x3="0.877200" y3="3.062900" z3="1.664500"/>
+            <atom id="a21" elementType="H" x3="-1.985000" y3="0.000000" z3="1.273000"/>
+            <atom id="a22" elementType="H" x3="-2.197900" y3="-0.847800" z3="-0.256000"/>
+            <atom id="a23" elementType="H" x3="-2.197900" y3="0.847800" z3="-0.256000"/>
+            <atom id="a24" elementType="H" x3="1.985000" y3="0.000000" z3="1.273000"/>
+            <atom id="a25" elementType="H" x3="2.197900" y3="0.847800" z3="-0.256000"/>
+            <atom id="a26" elementType="H" x3="2.197900" y3="-0.847800" z3="-0.256000"/>
+          </atomArray>
+          <bondArray>
+            <bond atomRefs2="a2 a1" order="1"/>
+            <bond atomRefs2="a1 a20" order="1"/>
+            <bond atomRefs2="a1 a18" order="1"/>
+            <bond atomRefs2="a1 a19" order="1"/>
+            <bond atomRefs2="a3 a2" order="1"/>
+            <bond atomRefs2="a5 a2" order="1"/>
+            <bond atomRefs2="a2 a7" order="1"/>
+            <bond atomRefs2="a2 a4" order="1"/>
+            <bond atomRefs2="a17 a3" order="1"/>
+            <bond atomRefs2="a16 a3" order="1"/>
+            <bond atomRefs2="a15 a3" order="1"/>
+            <bond atomRefs2="a25 a4" order="1"/>
+            <bond atomRefs2="a26 a4" order="1"/>
+            <bond atomRefs2="a4 a24" order="1"/>
+            <bond atomRefs2="a8 a5" order="1"/>
+            <bond atomRefs2="a5 a6" order="1"/>
+            <bond atomRefs2="a6 a13" order="1"/>
+            <bond atomRefs2="a6 a12" order="1"/>
+            <bond atomRefs2="a6 a14" order="1"/>
+            <bond atomRefs2="a22 a7" order="1"/>
+            <bond atomRefs2="a23 a7" order="1"/>
+            <bond atomRefs2="a7 a21" order="1"/>
+            <bond atomRefs2="a10 a8" order="1"/>
+            <bond atomRefs2="a11 a8" order="1"/>
+            <bond atomRefs2="a9 a8" order="1"/>
+          </bondArray>
+        </Molecule>
+        <Molecule Name="alme3" SmileString="C[Al](C)C">
+          <atomArray>
+            <atom id="a1" elementType="C" x3="-0.044900" y3="1.972500" z3="0.000000"/>
+            <atom id="a2" elementType="Al" x3="0.000000" y3="0.000000" z3="0.000000"/>
+            <atom id="a3" elementType="C" x3="1.730700" y3="-0.947400" z3="0.000000"/>
+            <atom id="a4" elementType="C" x3="-1.685800" y3="-1.025100" z3="0.000000"/>
+            <atom id="a5" elementType="H" x3="0.944900" y3="2.430200" z3="0.000000"/>
+            <atom id="a6" elementType="H" x3="-0.584200" y3="2.349200" z3="0.873500"/>
+            <atom id="a7" elementType="H" x3="-0.584200" y3="2.349200" z3="-0.873500"/>
+            <atom id="a8" elementType="H" x3="2.326600" y3="-0.668700" z3="-0.873500"/>
+            <atom id="a9" elementType="H" x3="2.326600" y3="-0.668700" z3="0.873500"/>
+            <atom id="a10" elementType="H" x3="1.632200" y3="-2.033400" z3="0.000000"/>
+            <atom id="a11" elementType="H" x3="-2.577100" y3="-0.396900" z3="0.000000"/>
+            <atom id="a12" elementType="H" x3="-1.742400" y3="-1.680500" z3="0.873500"/>
+            <atom id="a13" elementType="H" x3="-1.742400" y3="-1.680500" z3="-0.873500"/>
+          </atomArray>
+          <bondArray>
+            <bond atomRefs2="a7 a1" order="1"/>
+            <bond atomRefs2="a1 a2" order="1"/>
+            <bond atomRefs2="a1 a5" order="1"/>
+            <bond atomRefs2="a1 a6" order="1"/>
+            <bond atomRefs2="a2 a3" order="1"/>
+            <bond atomRefs2="a2 a4" order="1"/>
+            <bond atomRefs2="a8 a3" order="1"/>
+            <bond atomRefs2="a3 a10" order="1"/>
+            <bond atomRefs2="a3 a9" order="1"/>
+            <bond atomRefs2="a13 a4" order="1"/>
+            <bond atomRefs2="a4 a11" order="1"/>
+            <bond atomRefs2="a4 a12" order="1"/>
+          </bondArray>
+        </Molecule>
+      </Molecules>
+      <Methods>
+        <Method Hamiltonian="SPW92" CategoryOfHamiltonian="LDA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="30.89"/>
+        </Method>
+        <Method Hamiltonian="SVWN" CategoryOfHamiltonian="LDA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="30.93"/>
+        </Method>
+        <Method Hamiltonian="B97" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="5.4"/>
+        </Method>
+        <Method Hamiltonian="B97-D3" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="14.85"/>
+        </Method>
+        <Method Hamiltonian="BP86" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="13.51"/>
+        </Method>
+        <Method Hamiltonian="BP86-D3" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="21.88"/>
+        </Method>
+        <Method Hamiltonian="BOP" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="2.62"/>
+        </Method>
+        <Method Hamiltonian="BOP-D3" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="14.98"/>
+        </Method>
+        <Method Hamiltonian="BLYP" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="5.71"/>
+        </Method>
+        <Method Hamiltonian="BLYP-D3" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="14.68"/>
+        </Method>
+        <Method Hamiltonian="mPWLYP" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="8.18"/>
+        </Method>
+        <Method Hamiltonian="mPWLYP-D3" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="13.63"/>
+        </Method>
+        <Method Hamiltonian="OLYP" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="4.36"/>
+        </Method>
+        <Method Hamiltonian="OLYP-D3" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="17.24"/>
+        </Method>
+        <Method Hamiltonian="PBE" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="17.47"/>
+        </Method>
+        <Method Hamiltonian="PBE-D3" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="21.94"/>
+        </Method>
+        <Method Hamiltonian="PBEsol" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="24.24"/>
+        </Method>
+        <Method Hamiltonian="PBEsol-D3" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="27.41"/>
+        </Method>
+        <Method Hamiltonian="revPBE" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="10.88"/>
+        </Method>
+        <Method Hamiltonian="revPBE-D3" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="20.28"/>
+        </Method>
+        <Method Hamiltonian="OPBE" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="11.6"/>
+        </Method>
+        <Method Hamiltonian="OPBE-D3" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="25.15"/>
+        </Method>
+        <Method Hamiltonian="BPBE" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="12.83"/>
+        </Method>
+        <Method Hamiltonian="BPBE-D3" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="23.01"/>
+        </Method>
+        <Method Hamiltonian="rPW86PBE" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="12.15"/>
+        </Method>
+        <Method Hamiltonian="rPW86PBE-D3" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="17.12"/>
+        </Method>
+        <Method Hamiltonian="SSB" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="16.85"/>
+        </Method>
+        <Method Hamiltonian="SSB-D3" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="21.15"/>
+        </Method>
+        <Method Hamiltonian="revSSB" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="18.83"/>
+        </Method>
+        <Method Hamiltonian="revSSB-D3" CategoryOfHamiltonian="GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="22.75"/>
+        </Method>
+        <Method Hamiltonian="TPSS" CategoryOfHamiltonian="meta-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="16.56"/>
+        </Method>
+        <Method Hamiltonian="TPSS-D3" CategoryOfHamiltonian="meta-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="22.78"/>
+        </Method>
+        <Method Hamiltonian="oTPSS" CategoryOfHamiltonian="meta-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="14.73"/>
+        </Method>
+        <Method Hamiltonian="oTPSS-D3" CategoryOfHamiltonian="meta-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="22.65"/>
+        </Method>
+        <Method Hamiltonian="M06L" CategoryOfHamiltonian="meta-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="22.51"/>
+        </Method>
+        <Method Hamiltonian="M06L-D3" CategoryOfHamiltonian="meta-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="22.98"/>
+        </Method>
+        <Method Hamiltonian="B3LYP" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="9.25"/>
+        </Method>
+        <Method Hamiltonian="B3LYP-D3" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="16.42"/>
+        </Method>
+        <Method Hamiltonian="B3PW91" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="14.41"/>
+        </Method>
+        <Method Hamiltonian="B3PW91-D3" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="22.63"/>
+        </Method>
+        <Method Hamiltonian="BHLYP" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="11.9"/>
+        </Method>
+        <Method Hamiltonian="BHLYP-D3" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="17.56"/>
+        </Method>
+        <Method Hamiltonian="PBE0" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="19.06"/>
+        </Method>
+        <Method Hamiltonian="PBE0-D3" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="23.59"/>
+        </Method>
+        <Method Hamiltonian="PBE38" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="19.87"/>
+        </Method>
+        <Method Hamiltonian="PBE38-D3" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="24.32"/>
+        </Method>
+        <Method Hamiltonian="revPBE0" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="14.12"/>
+        </Method>
+        <Method Hamiltonian="revPBE0-D3" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="22.49"/>
+        </Method>
+        <Method Hamiltonian="revPBE38" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="15.76"/>
+        </Method>
+        <Method Hamiltonian="revPBE38-D3" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="23.25"/>
+        </Method>
+        <Method Hamiltonian="TPSSh" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="17.18"/>
+        </Method>
+        <Method Hamiltonian="TPSSh-D3" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="23.16"/>
+        </Method>
+        <Method Hamiltonian="TPSS0" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="18.14"/>
+        </Method>
+        <Method Hamiltonian="TPSS0-D3" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="23.93"/>
+        </Method>
+        <Method Hamiltonian="PW6B95" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="19.48"/>
+        </Method>
+        <Method Hamiltonian="PW6B95-D3" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="22.79"/>
+        </Method>
+        <Method Hamiltonian="MPW1B95" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="20.97"/>
+        </Method>
+        <Method Hamiltonian="MPW1B95-D3" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="24.91"/>
+        </Method>
+        <Method Hamiltonian="PWB6K" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="22.15"/>
+        </Method>
+        <Method Hamiltonian="PWB6K-D3" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="24.22"/>
+        </Method>
+        <Method Hamiltonian="MPWB1K" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="22.16"/>
+        </Method>
+        <Method Hamiltonian="MPWB1K-D3" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="25.82"/>
+        </Method>
+        <Method Hamiltonian="B1B95" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="18.85"/>
+        </Method>
+        <Method Hamiltonian="B1B95-D3" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="25.14"/>
+        </Method>
+        <Method Hamiltonian="BMK" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="17.87"/>
+        </Method>
+        <Method Hamiltonian="BMK-D3" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="24.8"/>
+        </Method>
+        <Method Hamiltonian="M05" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="15.45"/>
+        </Method>
+        <Method Hamiltonian="M05-D3" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="18.43"/>
+        </Method>
+        <Method Hamiltonian="M052X" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="23.17"/>
+        </Method>
+        <Method Hamiltonian="M052X-D3" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="24.09"/>
+        </Method>
+        <Method Hamiltonian="M06" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="21.73"/>
+        </Method>
+        <Method Hamiltonian="M06-D3" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="23.09"/>
+        </Method>
+        <Method Hamiltonian="M062X" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="23.23"/>
+        </Method>
+        <Method Hamiltonian="M062X-D3" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="23.64"/>
+        </Method>
+        <Method Hamiltonian="M06HF" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="25.98"/>
+        </Method>
+        <Method Hamiltonian="M06HF-D3" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="26.79"/>
+        </Method>
+        <Method Hamiltonian="CAM-B3LYP" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="13.56"/>
+        </Method>
+        <Method Hamiltonian="CAM-B3LYP-D3" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="18.47"/>
+        </Method>
+        <Method Hamiltonian="LC-wPBE" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="20.57"/>
+        </Method>
+        <Method Hamiltonian="LC-wPBE-D3" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="25.78"/>
+        </Method>
+        <Method Hamiltonian="wB97X-D" CategoryOfHamiltonian="hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="20.87"/>
+        </Method>
+        <Method Hamiltonian="B2PLYP" CategoryOfHamiltonian="double-hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="15.65"/>
+        </Method>
+        <Method Hamiltonian="B2PLYP-D3" CategoryOfHamiltonian="double-hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="19.43"/>
+        </Method>
+        <Method Hamiltonian="XYG3" CategoryOfHamiltonian="double-hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="20.48"/>
+        </Method>
+        <Method Hamiltonian="B2GPPLYP" CategoryOfHamiltonian="double-hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="17.86"/>
+        </Method>
+        <Method Hamiltonian="B2GPPLYP-D3" CategoryOfHamiltonian="double-hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="20.51"/>
+        </Method>
+        <Method Hamiltonian="PTPSS" CategoryOfHamiltonian="double-hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="19.87"/>
+        </Method>
+        <Method Hamiltonian="PTPSS-D3" CategoryOfHamiltonian="double-hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="23.06"/>
+        </Method>
+        <Method Hamiltonian="PWPB95" CategoryOfHamiltonian="double-hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="21.24"/>
+        </Method>
+        <Method Hamiltonian="PWPB95-D3" CategoryOfHamiltonian="double-hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="23.88"/>
+        </Method>
+        <Method Hamiltonian="DSD-BLYP" CategoryOfHamiltonian="double-hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="18.3"/>
+        </Method>
+        <Method Hamiltonian="DSD-BLYP-D3" CategoryOfHamiltonian="double-hybrid-GGA" Basis="def2-QZVP" CategoryOfBasis="Ahlrich" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="20.76"/>
+        </Method>
+        <Method Hamiltonian="HF" CategoryOfHamiltonian="wavefunction" Basis="CBS" CategoryOfBasis="CBS" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="4.98"/>
+        </Method>
+        <Method Hamiltonian="HF-D3" CategoryOfHamiltonian="wavefunction" Basis="CBS" CategoryOfBasis="CBS" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="13.31"/>
+        </Method>
+        <Method Hamiltonian="HF-D3(BJ)" CategoryOfHamiltonian="wavefunction" Basis="CBS" CategoryOfBasis="CBS" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="29.38"/>
+        </Method>
+        <Method Hamiltonian="MP2" CategoryOfHamiltonian="wavefunction" Basis="CBS" CategoryOfBasis="CBS" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="25.09"/>
+        </Method>
+        <Method Hamiltonian="SCS-MP2" CategoryOfHamiltonian="wavefunction" Basis="CBS" CategoryOfBasis="CBS" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="21.05"/>
+        </Method>
+        <Method Hamiltonian="S2-MP2" CategoryOfHamiltonian="wavefunction" Basis="CBS" CategoryOfBasis="CBS" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="24.39"/>
+        </Method>
+        <Method Hamiltonian="SOS-MP2" CategoryOfHamiltonian="wavefunction" Basis="CBS" CategoryOfBasis="CBS" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="19.03"/>
+        </Method>
+      </Methods>
+      <ReferenceResult>
+        <ReferenceMethod Hamiltonian="" CategoryOfHamiltonian="" Basis="" CategoryOfBasis="" CounterpoiseCorrection="noCP"/>
+        <ReferenceValue Value="21.4"/>
+      </ReferenceResult>
+    </System>
+  </Dataset>
+</Jacob>

@@ -1,0 +1,405 @@
+<Jacob Version='0.1'>
+  <Benchmark Name='BEGDB' ReferenceArticle='Collect. Czech. Chem. Commun. 2008, 73, 1261.' />
+  <Dataset Name='Hal' ReferenceArticle='Riley, K.E., Hobza, P., J. Chem. Theory Coput., 4, 232-242 (2008)'>
+    <System Name='H3CClOCH2'>
+      <Molecules>
+        <Molecule Name='H3CClOCH2' SmileString='CCl.O=C'>
+          <atomArray>
+            <atom id='a1' elementType='C' x3='-0.000231' y3='0.065340' z3='-5.013126' />
+            <atom id='a2' elementType='Cl' x3='-0.009924' y3='-0.245228' z3='-3.261785' />
+            <atom id='a3' elementType='H' x3='1.028089' y3='0.128754' z3='-5.349045' />
+            <atom id='a4' elementType='H' x3='-0.507552' y3='-0.752048' z3='-5.511745' />
+            <atom id='a5' elementType='H' x3='-0.516144' y3='0.998770' z3='-5.205090' />
+            <atom id='a6' elementType='O' x3='-0.008157' y3='-0.065770' z3='-0.005318' />
+            <atom id='a7' elementType='C' x3='0.003752' y3='1.144935' z3='-0.045048' />
+            <atom id='a8' elementType='H' x3='0.012326' y3='1.690115' z3='-0.999970' />
+            <atom id='a9' elementType='H' x3='0.006169' y3='1.753734' z3='0.872416' />
+          </atomArray>
+          <bondArray>
+            <bond atomRefs2='a4 a1' order='1' />
+            <bond atomRefs2='a3 a1' order='1' />
+            <bond atomRefs2='a5 a1' order='1' />
+            <bond atomRefs2='a1 a2' order='1' />
+            <bond atomRefs2='a8 a7' order='1' />
+            <bond atomRefs2='a7 a6' order='2' />
+            <bond atomRefs2='a7 a9' order='1' />
+          </bondArray>
+        </Molecule>
+      </Molecules>
+      <Methods>
+        <Method Hamiltonian='HF' CategoryOfHamiltonian='wavefunction' Basis='aug-cc-pVDZ' CategoryOfBasis='Dunnings' CounterpoiseCorrection='CP'>
+          <Result CalculatedValue='0.63' />
+        </Method>
+        <Method Hamiltonian='HF' CategoryOfHamiltonian='wavefunction' Basis='aug-cc-pVTZ' CategoryOfBasis='Dunnings' CounterpoiseCorrection='CP'>
+          <Result CalculatedValue='0.66' />
+        </Method>
+        <Method Hamiltonian='HF' CategoryOfHamiltonian='wavefunction' Basis='aug-cc-pVQZ' CategoryOfBasis='Dunnings' CounterpoiseCorrection='CP'>
+          <Result CalculatedValue='0.65' />
+        </Method>
+        <Method Hamiltonian='MP2' CategoryOfHamiltonian='wavefunction' Basis='aug-cc-pVDZ' CategoryOfBasis='Dunnings' CounterpoiseCorrection='CP'>
+          <Result CalculatedValue='-0.86' />
+        </Method>
+        <Method Hamiltonian='MP2' CategoryOfHamiltonian='wavefunction' Basis='aug-cc-pVTZ' CategoryOfBasis='Dunnings' CounterpoiseCorrection='CP'>
+          <Result CalculatedValue='-1.11' />
+        </Method>
+        <Method Hamiltonian='MP2' CategoryOfHamiltonian='wavefunction' Basis='aug-cc-pVQZ' CategoryOfBasis='Dunnings' CounterpoiseCorrection='CP'>
+          <Result CalculatedValue='-1.19' />
+        </Method>
+        <Method Hamiltonian='MP2' CategoryOfHamiltonian='wavefunction' Basis='CBS' CategoryOfBasis='unclassified' CounterpoiseCorrection='noCP'>
+          <Result CalculatedValue='-2.50' />
+        </Method>
+        <Method Hamiltonian='CCSD(T)' CategoryOfHamiltonian='wavefunction' Basis='aug-cc-pVDZ' CategoryOfBasis='Dunnings' CounterpoiseCorrection='CP'>
+          <Result CalculatedValue='-0.78' />
+        </Method>
+        <Method Hamiltonian='CCSD(T)' CategoryOfHamiltonian='wavefunction' Basis='aug-cc-pVTZ' CategoryOfBasis='Dunnings' CounterpoiseCorrection='CP'>
+          <Result CalculatedValue='-1.05' />
+        </Method>
+        <Method Hamiltonian='CCSD(T)' CategoryOfHamiltonian='wavefunction' Basis='aug-cc-pVQZ' CategoryOfBasis='Dunnings' CounterpoiseCorrection='CP'>
+          <Result CalculatedValue='-1.12' />
+        </Method>
+        <Method Hamiltonian='CCSD(T)' CategoryOfHamiltonian='wavefunction' Basis='CBS' CategoryOfBasis='unclassified' CounterpoiseCorrection='noCP'>
+          <Result CalculatedValue='-2.32' />
+        </Method>
+        <Method Hamiltonian='HF' CategoryOfHamiltonian='wavefunction' Basis='aug-cc-pVDZ&amp;aug-cc-pVDZ-PP' CategoryOfBasis='Dunnings' CounterpoiseCorrection='CP'>
+          <Result CalculatedValue='-0.33' />
+        </Method>
+        <Method Hamiltonian='HF' CategoryOfHamiltonian='wavefunction' Basis='aug-cc-pVTZ&amp;aug-cc-pVTZ-PP' CategoryOfBasis='Dunnings' CounterpoiseCorrection='CP'>
+          <Result CalculatedValue='-0.21' />
+        </Method>
+        <Method Hamiltonian='HF' CategoryOfHamiltonian='wavefunction' Basis='aug-cc-pVQZ&amp;aug-cc-pVQZ-PP' CategoryOfBasis='Dunnings' CounterpoiseCorrection='CP'>
+          <Result CalculatedValue='-0.21' />
+        </Method>
+        <Method Hamiltonian='MP2' CategoryOfHamiltonian='wavefunction' Basis='aug-cc-pVDZ&amp;aug-cc-pVDZ-PP' CategoryOfBasis='Dunnings' CounterpoiseCorrection='CP'>
+          <Result CalculatedValue='-2.08' />
+        </Method>
+        <Method Hamiltonian='MP2' CategoryOfHamiltonian='wavefunction' Basis='aug-cc-pVTZ&amp;aug-cc-pVTZ-PP' CategoryOfBasis='Dunnings' CounterpoiseCorrection='CP'>
+          <Result CalculatedValue='-2.34' />
+        </Method>
+        <Method Hamiltonian='MP2' CategoryOfHamiltonian='wavefunction' Basis='aug-cc-pVQZ&amp;aug-cc-pVQZ-PP' CategoryOfBasis='Dunnings' CounterpoiseCorrection='CP'>
+          <Result CalculatedValue='-2.43' />
+        </Method>
+        <Method Hamiltonian='CCSD(T)' CategoryOfHamiltonian='wavefunction' Basis='aug-cc-pVDZ&amp;aug-cc-pVDZ-PP' CategoryOfBasis='Dunnings' CounterpoiseCorrection='CP'>
+          <Result CalculatedValue='-1.87' />
+        </Method>
+        <Method Hamiltonian='CCSD(T)' CategoryOfHamiltonian='wavefunction' Basis='aug-cc-pVTZ&amp;aug-cc-pVTZ-PP' CategoryOfBasis='Dunnings' CounterpoiseCorrection='CP'>
+          <Result CalculatedValue='-2.15' />
+        </Method>
+        <Method Hamiltonian='CCSD(T)' CategoryOfHamiltonian='wavefunction' Basis='aug-cc-pVQZ&amp;aug-cc-pVQZ-PP' CategoryOfBasis='Dunnings' CounterpoiseCorrection='CP'>
+          <Result CalculatedValue='-2.25' />
+        </Method>
+      </Methods>
+      <ReferenceResult>
+        <ReferenceMethod Hamiltonian='CCSD(T)' CategoryOfHamiltonian='wavefunction' Basis='CBS' CategoryOfBasis='unclassified' CounterpoiseCorrection='noCP' />
+        <ReferenceValue Value='-2.32' />
+      </ReferenceResult>
+    </System>
+    <System Name='H3CBrOCH2'>
+      <Molecules>
+        <Molecule Name='H3CBrOCH2' SmileString='CBr.O=C'>
+          <atomArray>
+            <atom id='a1' elementType='C' x3='-0.000194' y3='0.024086' z3='-5.186541' />
+            <atom id='a2' elementType='H' x3='1.040616' y3='0.059904' z3='-5.526685' />
+            <atom id='a3' elementType='H' x3='-0.519344' y3='-0.836356' z3='-5.623236' />
+            <atom id='a4' elementType='H' x3='-0.520126' y3='0.955605' z3='-5.436015' />
+            <atom id='a5' elementType='Br' x3='-0.003392' y3='-0.184187' z3='-3.249086' />
+            <atom id='a6' elementType='O' x3='-0.002120' y3='-0.031072' z3='0.031985' />
+            <atom id='a7' elementType='C' x3='0.002704' y3='1.189993' z3='0.127549' />
+            <atom id='a8' elementType='H' x3='0.007485' y3='1.840549' z3='-0.773006' />
+            <atom id='a9' elementType='H' x3='0.002698' y3='1.700078' z3='1.116323' />
+          </atomArray>
+          <bondArray>
+            <bond atomRefs2='a3 a1' order='1' />
+            <bond atomRefs2='a2 a1' order='1' />
+            <bond atomRefs2='a4 a1' order='1' />
+            <bond atomRefs2='a1 a5' order='1' />
+            <bond atomRefs2='a8 a7' order='1' />
+            <bond atomRefs2='a6 a7' order='2' />
+            <bond atomRefs2='a7 a9' order='1' />
+          </bondArray>
+        </Molecule>
+      </Molecules>
+      <Methods>
+        <Method Hamiltonian='HF' CategoryOfHamiltonian='wavefunction' Basis='aug-cc-pVDZ' CategoryOfBasis='Dunnings' CounterpoiseCorrection='CP'>
+          <Result CalculatedValue='0.29' />
+        </Method>
+        <Method Hamiltonian='HF' CategoryOfHamiltonian='wavefunction' Basis='aug-cc-pVTZ' CategoryOfBasis='Dunnings' CounterpoiseCorrection='CP'>
+          <Result CalculatedValue='0.36' />
+        </Method>
+        <Method Hamiltonian='HF' CategoryOfHamiltonian='wavefunction' Basis='aug-cc-pVQZ' CategoryOfBasis='Dunnings' CounterpoiseCorrection='CP'>
+          <Result CalculatedValue='0.37' />
+        </Method>
+        <Method Hamiltonian='MP2' CategoryOfHamiltonian='wavefunction' Basis='aug-cc-pVDZ' CategoryOfBasis='Dunnings' CounterpoiseCorrection='CP'>
+          <Result CalculatedValue='-1.37' />
+        </Method>
+        <Method Hamiltonian='MP2' CategoryOfHamiltonian='wavefunction' Basis='aug-cc-pVTZ' CategoryOfBasis='Dunnings' CounterpoiseCorrection='CP'>
+          <Result CalculatedValue='-1.61' />
+        </Method>
+        <Method Hamiltonian='MP2' CategoryOfHamiltonian='wavefunction' Basis='aug-cc-pVQZ' CategoryOfBasis='Dunnings' CounterpoiseCorrection='CP'>
+          <Result CalculatedValue='-1.69' />
+        </Method>
+        <Method Hamiltonian='MP2' CategoryOfHamiltonian='wavefunction' Basis='CBS' CategoryOfBasis='unclassified' CounterpoiseCorrection='noCP'>
+          <Result CalculatedValue='-1.82' />
+        </Method>
+        <Method Hamiltonian='CCSD(T)' CategoryOfHamiltonian='wavefunction' Basis='aug-cc-pVDZ' CategoryOfBasis='Dunnings' CounterpoiseCorrection='CP'>
+          <Result CalculatedValue='-1.24' />
+        </Method>
+        <Method Hamiltonian='CCSD(T)' CategoryOfHamiltonian='wavefunction' Basis='aug-cc-pVTZ' CategoryOfBasis='Dunnings' CounterpoiseCorrection='CP'>
+          <Result CalculatedValue='-1.49' />
+        </Method>
+        <Method Hamiltonian='CCSD(T)' CategoryOfHamiltonian='wavefunction' Basis='aug-cc-pVQZ' CategoryOfBasis='Dunnings' CounterpoiseCorrection='CP'>
+          <Result CalculatedValue='-1.58' />
+        </Method>
+        <Method Hamiltonian='CCSD(T)' CategoryOfHamiltonian='wavefunction' Basis='CBS' CategoryOfBasis='unclassified' CounterpoiseCorrection='noCP'>
+          <Result CalculatedValue='-1.71' />
+        </Method>
+        <Method Hamiltonian='HF' CategoryOfHamiltonian='wavefunction' Basis='aug-cc-pVDZ&amp;aug-cc-pVDZ-PP' CategoryOfBasis='Dunnings' CounterpoiseCorrection='CP'>
+          <Result CalculatedValue='0.20' />
+        </Method>
+        <Method Hamiltonian='HF' CategoryOfHamiltonian='wavefunction' Basis='aug-cc-pVTZ&amp;aug-cc-pVTZ-PP' CategoryOfBasis='Dunnings' CounterpoiseCorrection='CP'>
+          <Result CalculatedValue='0.27' />
+        </Method>
+        <Method Hamiltonian='HF' CategoryOfHamiltonian='wavefunction' Basis='aug-cc-pVQZ&amp;aug-cc-pVQZ-PP' CategoryOfBasis='Dunnings' CounterpoiseCorrection='CP'>
+          <Result CalculatedValue='0.28' />
+        </Method>
+        <Method Hamiltonian='MP2' CategoryOfHamiltonian='wavefunction' Basis='aug-cc-pVDZ&amp;aug-cc-pVDZ-PP' CategoryOfBasis='Dunnings' CounterpoiseCorrection='CP'>
+          <Result CalculatedValue='-1.44' />
+        </Method>
+        <Method Hamiltonian='MP2' CategoryOfHamiltonian='wavefunction' Basis='aug-cc-pVTZ&amp;aug-cc-pVTZ-PP' CategoryOfBasis='Dunnings' CounterpoiseCorrection='CP'>
+          <Result CalculatedValue='-1.68' />
+        </Method>
+        <Method Hamiltonian='MP2' CategoryOfHamiltonian='wavefunction' Basis='aug-cc-pVQZ&amp;aug-cc-pVQZ-PP' CategoryOfBasis='Dunnings' CounterpoiseCorrection='CP'>
+          <Result CalculatedValue='-1.76' />
+        </Method>
+        <Method Hamiltonian='CCSD(T)' CategoryOfHamiltonian='wavefunction' Basis='aug-cc-pVDZ&amp;aug-cc-pVDZ-PP' CategoryOfBasis='Dunnings' CounterpoiseCorrection='CP'>
+          <Result CalculatedValue='-1.32' />
+        </Method>
+        <Method Hamiltonian='CCSD(T)' CategoryOfHamiltonian='wavefunction' Basis='aug-cc-pVTZ&amp;aug-cc-pVTZ-PP' CategoryOfBasis='Dunnings' CounterpoiseCorrection='CP'>
+          <Result CalculatedValue='-1.57' />
+        </Method>
+        <Method Hamiltonian='CCSD(T)' CategoryOfHamiltonian='wavefunction' Basis='aug-cc-pVQZ&amp;aug-cc-pVQZ-PP' CategoryOfBasis='Dunnings' CounterpoiseCorrection='CP'>
+          <Result CalculatedValue='-1.65' />
+        </Method>
+      </Methods>
+      <ReferenceResult>
+        <ReferenceMethod Hamiltonian='CCSD(T)' CategoryOfHamiltonian='wavefunction' Basis='CBS' CategoryOfBasis='unclassified' CounterpoiseCorrection='noCP' />
+        <ReferenceValue Value='-1.71' />
+      </ReferenceResult>
+    </System>
+    <System Name='FH2CClOCH2'>
+      <Molecules>
+        <Molecule Name='FH2CClOCH2' SmileString='' />
+      </Molecules>
+      <Methods>
+        <Method Hamiltonian='HF' CategoryOfHamiltonian='wavefunction' Basis='aug-cc-pVTZ' CategoryOfBasis='Dunnings' CounterpoiseCorrection='CP'>
+          <Result CalculatedValue='0.32' />
+        </Method>
+        <Method Hamiltonian='MP2' CategoryOfHamiltonian='wavefunction' Basis='aug-cc-pVTZ' CategoryOfBasis='Dunnings' CounterpoiseCorrection='CP'>
+          <Result CalculatedValue='-1.34' />
+        </Method>
+      </Methods>
+      <ReferenceResult>
+        <ReferenceMethod Hamiltonian='CCSD(T)' CategoryOfHamiltonian='wavefunction' Basis='aug-cc-pVTZ' CategoryOfBasis='Dunnings' CounterpoiseCorrection='CP' />
+        <ReferenceValue Value='-1.29' />
+      </ReferenceResult>
+    </System>
+    <System Name='F2HCClOCH2'>
+      <Molecules>
+        <Molecule Name='F2HCClOCH2' SmileString='' />
+      </Molecules>
+      <Methods>
+        <Method Hamiltonian='HF' CategoryOfHamiltonian='wavefunction' Basis='aug-cc-pVTZ' CategoryOfBasis='Dunnings' CounterpoiseCorrection='CP'>
+          <Result CalculatedValue='-0.03' />
+        </Method>
+        <Method Hamiltonian='MP2' CategoryOfHamiltonian='wavefunction' Basis='aug-cc-pVTZ' CategoryOfBasis='Dunnings' CounterpoiseCorrection='CP'>
+          <Result CalculatedValue='-1.58' />
+        </Method>
+      </Methods>
+      <ReferenceResult>
+        <ReferenceMethod Hamiltonian='CCSD(T)' CategoryOfHamiltonian='wavefunction' Basis='aug-cc-pVTZ' CategoryOfBasis='Dunnings' CounterpoiseCorrection='CP' />
+        <ReferenceValue Value='-1.54' />
+      </ReferenceResult>
+    </System>
+    <System Name='F3CClOCH2'>
+      <Molecules>
+        <Molecule Name='F3CClOCH2' SmileString='C(Cl)(F)(F)F.O=C'>
+          <atomArray>
+            <atom id='a1' elementType='C' x3='1.472653' y3='0.072305' z3='-0.006174' />
+            <atom id='a2' elementType='Cl' x3='-0.237519' y3='-0.416571' z3='0.000828' />
+            <atom id='a3' elementType='F' x3='1.903100' y3='0.229501' z3='1.291713' />
+            <atom id='a4' elementType='F' x3='2.220170' y3='-0.911871' z3='-0.610750' />
+            <atom id='a5' elementType='F' x3='1.641736' y3='1.236724' z3='-0.675184' />
+            <atom id='a6' elementType='O' x3='-3.495186' y3='-0.572407' z3='0.011475' />
+            <atom id='a7' elementType='C' x3='-3.580046' y3='0.635801' z3='-0.012235' />
+            <atom id='a8' elementType='H' x3='-2.686183' y3='1.276149' z3='-0.023767' />
+            <atom id='a9' elementType='H' x3='-4.555203' y3='1.146996' z3='-0.023657' />
+          </atomArray>
+          <bondArray>
+            <bond atomRefs2='a5 a1' order='1' />
+            <bond atomRefs2='a4 a1' order='1' />
+            <bond atomRefs2='a8 a7' order='1' />
+            <bond atomRefs2='a9 a7' order='1' />
+            <bond atomRefs2='a7 a6' order='2' />
+            <bond atomRefs2='a1 a2' order='1' />
+            <bond atomRefs2='a1 a3' order='1' />
+          </bondArray>
+        </Molecule>
+      </Molecules>
+      <Methods>
+        <Method Hamiltonian='HF' CategoryOfHamiltonian='wavefunction' Basis='aug-cc-pVTZ' CategoryOfBasis='Dunnings' CounterpoiseCorrection='CP'>
+          <Result CalculatedValue='-0.45' />
+        </Method>
+        <Method Hamiltonian='MP2' CategoryOfHamiltonian='wavefunction' Basis='aug-cc-pVTZ' CategoryOfBasis='Dunnings' CounterpoiseCorrection='CP'>
+          <Result CalculatedValue='-1.87' />
+        </Method>
+      </Methods>
+      <ReferenceResult>
+	<ReferenceMethod Hamiltonian='CCSD(T)' CategoryOfHamiltonian='wavefunction' Basis='aug-cc-pVTZ' CategoryOfBasis='Dunnings' CounterpoiseCorrection='CP' />
+        <ReferenceValue Value='-1.84' />
+      </ReferenceResult>
+    </System>
+    <System Name='FH2CBrOCH2'>
+      <Molecules>
+        <Molecule Name='FH2CBrOCH2' SmileString='' />
+      </Molecules>
+      <Methods>
+        <Method Hamiltonian='HF' CategoryOfHamiltonian='wavefunction' Basis='aug-cc-pVTZ&amp;aug-ccpVTZ-PP' CategoryOfBasis='Dunnings' CounterpoiseCorrection='CP'>
+          <Result CalculatedValue='-0.18' />
+        </Method>
+        <Method Hamiltonian='MP2' CategoryOfHamiltonian='wavefunction' Basis='aug-cc-pVTZ&amp;aug-ccpVTZ-PP' CategoryOfBasis='Dunnings' CounterpoiseCorrection='CP'>
+          <Result CalculatedValue='-1.98' />
+        </Method>
+      </Methods>
+      <ReferenceResult>
+	<ReferenceMethod Hamiltonian='CCSD(T)' CategoryOfHamiltonian='wavefunction' Basis='aug-cc-pVTZ' CategoryOfBasis='Dunnings' CounterpoiseCorrection='CP' />
+        <ReferenceValue Value='-1.98' />
+      </ReferenceResult>
+    </System>
+    <System Name='F2HCBrOCH2'>
+      <Molecules>
+        <Molecule Name='F2HCBrOCH2' SmileString='' />
+      </Molecules>
+      <Methods>
+        <Method Hamiltonian='HF' CategoryOfHamiltonian='wavefunction' Basis='aug-cc-pVTZ&amp;aug-ccpVTZ-PP' CategoryOfBasis='Dunnings' CounterpoiseCorrection='CP'>
+          <Result CalculatedValue='-0.69' />
+        </Method>
+        <Method Hamiltonian='MP2' CategoryOfHamiltonian='wavefunction' Basis='aug-cc-pVTZ&amp;aug-ccpVTZ-PP' CategoryOfBasis='Dunnings' CounterpoiseCorrection='CP'>
+          <Result CalculatedValue='-2.28' />
+        </Method>
+      </Methods>
+      <ReferenceResult>
+        <ReferenceMethod Hamiltonian='CCSD(T)' CategoryOfHamiltonian='wavefunction' Basis='aug-cc-pVTZ' CategoryOfBasis='Dunnings' CounterpoiseCorrection='CP' />
+	<ReferenceValue Value='-2.23' />
+      </ReferenceResult>
+    </System>
+    <System Name='F3CBrOCH2'>
+      <Molecules>
+        <Molecule Name='F3CBrOCH2' SmileString='C(F)(F)(F)Br.O=C'>
+          <atomArray>
+            <atom id='a1' elementType='C' x3='1.656945' y3='0.137427' z3='-0.006831' />
+            <atom id='a2' elementType='F' x3='2.103220' y3='0.256553' z3='1.289239' />
+            <atom id='a3' elementType='F' x3='2.339769' y3='-0.885304' z3='-0.623119' />
+            <atom id='a4' elementType='F' x3='1.902667' y3='1.292776' z3='-0.665151' />
+            <atom id='a5' elementType='Br' x3='-0.246349' y3='-0.280315' z3='0.002243' />
+            <atom id='a6' elementType='O' x3='-3.524599' y3='-0.484930' z3='0.011495' />
+            <atom id='a7' elementType='C' x3='-3.752447' y3='0.718223' z3='-0.014241' />
+            <atom id='a8' elementType='H' x3='-2.928017' y3='1.462763' z3='-0.029180' />
+            <atom id='a9' elementType='H' x3='-4.790850' y3='1.117590' z3='-0.023583' />
+          </atomArray>
+          <bondArray>
+            <bond atomRefs2='a4 a1' order='1' />
+            <bond atomRefs2='a3 a1' order='1' />
+            <bond atomRefs2='a8 a7' order='1' />
+            <bond atomRefs2='a9 a7' order='1' />
+            <bond atomRefs2='a7 a6' order='2' />
+            <bond atomRefs2='a1 a5' order='1' />
+            <bond atomRefs2='a1 a2' order='1' />
+          </bondArray>
+        </Molecule>
+      </Molecules>
+      <Methods>
+        <Method Hamiltonian='HF' CategoryOfHamiltonian='wavefunction' Basis='aug-cc-pVTZ&amp;aug-ccpVTZ-PP' CategoryOfBasis='Dunnings' CounterpoiseCorrection='CP'>
+          <Result CalculatedValue='-1.24' />
+        </Method>
+        <Method Hamiltonian='MP2' CategoryOfHamiltonian='wavefunction' Basis='aug-cc-pVTZ&amp;aug-ccpVTZ-PP' CategoryOfBasis='Dunnings' CounterpoiseCorrection='CP'>
+          <Result CalculatedValue='-2.61' />
+        </Method>
+      </Methods>
+      <ReferenceResult>
+	<ReferenceMethod Hamiltonian='CCSD(T)' CategoryOfHamiltonian='wavefunction' Basis='aug-cc-pVTZ' CategoryOfBasis='Dunnings' CounterpoiseCorrection='CP' />
+        <ReferenceValue Value='-2.58' />
+      </ReferenceResult>
+    </System>
+    <System Name='FH2CIOCH2'>
+      <Molecules>
+        <Molecule Name='FH2CIOCH2' SmileString='' />
+      </Molecules>
+      <Methods>
+        <Method Hamiltonian='HF' CategoryOfHamiltonian='wavefunction' Basis='aug-cc-pVTZ&amp;aug-ccpVTZ-PP' CategoryOfBasis='Dunnings' CounterpoiseCorrection='CP'>
+          <Result CalculatedValue='-0.89' />
+        </Method>
+        <Method Hamiltonian='MP2' CategoryOfHamiltonian='wavefunction' Basis='aug-cc-pVTZ&amp;aug-ccpVTZ-PP' CategoryOfBasis='Dunnings' CounterpoiseCorrection='CP'>
+          <Result CalculatedValue='-2.72' />
+        </Method>
+      </Methods>
+      <ReferenceResult>
+	<ReferenceMethod Hamiltonian='CCSD(T)' CategoryOfHamiltonian='wavefunction' Basis='aug-cc-pVTZ' CategoryOfBasis='Dunnings' CounterpoiseCorrection='CP' />
+        <ReferenceValue Value='-2.58' />
+      </ReferenceResult>
+    </System>
+    <System Name='F2HCIOCH2'>
+      <Molecules>
+        <Molecule Name='F2HCIOCH2' SmileString='' />
+      </Molecules>
+      <Methods>
+        <Method Hamiltonian='HF' CategoryOfHamiltonian='wavefunction' Basis='aug-cc-pVTZ&amp;aug-ccpVTZ-PP' CategoryOfBasis='Dunnings' CounterpoiseCorrection='CP'>
+          <Result CalculatedValue='-1.60' />
+        </Method>
+        <Method Hamiltonian='MP2' CategoryOfHamiltonian='wavefunction' Basis='aug-cc-pVTZ&amp;aug-ccpVTZ-PP' CategoryOfBasis='Dunnings' CounterpoiseCorrection='CP'>
+          <Result CalculatedValue='-3.22' />
+        </Method>
+      </Methods>
+      <ReferenceResult>
+	<ReferenceMethod Hamiltonian='CCSD(T)' CategoryOfHamiltonian='wavefunction' Basis='aug-cc-pVTZ' CategoryOfBasis='Dunnings' CounterpoiseCorrection='CP' />
+        <ReferenceValue Value='-3.16' />
+      </ReferenceResult>
+    </System>
+    <System Name='F3CIOCH2'>
+      <Molecules>
+        <Molecule Name='F3CIOCH2' SmileString='C(F)(F)(F)I.O=C'>
+          <atomArray>
+            <atom id='a1' elementType='C' x3='1.837397' y3='0.157716' z3='-0.017230' />
+            <atom id='a2' elementType='F' x3='2.150182' y3='1.164408' z3='-0.879874' />
+            <atom id='a3' elementType='F' x3='2.276280' y3='0.540634' z3='1.265292' />
+            <atom id='a4' elementType='F' x3='2.529957' y3='-0.957222' z3='-0.378116' />
+            <atom id='a5' elementType='I' x3='-0.282855' y3='-0.221166' z3='0.000021' />
+            <atom id='a6' elementType='O' x3='-3.578242' y3='-0.394535' z3='0.019251' />
+            <atom id='a7' elementType='C' x3='-4.007487' y3='0.746410' z3='-0.009440' />
+            <atom id='a8' elementType='H' x3='-3.331977' y3='1.631931' z3='-0.038418' />
+            <atom id='a9' elementType='H' x3='-5.101275' y3='0.961430' z3='-0.008021' />
+          </atomArray>
+          <bondArray>
+            <bond atomRefs2='a2 a1' order='1' />
+            <bond atomRefs2='a4 a1' order='1' />
+            <bond atomRefs2='a8 a7' order='1' />
+            <bond atomRefs2='a1 a5' order='1' />
+            <bond atomRefs2='a1 a3' order='1' />
+            <bond atomRefs2='a7 a9' order='1' />
+            <bond atomRefs2='a7 a6' order='2' />
+          </bondArray>
+        </Molecule>
+      </Molecules>
+      <Methods>
+        <Method Hamiltonian='HF' CategoryOfHamiltonian='wavefunction' Basis='aug-cc-pVTZ&amp;aug-ccpVTZ-PP' CategoryOfBasis='Dunnings' CounterpoiseCorrection='CP'>
+          <Result CalculatedValue='-2.50' />
+        </Method>
+        <Method Hamiltonian='MP2' CategoryOfHamiltonian='wavefunction' Basis='aug-cc-pVTZ&amp;aug-ccpVTZ-PP' CategoryOfBasis='Dunnings' CounterpoiseCorrection='CP'>
+          <Result CalculatedValue='-3.77' />
+        </Method>
+      </Methods>
+      <ReferenceResult>
+	<ReferenceMethod Hamiltonian='CCSD(T)' CategoryOfHamiltonian='wavefunction' Basis='aug-cc-pVTZ' CategoryOfBasis='Dunnings' CounterpoiseCorrection='CP' />
+        <ReferenceValue Value='-3.72' />
+      </ReferenceResult>
+    </System>
+  </Dataset>
+</Jacob>

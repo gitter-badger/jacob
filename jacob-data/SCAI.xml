@@ -1,0 +1,2593 @@
+<Jacob Version="0.1">
+  <Benchmark Name="BEGDB" ReferenceArticle="Collect. Czech. Chem. Commun. 2008, 73, 1261."/>
+  <Dataset Name="SCAI" ReferenceArticle="&quot;K. Berka, R. Laskowski, K. E. Riley, P. Hobza, and J. Vondrasek; J Chem Theory Comput 2009, 5 (4), 982-992&quot;">
+    <System Name="DHN1">
+      <Molecules>
+        <Molecule Name="DHN1" SmileString="CCc1c[nH]cn1.CCC(=O)O">
+          <atomArray>
+            <atom id="a1" elementType="C" x3="-1.124000" y3="2.474000" z3="2.503000"/>
+            <atom id="a2" elementType="C" x3="-0.995000" y3="3.636000" z3="1.486000"/>
+            <atom id="a3" elementType="C" x3="0.421000" y3="3.987000" z3="1.260000"/>
+            <atom id="a4" elementType="C" x3="1.124000" y3="5.108000" z3="1.631000"/>
+            <atom id="a5" elementType="N" x3="1.316000" y3="3.176000" z3="0.595000"/>
+            <atom id="a6" elementType="C" x3="2.505000" y3="3.757000" z3="0.553000"/>
+            <atom id="a7" elementType="N" x3="2.409000" y3="4.919000" z3="1.173000"/>
+            <atom id="a8" elementType="H" x3="-0.607000" y3="1.588000" z3="2.136000"/>
+            <atom id="a9" elementType="H" x3="-0.700000" y3="2.761000" z3="3.472000"/>
+            <atom id="a10" elementType="H" x3="-2.176000" y3="2.208000" z3="2.645000"/>
+            <atom id="a11" elementType="H" x3="-1.453000" y3="3.323000" z3="0.542000"/>
+            <atom id="a12" elementType="H" x3="-1.531000" y3="4.520000" z3="1.850000"/>
+            <atom id="a13" elementType="H" x3="0.843000" y3="6.006000" z3="2.159000"/>
+            <atom id="a14" elementType="H" x3="3.400000" y3="3.360000" z3="0.101000"/>
+            <atom id="a15" elementType="H" x3="3.158000" y3="5.591000" z3="1.291000"/>
+            <atom id="a16" elementType="C" x3="-1.284000" y3="-2.228000" z3="0.424000"/>
+            <atom id="a17" elementType="C" x3="0.019000" y3="-1.537000" z3="0.055000"/>
+            <atom id="a18" elementType="C" x3="0.000000" y3="0.000000" z3="0.000000"/>
+            <atom id="a19" elementType="O" x3="-1.110000" y3="0.546000" z3="0.000000"/>
+            <atom id="a20" elementType="O" x3="1.125000" y3="0.553000" z3="0.000000"/>
+            <atom id="a21" elementType="H" x3="-1.628000" y3="-1.923000" z3="1.417000"/>
+            <atom id="a22" elementType="H" x3="-1.139000" y3="-3.314000" z3="0.428000"/>
+            <atom id="a23" elementType="H" x3="-2.077000" y3="-1.982000" z3="-0.287000"/>
+            <atom id="a24" elementType="H" x3="0.822000" y3="-1.835000" z3="0.743000"/>
+            <atom id="a25" elementType="H" x3="0.359000" y3="-1.885000" z3="-0.932000"/>
+            <atom id="a26" elementType="H" x3="1.084000" y3="1.585000" z3="0.128000"/>
+          </atomArray>
+          <bondArray>
+            <bond atomRefs2="a25 a17" order="1"/>
+            <bond atomRefs2="a23 a16" order="1"/>
+            <bond atomRefs2="a20 a18" order="1"/>
+            <bond atomRefs2="a20 a26" order="1"/>
+            <bond atomRefs2="a19 a18" order="2"/>
+            <bond atomRefs2="a18 a17" order="1"/>
+            <bond atomRefs2="a17 a16" order="1"/>
+            <bond atomRefs2="a17 a24" order="1"/>
+            <bond atomRefs2="a14 a6" order="1"/>
+            <bond atomRefs2="a16 a22" order="1"/>
+            <bond atomRefs2="a16 a21" order="1"/>
+            <bond atomRefs2="a11 a2" order="1"/>
+            <bond atomRefs2="a6 a5" order="2"/>
+            <bond atomRefs2="a6 a7" order="1"/>
+            <bond atomRefs2="a5 a3" order="1"/>
+            <bond atomRefs2="a7 a15" order="1"/>
+            <bond atomRefs2="a7 a4" order="1"/>
+            <bond atomRefs2="a3 a2" order="1"/>
+            <bond atomRefs2="a3 a4" order="2"/>
+            <bond atomRefs2="a2 a12" order="1"/>
+            <bond atomRefs2="a2 a1" order="1"/>
+            <bond atomRefs2="a4 a13" order="1"/>
+            <bond atomRefs2="a8 a1" order="1"/>
+            <bond atomRefs2="a1 a10" order="1"/>
+            <bond atomRefs2="a1 a9" order="1"/>
+          </bondArray>
+        </Molecule>
+      </Molecules>
+      <Methods>
+        <Method Hamiltonian="AMBER_ff03" CategoryOfHamiltonian="forcefield" Basis="nobasis" CategoryOfBasis="unclassified" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-7.8"/>
+        </Method>
+        <Method Hamiltonian="CCSD(T)" CategoryOfHamiltonian="wavefunction" Basis="CBS" CategoryOfBasis="unclassified" CounterpoiseCorrection="CP">
+          <Result CalculatedValue="-17.97"/>
+        </Method>
+        <Method Hamiltonian="TPSS" CategoryOfHamiltonian="meta-GGA" Basis="TZVP" CategoryOfBasis="Ahlrichs" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-16.26"/>
+        </Method>
+        <Method Hamiltonian="TPSS-D" CategoryOfHamiltonian="hybrid-GGA" Basis="TZVP" CategoryOfBasis="Ahlrichs" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-19.29"/>
+        </Method>
+        <Method Hamiltonian="DFT-SAPT PBE0AC" CategoryOfHamiltonian="undefined" Basis="aug-cc-pVDZ" CategoryOfBasis="Dunnings" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-6.4"/>
+        </Method>
+        <Method Hamiltonian="DFT-SAPT PBE0AC" CategoryOfHamiltonian="undefined" Basis="aug-cc-pVDZ" CategoryOfBasis="Dunnings" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-16.05"/>
+        </Method>
+        <Method Hamiltonian="OPLS-AA" CategoryOfHamiltonian="forcefield" Basis="L" CategoryOfBasis="unclassified" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-10.9"/>
+        </Method>
+        <Method Hamiltonian="RI-TPSS-D" CategoryOfHamiltonian="meta-GGA" Basis="TZVP" CategoryOfBasis="Ahlrichs" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-19.03"/>
+        </Method>
+        <Method Hamiltonian="RI-MP2" CategoryOfHamiltonian="wavefunction" Basis="aug-cc-pVDZ" CategoryOfBasis="Dunnings" CounterpoiseCorrection="CP">
+          <Result CalculatedValue="-16.81"/>
+        </Method>
+        <Method Hamiltonian="RI-MP2" CategoryOfHamiltonian="wavefunction" Basis="aug-cc-pVTZ" CategoryOfBasis="Dunnings" CounterpoiseCorrection="CP">
+          <Result CalculatedValue="-17.94"/>
+        </Method>
+        <Method Hamiltonian="SCS-MI-MP2" CategoryOfHamiltonian="wavefunction" Basis="cc-pVTZ" CategoryOfBasis="Dunnings" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-17.68"/>
+        </Method>
+      </Methods>
+      <ReferenceResult>
+        <ReferenceMethod Hamiltonian="CCSD(T)" CategoryOfHamiltonian="wavefunction" Basis="CBS" CategoryOfBasis="unclassified" CounterpoiseCorrection="CP"/>
+        <ReferenceValue Value="-17.97"/>
+      </ReferenceResult>
+    </System>
+    <System Name="DH1">
+      <Molecules>
+        <Molecule Name="DH1" SmileString="CCc1cnc[nH]1.CCC(=O)[O]">
+          <atomArray>
+            <atom id="a1" elementType="C" x3="-1.124000" y3="2.474000" z3="2.503000"/>
+            <atom id="a2" elementType="C" x3="-0.996000" y3="3.637000" z3="1.486000"/>
+            <atom id="a3" elementType="C" x3="0.421000" y3="3.988000" z3="1.260000"/>
+            <atom id="a4" elementType="C" x3="1.124000" y3="5.108000" z3="1.631000"/>
+            <atom id="a5" elementType="N" x3="1.316000" y3="3.176000" z3="0.596000"/>
+            <atom id="a6" elementType="C" x3="2.505000" y3="3.757000" z3="0.553000"/>
+            <atom id="a7" elementType="N" x3="2.409000" y3="4.920000" z3="1.173000"/>
+            <atom id="a8" elementType="H" x3="-0.620000" y3="1.589000" z3="2.114000"/>
+            <atom id="a9" elementType="H" x3="-0.681000" y3="2.758000" z3="3.466000"/>
+            <atom id="a10" elementType="H" x3="-2.176000" y3="2.208000" z3="2.666000"/>
+            <atom id="a11" elementType="H" x3="-1.520000" y3="4.527000" z3="1.856000"/>
+            <atom id="a12" elementType="H" x3="-1.477000" y3="3.319000" z3="0.553000"/>
+            <atom id="a13" elementType="H" x3="0.819000" y3="5.997000" z3="2.165000"/>
+            <atom id="a14" elementType="H" x3="1.116000" y3="2.176000" z3="0.279000"/>
+            <atom id="a15" elementType="H" x3="3.386000" y3="3.332000" z3="0.095000"/>
+            <atom id="a16" elementType="C" x3="-1.284000" y3="-2.228000" z3="0.424000"/>
+            <atom id="a17" elementType="C" x3="0.019000" y3="-1.537000" z3="0.055000"/>
+            <atom id="a18" elementType="C" x3="0.000000" y3="0.000000" z3="0.000000"/>
+            <atom id="a19" elementType="O" x3="-1.110000" y3="0.546000" z3="0.000000"/>
+            <atom id="a20" elementType="O" x3="1.125000" y3="0.553000" z3="0.000000"/>
+            <atom id="a21" elementType="H" x3="-1.622000" y3="-1.923000" z3="1.422000"/>
+            <atom id="a22" elementType="H" x3="-1.172000" y3="-3.322000" z3="0.419000"/>
+            <atom id="a23" elementType="H" x3="-2.080000" y3="-1.952000" z3="-0.276000"/>
+            <atom id="a24" elementType="H" x3="0.356000" y3="-1.890000" z3="-0.933000"/>
+            <atom id="a25" elementType="H" x3="0.820000" y3="-1.832000" z3="0.748000"/>
+          </atomArray>
+          <bondArray>
+            <bond atomRefs2="a24 a17" order="1"/>
+            <bond atomRefs2="a23 a16" order="1"/>
+            <bond atomRefs2="a18 a20" order="2"/>
+            <bond atomRefs2="a18 a19" order="1"/>
+            <bond atomRefs2="a18 a17" order="1"/>
+            <bond atomRefs2="a17 a16" order="1"/>
+            <bond atomRefs2="a17 a25" order="1"/>
+            <bond atomRefs2="a15 a6" order="1"/>
+            <bond atomRefs2="a14 a5" order="1"/>
+            <bond atomRefs2="a22 a16" order="1"/>
+            <bond atomRefs2="a16 a21" order="1"/>
+            <bond atomRefs2="a6 a5" order="1"/>
+            <bond atomRefs2="a6 a7" order="2"/>
+            <bond atomRefs2="a12 a2" order="1"/>
+            <bond atomRefs2="a5 a3" order="1"/>
+            <bond atomRefs2="a7 a4" order="1"/>
+            <bond atomRefs2="a3 a2" order="1"/>
+            <bond atomRefs2="a3 a4" order="2"/>
+            <bond atomRefs2="a2 a11" order="1"/>
+            <bond atomRefs2="a2 a1" order="1"/>
+            <bond atomRefs2="a4 a13" order="1"/>
+            <bond atomRefs2="a8 a1" order="1"/>
+            <bond atomRefs2="a1 a10" order="1"/>
+            <bond atomRefs2="a1 a9" order="1"/>
+          </bondArray>
+        </Molecule>
+      </Molecules>
+      <Methods>
+        <Method Hamiltonian="AMBER_ff03" CategoryOfHamiltonian="forcefield" Basis="nobasis" CategoryOfBasis="unclassified" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-22.36"/>
+        </Method>
+        <Method Hamiltonian="CCSD(T)" CategoryOfHamiltonian="wavefunction" Basis="CBS" CategoryOfBasis="unclassified" CounterpoiseCorrection="CP">
+          <Result CalculatedValue="-30.64"/>
+        </Method>
+        <Method Hamiltonian="TPSS" CategoryOfHamiltonian="meta-GGA" Basis="TZVP" CategoryOfBasis="Ahlrichs" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-28.83"/>
+        </Method>
+        <Method Hamiltonian="TPSS-D" CategoryOfHamiltonian="hybrid-GGA" Basis="TZVP" CategoryOfBasis="Ahlrichs" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-31.47"/>
+        </Method>
+        <Method Hamiltonian="DFT-SAPT PBE0AC" CategoryOfHamiltonian="undefined" Basis="aug-cc-pVDZ" CategoryOfBasis="Dunnings" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-6.85"/>
+        </Method>
+        <Method Hamiltonian="DFT-SAPT PBE0AC" CategoryOfHamiltonian="undefined" Basis="aug-cc-pVDZ" CategoryOfBasis="Dunnings" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-28.35"/>
+        </Method>
+        <Method Hamiltonian="OPLS-AA" CategoryOfHamiltonian="forcefield" Basis="L" CategoryOfBasis="unclassified" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-12.2"/>
+        </Method>
+        <Method Hamiltonian="RI-TPSS-D" CategoryOfHamiltonian="meta-GGA" Basis="TZVP" CategoryOfBasis="Ahlrichs" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-31.3"/>
+        </Method>
+        <Method Hamiltonian="RI-MP2" CategoryOfHamiltonian="wavefunction" Basis="aug-cc-pVDZ" CategoryOfBasis="Dunnings" CounterpoiseCorrection="CP">
+          <Result CalculatedValue="-29.88"/>
+        </Method>
+        <Method Hamiltonian="RI-MP2" CategoryOfHamiltonian="wavefunction" Basis="aug-cc-pVTZ" CategoryOfBasis="Dunnings" CounterpoiseCorrection="CP">
+          <Result CalculatedValue="-30.91"/>
+        </Method>
+        <Method Hamiltonian="SCS-MI-MP2" CategoryOfHamiltonian="wavefunction" Basis="cc-pVTZ" CategoryOfBasis="Dunnings" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-31.06"/>
+        </Method>
+      </Methods>
+      <ReferenceResult>
+        <ReferenceMethod Hamiltonian="CCSD(T)" CategoryOfHamiltonian="wavefunction" Basis="CBS" CategoryOfBasis="unclassified" CounterpoiseCorrection="CP"/>
+        <ReferenceValue Value="-30.64"/>
+      </ReferenceResult>
+    </System>
+    <System Name="FF1">
+      <Molecules>
+        <Molecule Name="FF1" SmileString="CCc1ccccc1.CCc1ccccc1">
+          <atomArray>
+            <atom id="a1" elementType="C" x3="-0.465000" y3="-1.371000" z3="4.832000"/>
+            <atom id="a2" elementType="H" x3="-0.174000" y3="-2.337000" z3="5.261000"/>
+            <atom id="a3" elementType="H" x3="-0.194000" y3="-1.374000" z3="3.770000"/>
+            <atom id="a4" elementType="H" x3="-1.555000" y3="-1.284000" z3="4.898000"/>
+            <atom id="a5" elementType="C" x3="0.225000" y3="-0.220000" z3="5.571000"/>
+            <atom id="a6" elementType="H" x3="-0.038000" y3="-0.271000" z3="6.635000"/>
+            <atom id="a7" elementType="H" x3="1.312000" y3="-0.363000" z3="5.512000"/>
+            <atom id="a8" elementType="C" x3="-0.123000" y3="1.143000" z3="5.038000"/>
+            <atom id="a9" elementType="C" x3="0.629000" y3="1.717000" z3="4.015000"/>
+            <atom id="a10" elementType="H" x3="1.481000" y3="1.177000" z3="3.607000"/>
+            <atom id="a11" elementType="C" x3="0.308000" y3="2.978000" z3="3.512000"/>
+            <atom id="a12" elementType="H" x3="0.907000" y3="3.411000" z3="2.718000"/>
+            <atom id="a13" elementType="C" x3="-0.778000" y3="3.677000" z3="4.032000"/>
+            <atom id="a14" elementType="H" x3="-1.030000" y3="4.663000" z3="3.646000"/>
+            <atom id="a15" elementType="C" x3="-1.535000" y3="3.113000" z3="5.053000"/>
+            <atom id="a16" elementType="H" x3="-2.384000" y3="3.653000" z3="5.467000"/>
+            <atom id="a17" elementType="C" x3="-1.206000" y3="1.850000" z3="5.549000"/>
+            <atom id="a18" elementType="H" x3="-1.803000" y3="1.415000" z3="6.349000"/>
+            <atom id="a19" elementType="C" x3="-0.511000" y3="-2.087000" z3="-1.348000"/>
+            <atom id="a20" elementType="H" x3="-0.491000" y3="-3.183000" z3="-1.323000"/>
+            <atom id="a21" elementType="H" x3="0.103000" y3="-1.753000" z3="-2.193000"/>
+            <atom id="a22" elementType="H" x3="-1.542000" y3="-1.774000" z3="-1.544000"/>
+            <atom id="a23" elementType="C" x3="0.002000" y3="-1.503000" z3="-0.031000"/>
+            <atom id="a24" elementType="H" x3="-0.622000" y3="-1.884000" z3="0.789000"/>
+            <atom id="a25" elementType="H" x3="1.018000" y3="-1.868000" z3="0.159000"/>
+            <atom id="a26" elementType="C" x3="0.000000" y3="0.000000" z3="0.000000"/>
+            <atom id="a27" elementType="C" x3="-1.200000" y3="0.708000" z3="0.000000"/>
+            <atom id="a28" elementType="H" x3="-2.145000" y3="0.168000" z3="0.009000"/>
+            <atom id="a29" elementType="C" x3="-1.205000" y3="2.103000" z3="-0.002000"/>
+            <atom id="a30" elementType="H" x3="-2.148000" y3="2.643000" z3="0.005000"/>
+            <atom id="a31" elementType="C" x3="0.001000" y3="2.800000" z3="-0.003000"/>
+            <atom id="a32" elementType="H" x3="0.001000" y3="3.888000" z3="-0.006000"/>
+            <atom id="a33" elementType="C" x3="1.202000" y3="2.102000" z3="-0.002000"/>
+            <atom id="a34" elementType="H" x3="2.147000" y3="2.641000" z3="-0.005000"/>
+            <atom id="a35" elementType="C" x3="1.197000" y3="0.707000" z3="0.000000"/>
+            <atom id="a36" elementType="H" x3="2.140000" y3="0.163000" z3="-0.001000"/>
+          </atomArray>
+          <bondArray>
+            <bond atomRefs2="a21 a19" order="1"/>
+            <bond atomRefs2="a22 a19" order="1"/>
+            <bond atomRefs2="a19 a20" order="1"/>
+            <bond atomRefs2="a19 a23" order="1"/>
+            <bond atomRefs2="a23 a26" order="1"/>
+            <bond atomRefs2="a23 a25" order="1"/>
+            <bond atomRefs2="a23 a24" order="1"/>
+            <bond atomRefs2="a32 a31" order="1"/>
+            <bond atomRefs2="a34 a33" order="1"/>
+            <bond atomRefs2="a31 a33" order="2"/>
+            <bond atomRefs2="a31 a29" order="1"/>
+            <bond atomRefs2="a33 a35" order="1"/>
+            <bond atomRefs2="a29 a27" order="2"/>
+            <bond atomRefs2="a29 a30" order="1"/>
+            <bond atomRefs2="a36 a35" order="1"/>
+            <bond atomRefs2="a35 a26" order="2"/>
+            <bond atomRefs2="a27 a26" order="1"/>
+            <bond atomRefs2="a27 a28" order="1"/>
+            <bond atomRefs2="a12 a11" order="1"/>
+            <bond atomRefs2="a11 a9" order="2"/>
+            <bond atomRefs2="a11 a13" order="1"/>
+            <bond atomRefs2="a10 a9" order="1"/>
+            <bond atomRefs2="a14 a13" order="1"/>
+            <bond atomRefs2="a3 a1" order="1"/>
+            <bond atomRefs2="a9 a8" order="1"/>
+            <bond atomRefs2="a13 a15" order="2"/>
+            <bond atomRefs2="a1 a4" order="1"/>
+            <bond atomRefs2="a1 a2" order="1"/>
+            <bond atomRefs2="a1 a5" order="1"/>
+            <bond atomRefs2="a8 a17" order="2"/>
+            <bond atomRefs2="a8 a5" order="1"/>
+            <bond atomRefs2="a15 a16" order="1"/>
+            <bond atomRefs2="a15 a17" order="1"/>
+            <bond atomRefs2="a7 a5" order="1"/>
+            <bond atomRefs2="a17 a18" order="1"/>
+            <bond atomRefs2="a5 a6" order="1"/>
+          </bondArray>
+        </Molecule>
+      </Molecules>
+      <Methods>
+        <Method Hamiltonian="AMBER_ff03" CategoryOfHamiltonian="forcefield" Basis="nobasis" CategoryOfBasis="unclassified" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-2.26"/>
+        </Method>
+        <Method Hamiltonian="CCSD(T)" CategoryOfHamiltonian="wavefunction" Basis="CBS" CategoryOfBasis="unclassified" CounterpoiseCorrection="CP">
+          <Result CalculatedValue="-2.33"/>
+        </Method>
+        <Method Hamiltonian="TPSS" CategoryOfHamiltonian="meta-GGA" Basis="TZVP" CategoryOfBasis="Ahlrichs" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="1.11"/>
+        </Method>
+        <Method Hamiltonian="TPSS-D" CategoryOfHamiltonian="hybrid-GGA" Basis="TZVP" CategoryOfBasis="Ahlrichs" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-2.07"/>
+        </Method>
+        <Method Hamiltonian="DFT-SAPT PBE0AC" CategoryOfHamiltonian="undefined" Basis="aug-cc-pVDZ" CategoryOfBasis="Dunnings" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-0.26"/>
+        </Method>
+        <Method Hamiltonian="DFT-SAPT PBE0AC" CategoryOfHamiltonian="undefined" Basis="aug-cc-pVDZ" CategoryOfBasis="Dunnings" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-2.01"/>
+        </Method>
+        <Method Hamiltonian="OPLS-AA" CategoryOfHamiltonian="forcefield" Basis="L" CategoryOfBasis="unclassified" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-1.97"/>
+        </Method>
+        <Method Hamiltonian="RI-TPSS-D" CategoryOfHamiltonian="meta-GGA" Basis="TZVP" CategoryOfBasis="Ahlrichs" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-2.15"/>
+        </Method>
+        <Method Hamiltonian="RI-MP2" CategoryOfHamiltonian="wavefunction" Basis="aug-cc-pVDZ" CategoryOfBasis="Dunnings" CounterpoiseCorrection="CP">
+          <Result CalculatedValue="-2.85"/>
+        </Method>
+        <Method Hamiltonian="RI-MP2" CategoryOfHamiltonian="wavefunction" Basis="aug-cc-pVTZ" CategoryOfBasis="Dunnings" CounterpoiseCorrection="CP">
+          <Result CalculatedValue="-3.04"/>
+        </Method>
+        <Method Hamiltonian="SCS-MI-MP2" CategoryOfHamiltonian="wavefunction" Basis="cc-pVTZ" CategoryOfBasis="Dunnings" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-2.19"/>
+        </Method>
+      </Methods>
+      <ReferenceResult>
+        <ReferenceMethod Hamiltonian="CCSD(T)" CategoryOfHamiltonian="wavefunction" Basis="CBS" CategoryOfBasis="unclassified" CounterpoiseCorrection="CP"/>
+        <ReferenceValue Value="-2.33"/>
+      </ReferenceResult>
+    </System>
+    <System Name="II1">
+      <Molecules>
+        <Molecule Name="II1" SmileString="CCC(C)C.CCC(C)C">
+          <atomArray>
+            <atom id="a1" elementType="C" x3="-6.578000" y3="1.824000" z3="2.339000"/>
+            <atom id="a2" elementType="H" x3="-7.407000" y3="2.443000" z3="1.973000"/>
+            <atom id="a3" elementType="H" x3="-5.685000" y3="2.122000" z3="1.781000"/>
+            <atom id="a4" elementType="H" x3="-6.414000" y3="2.087000" z3="3.392000"/>
+            <atom id="a5" elementType="C" x3="-6.887000" y3="0.353000" z3="2.188000"/>
+            <atom id="a6" elementType="H" x3="-7.850000" y3="0.135000" z3="2.671000"/>
+            <atom id="a7" elementType="H" x3="-7.017000" y3="0.104000" z3="1.124000"/>
+            <atom id="a8" elementType="C" x3="-5.814000" y3="-0.565000" z3="2.774000"/>
+            <atom id="a9" elementType="C" x3="-4.477000" y3="-0.317000" z3="2.024000"/>
+            <atom id="a10" elementType="H" x3="-4.111000" y3="0.699000" z3="2.183000"/>
+            <atom id="a11" elementType="H" x3="-3.697000" y3="-1.009000" z3="2.363000"/>
+            <atom id="a12" elementType="H" x3="-4.617000" y3="-0.470000" z3="0.946000"/>
+            <atom id="a13" elementType="H" x3="-5.670000" y3="-0.309000" z3="3.834000"/>
+            <atom id="a14" elementType="C" x3="-6.244000" y3="-2.050000" z3="2.687000"/>
+            <atom id="a15" elementType="H" x3="-6.405000" y3="-2.344000" z3="1.642000"/>
+            <atom id="a16" elementType="H" x3="-5.478000" y3="-2.710000" z3="3.110000"/>
+            <atom id="a17" elementType="H" x3="-7.179000" y3="-2.218000" z3="3.234000"/>
+            <atom id="a18" elementType="C" x3="-1.443000" y3="1.678000" z3="1.269000"/>
+            <atom id="a19" elementType="H" x3="-2.373000" y3="2.257000" z3="1.248000"/>
+            <atom id="a20" elementType="H" x3="-0.625000" y3="2.391000" z3="1.422000"/>
+            <atom id="a21" elementType="H" x3="-1.480000" y3="1.024000" z3="2.149000"/>
+            <atom id="a22" elementType="C" x3="-1.263000" y3="0.876000" z3="0.000000"/>
+            <atom id="a23" elementType="H" x3="-2.140000" y3="0.233000" z3="-0.152000"/>
+            <atom id="a24" elementType="H" x3="-1.218000" y3="1.548000" z3="-0.870000"/>
+            <atom id="a25" elementType="C" x3="0.000000" y3="0.000000" z3="0.000000"/>
+            <atom id="a26" elementType="C" x3="1.253000" y3="0.869000" z3="0.000000"/>
+            <atom id="a27" elementType="H" x3="1.320000" y3="1.503000" z3="0.890000"/>
+            <atom id="a28" elementType="H" x3="2.162000" y3="0.256000" z3="-0.033000"/>
+            <atom id="a29" elementType="H" x3="1.262000" y3="1.524000" z3="-0.881000"/>
+            <atom id="a30" elementType="H" x3="-0.007000" y3="-0.630000" z3="0.901000"/>
+            <atom id="a31" elementType="C" x3="-0.005000" y3="-0.907000" z3="-1.242000"/>
+            <atom id="a32" elementType="H" x3="-0.036000" y3="-0.301000" z3="-2.156000"/>
+            <atom id="a33" elementType="H" x3="0.894000" y3="-1.534000" z3="-1.285000"/>
+            <atom id="a34" elementType="H" x3="-0.879000" y3="-1.569000" z3="-1.247000"/>
+          </atomArray>
+          <bondArray>
+            <bond atomRefs2="a32 a31" order="1"/>
+            <bond atomRefs2="a33 a31" order="1"/>
+            <bond atomRefs2="a34 a31" order="1"/>
+            <bond atomRefs2="a31 a25" order="1"/>
+            <bond atomRefs2="a29 a26" order="1"/>
+            <bond atomRefs2="a24 a22" order="1"/>
+            <bond atomRefs2="a23 a22" order="1"/>
+            <bond atomRefs2="a28 a26" order="1"/>
+            <bond atomRefs2="a22 a25" order="1"/>
+            <bond atomRefs2="a22 a18" order="1"/>
+            <bond atomRefs2="a26 a25" order="1"/>
+            <bond atomRefs2="a26 a27" order="1"/>
+            <bond atomRefs2="a25 a30" order="1"/>
+            <bond atomRefs2="a12 a9" order="1"/>
+            <bond atomRefs2="a7 a5" order="1"/>
+            <bond atomRefs2="a19 a18" order="1"/>
+            <bond atomRefs2="a18 a20" order="1"/>
+            <bond atomRefs2="a18 a21" order="1"/>
+            <bond atomRefs2="a15 a14" order="1"/>
+            <bond atomRefs2="a3 a1" order="1"/>
+            <bond atomRefs2="a2 a1" order="1"/>
+            <bond atomRefs2="a9 a10" order="1"/>
+            <bond atomRefs2="a9 a11" order="1"/>
+            <bond atomRefs2="a9 a8" order="1"/>
+            <bond atomRefs2="a5 a1" order="1"/>
+            <bond atomRefs2="a5 a6" order="1"/>
+            <bond atomRefs2="a5 a8" order="1"/>
+            <bond atomRefs2="a1 a4" order="1"/>
+            <bond atomRefs2="a14 a8" order="1"/>
+            <bond atomRefs2="a14 a16" order="1"/>
+            <bond atomRefs2="a14 a17" order="1"/>
+            <bond atomRefs2="a8 a13" order="1"/>
+          </bondArray>
+        </Molecule>
+      </Molecules>
+      <Methods>
+        <Method Hamiltonian="AMBER_ff03" CategoryOfHamiltonian="forcefield" Basis="nobasis" CategoryOfBasis="unclassified" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-1.17"/>
+        </Method>
+        <Method Hamiltonian="CCSD(T)" CategoryOfHamiltonian="wavefunction" Basis="CBS" CategoryOfBasis="unclassified" CounterpoiseCorrection="CP">
+          <Result CalculatedValue="-1.24"/>
+        </Method>
+        <Method Hamiltonian="TPSS" CategoryOfHamiltonian="meta-GGA" Basis="TZVP" CategoryOfBasis="Ahlrichs" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="0.62"/>
+        </Method>
+        <Method Hamiltonian="TPSS-D" CategoryOfHamiltonian="hybrid-GGA" Basis="TZVP" CategoryOfBasis="Ahlrichs" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-1.39"/>
+        </Method>
+        <Method Hamiltonian="DFT-SAPT PBE0AC" CategoryOfHamiltonian="undefined" Basis="aug-cc-pVDZ" CategoryOfBasis="Dunnings" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-0.09"/>
+        </Method>
+        <Method Hamiltonian="DFT-SAPT PBE0AC" CategoryOfHamiltonian="undefined" Basis="aug-cc-pVDZ" CategoryOfBasis="Dunnings" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-1.01"/>
+        </Method>
+        <Method Hamiltonian="OPLS-AA" CategoryOfHamiltonian="forcefield" Basis="L" CategoryOfBasis="unclassified" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-1.13"/>
+        </Method>
+        <Method Hamiltonian="RI-TPSS-D" CategoryOfHamiltonian="meta-GGA" Basis="TZVP" CategoryOfBasis="Ahlrichs" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-1.47"/>
+        </Method>
+        <Method Hamiltonian="RI-MP2" CategoryOfHamiltonian="wavefunction" Basis="aug-cc-pVDZ" CategoryOfBasis="Dunnings" CounterpoiseCorrection="CP">
+          <Result CalculatedValue="-0.98"/>
+        </Method>
+        <Method Hamiltonian="RI-MP2" CategoryOfHamiltonian="wavefunction" Basis="aug-cc-pVTZ" CategoryOfBasis="Dunnings" CounterpoiseCorrection="CP">
+          <Result CalculatedValue="-1.11"/>
+        </Method>
+        <Method Hamiltonian="SCS-MI-MP2" CategoryOfHamiltonian="wavefunction" Basis="cc-pVTZ" CategoryOfBasis="Dunnings" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-0.8"/>
+        </Method>
+      </Methods>
+      <ReferenceResult>
+        <ReferenceMethod Hamiltonian="CCSD(T)" CategoryOfHamiltonian="wavefunction" Basis="CBS" CategoryOfBasis="unclassified" CounterpoiseCorrection="CP"/>
+        <ReferenceValue Value="-1.24"/>
+      </ReferenceResult>
+    </System>
+    <System Name="IL1">
+      <Molecules>
+        <Molecule Name="IL1" SmileString="CCC(C)C.CCC(C)C">
+          <atomArray>
+            <atom id="a1" elementType="C" x3="-5.279000" y3="-2.182000" z3="1.934000"/>
+            <atom id="a2" elementType="H" x3="-5.581000" y3="-3.136000" z3="2.383000"/>
+            <atom id="a3" elementType="H" x3="-4.182000" y3="-2.154000" z3="1.923000"/>
+            <atom id="a4" elementType="H" x3="-5.626000" y3="-2.186000" z3="0.897000"/>
+            <atom id="a5" elementType="C" x3="-5.845000" y3="-0.996000" z3="2.726000"/>
+            <atom id="a6" elementType="H" x3="-6.945000" y3="-1.012000" z3="2.695000"/>
+            <atom id="a7" elementType="H" x3="-5.561000" y3="-1.094000" z3="3.783000"/>
+            <atom id="a8" elementType="C" x3="-5.340000" y3="0.357000" z3="2.185000"/>
+            <atom id="a9" elementType="C" x3="-5.799000" y3="0.538000" z3="0.732000"/>
+            <atom id="a10" elementType="H" x3="-6.895000" y3="0.516000" z3="0.671000"/>
+            <atom id="a11" elementType="H" x3="-5.465000" y3="1.502000" z3="0.330000"/>
+            <atom id="a12" elementType="H" x3="-5.410000" y3="-0.244000" z3="0.074000"/>
+            <atom id="a13" elementType="H" x3="-4.241000" y3="0.320000" z3="2.196000"/>
+            <atom id="a14" elementType="C" x3="-5.772000" y3="1.564000" z3="3.042000"/>
+            <atom id="a15" elementType="H" x3="-5.432000" y3="1.459000" z3="4.079000"/>
+            <atom id="a16" elementType="H" x3="-5.354000" y3="2.494000" z3="2.640000"/>
+            <atom id="a17" elementType="H" x3="-6.865000" y3="1.665000" z3="3.054000"/>
+            <atom id="a18" elementType="C" x3="-1.495000" y3="1.618000" z3="1.317000"/>
+            <atom id="a19" elementType="H" x3="-2.374000" y3="2.270000" z3="1.255000"/>
+            <atom id="a20" elementType="H" x3="-0.640000" y3="2.251000" z3="1.580000"/>
+            <atom id="a21" elementType="H" x3="-1.656000" y3="0.916000" z3="2.144000"/>
+            <atom id="a22" elementType="C" x3="-1.263000" y3="0.865000" z3="0.000000"/>
+            <atom id="a23" elementType="H" x3="-2.137000" y3="0.230000" z3="-0.203000"/>
+            <atom id="a24" elementType="H" x3="-1.201000" y3="1.579000" z3="-0.834000"/>
+            <atom id="a25" elementType="C" x3="0.000000" y3="0.000000" z3="0.000000"/>
+            <atom id="a26" elementType="C" x3="1.257000" y3="0.861000" z3="0.000000"/>
+            <atom id="a27" elementType="H" x3="1.318000" y3="1.510000" z3="0.880000"/>
+            <atom id="a28" elementType="H" x3="2.163000" y3="0.242000" z3="-0.016000"/>
+            <atom id="a29" elementType="H" x3="1.280000" y3="1.504000" z3="-0.891000"/>
+            <atom id="a30" elementType="H" x3="-0.005000" y3="-0.625000" z3="0.905000"/>
+            <atom id="a31" elementType="C" x3="-0.001000" y3="-0.931000" z3="-1.229000"/>
+            <atom id="a32" elementType="H" x3="-0.048000" y3="-0.344000" z3="-2.155000"/>
+            <atom id="a33" elementType="H" x3="0.906000" y3="-1.547000" z3="-1.267000"/>
+            <atom id="a34" elementType="H" x3="-0.867000" y3="-1.604000" z3="-1.216000"/>
+          </atomArray>
+          <bondArray>
+            <bond atomRefs2="a32 a31" order="1"/>
+            <bond atomRefs2="a33 a31" order="1"/>
+            <bond atomRefs2="a31 a34" order="1"/>
+            <bond atomRefs2="a31 a25" order="1"/>
+            <bond atomRefs2="a29 a26" order="1"/>
+            <bond atomRefs2="a24 a22" order="1"/>
+            <bond atomRefs2="a23 a22" order="1"/>
+            <bond atomRefs2="a28 a26" order="1"/>
+            <bond atomRefs2="a22 a25" order="1"/>
+            <bond atomRefs2="a22 a18" order="1"/>
+            <bond atomRefs2="a25 a26" order="1"/>
+            <bond atomRefs2="a25 a30" order="1"/>
+            <bond atomRefs2="a26 a27" order="1"/>
+            <bond atomRefs2="a12 a9" order="1"/>
+            <bond atomRefs2="a11 a9" order="1"/>
+            <bond atomRefs2="a10 a9" order="1"/>
+            <bond atomRefs2="a9 a8" order="1"/>
+            <bond atomRefs2="a4 a1" order="1"/>
+            <bond atomRefs2="a19 a18" order="1"/>
+            <bond atomRefs2="a18 a20" order="1"/>
+            <bond atomRefs2="a18 a21" order="1"/>
+            <bond atomRefs2="a3 a1" order="1"/>
+            <bond atomRefs2="a1 a2" order="1"/>
+            <bond atomRefs2="a1 a5" order="1"/>
+            <bond atomRefs2="a8 a13" order="1"/>
+            <bond atomRefs2="a8 a5" order="1"/>
+            <bond atomRefs2="a8 a14" order="1"/>
+            <bond atomRefs2="a16 a14" order="1"/>
+            <bond atomRefs2="a6 a5" order="1"/>
+            <bond atomRefs2="a5 a7" order="1"/>
+            <bond atomRefs2="a14 a17" order="1"/>
+            <bond atomRefs2="a14 a15" order="1"/>
+          </bondArray>
+        </Molecule>
+      </Molecules>
+      <Methods>
+        <Method Hamiltonian="AMBER_ff03" CategoryOfHamiltonian="forcefield" Basis="nobasis" CategoryOfBasis="unclassified" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-1.36"/>
+        </Method>
+        <Method Hamiltonian="CCSD(T)" CategoryOfHamiltonian="wavefunction" Basis="CBS" CategoryOfBasis="unclassified" CounterpoiseCorrection="CP">
+          <Result CalculatedValue="-1.39"/>
+        </Method>
+        <Method Hamiltonian="TPSS" CategoryOfHamiltonian="meta-GGA" Basis="TZVP" CategoryOfBasis="Ahlrichs" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="0.06"/>
+        </Method>
+        <Method Hamiltonian="TPSS-D" CategoryOfHamiltonian="hybrid-GGA" Basis="TZVP" CategoryOfBasis="Ahlrichs" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-1.68"/>
+        </Method>
+        <Method Hamiltonian="DFT-SAPT PBE0AC" CategoryOfHamiltonian="undefined" Basis="aug-cc-pVDZ" CategoryOfBasis="Dunnings" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-0.04"/>
+        </Method>
+        <Method Hamiltonian="DFT-SAPT PBE0AC" CategoryOfHamiltonian="undefined" Basis="aug-cc-pVDZ" CategoryOfBasis="Dunnings" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-1.29"/>
+        </Method>
+        <Method Hamiltonian="OPLS-AA" CategoryOfHamiltonian="forcefield" Basis="L" CategoryOfBasis="unclassified" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-1.19"/>
+        </Method>
+        <Method Hamiltonian="RI-TPSS-D" CategoryOfHamiltonian="meta-GGA" Basis="TZVP" CategoryOfBasis="Ahlrichs" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-1.7"/>
+        </Method>
+        <Method Hamiltonian="RI-MP2" CategoryOfHamiltonian="wavefunction" Basis="aug-cc-pVDZ" CategoryOfBasis="Dunnings" CounterpoiseCorrection="CP">
+          <Result CalculatedValue="-1.28"/>
+        </Method>
+        <Method Hamiltonian="RI-MP2" CategoryOfHamiltonian="wavefunction" Basis="aug-cc-pVTZ" CategoryOfBasis="Dunnings" CounterpoiseCorrection="CP">
+          <Result CalculatedValue="-1.35"/>
+        </Method>
+        <Method Hamiltonian="SCS-MI-MP2" CategoryOfHamiltonian="wavefunction" Basis="cc-pVTZ" CategoryOfBasis="Dunnings" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-1.12"/>
+        </Method>
+      </Methods>
+      <ReferenceResult>
+        <ReferenceMethod Hamiltonian="CCSD(T)" CategoryOfHamiltonian="wavefunction" Basis="CBS" CategoryOfBasis="unclassified" CounterpoiseCorrection="CP"/>
+        <ReferenceValue Value="-1.39"/>
+      </ReferenceResult>
+    </System>
+    <System Name="KEN1">
+      <Molecules>
+        <Molecule Name="KEN1" SmileString="CCCC(=O)O.CCCCCN">
+          <atomArray>
+            <atom id="a1" elementType="C" x3="-1.377000" y3="1.319000" z3="-4.536000"/>
+            <atom id="a2" elementType="C" x3="-0.721000" y3="2.563000" z3="-5.169000"/>
+            <atom id="a3" elementType="C" x3="0.807000" y3="2.643000" z3="-4.936000"/>
+            <atom id="a4" elementType="C" x3="1.201000" y3="2.448000" z3="-3.441000"/>
+            <atom id="a5" elementType="O" x3="0.875000" y3="3.342000" z3="-2.601000"/>
+            <atom id="a6" elementType="O" x3="1.831000" y3="1.395000" z3="-3.113000"/>
+            <atom id="a7" elementType="H" x3="-0.930000" y3="0.393000" z3="-4.915000"/>
+            <atom id="a8" elementType="H" x3="-1.263000" y3="1.333000" z3="-3.447000"/>
+            <atom id="a9" elementType="H" x3="-2.449000" y3="1.293000" z3="-4.760000"/>
+            <atom id="a10" elementType="H" x3="-0.898000" y3="2.578000" z3="-6.251000"/>
+            <atom id="a11" elementType="H" x3="-1.183000" y3="3.462000" z3="-4.748000"/>
+            <atom id="a12" elementType="H" x3="1.320000" y3="1.889000" z3="-5.545000"/>
+            <atom id="a13" elementType="H" x3="1.174000" y3="3.631000" z3="-5.225000"/>
+            <atom id="a14" elementType="H" x3="1.848000" y3="1.340000" z3="-2.110000"/>
+            <atom id="a15" elementType="C" x3="-5.067000" y3="0.171000" z3="-0.707000"/>
+            <atom id="a16" elementType="H" x3="-5.905000" y3="0.870000" z3="-0.796000"/>
+            <atom id="a17" elementType="H" x3="-5.331000" y3="-0.578000" z3="0.049000"/>
+            <atom id="a18" elementType="H" x3="-4.957000" y3="-0.347000" z3="-1.667000"/>
+            <atom id="a19" elementType="C" x3="-3.765000" y3="0.913000" z3="-0.329000"/>
+            <atom id="a20" elementType="H" x3="-3.554000" y3="1.666000" z3="-1.100000"/>
+            <atom id="a21" elementType="H" x3="-3.923000" y3="1.468000" z3="0.606000"/>
+            <atom id="a22" elementType="C" x3="-2.537000" y3="0.012000" z3="-0.178000"/>
+            <atom id="a23" elementType="H" x3="-2.663000" y3="-0.668000" z3="0.675000"/>
+            <atom id="a24" elementType="H" x3="-2.428000" y3="-0.616000" z3="-1.074000"/>
+            <atom id="a25" elementType="C" x3="-1.265000" y3="0.863000" z3="0.000000"/>
+            <atom id="a26" elementType="H" x3="-1.196000" y3="1.599000" z3="-0.811000"/>
+            <atom id="a27" elementType="H" x3="-1.324000" y3="1.427000" z3="0.941000"/>
+            <atom id="a28" elementType="C" x3="0.000000" y3="0.000000" z3="0.000000"/>
+            <atom id="a29" elementType="H" x3="-0.019000" y3="-0.674000" z3="0.869000"/>
+            <atom id="a30" elementType="H" x3="0.023000" y3="-0.625000" z3="-0.901000"/>
+            <atom id="a31" elementType="N" x3="1.245000" y3="0.851000" z3="0.000000"/>
+            <atom id="a32" elementType="H" x3="1.995000" y3="0.379000" z3="0.504000"/>
+            <atom id="a33" elementType="H" x3="1.065000" y3="1.729000" z3="0.487000"/>
+          </atomArray>
+          <bondArray>
+            <bond atomRefs2="a10 a2" order="1"/>
+            <bond atomRefs2="a12 a3" order="1"/>
+            <bond atomRefs2="a13 a3" order="1"/>
+            <bond atomRefs2="a2 a3" order="1"/>
+            <bond atomRefs2="a2 a11" order="1"/>
+            <bond atomRefs2="a2 a1" order="1"/>
+            <bond atomRefs2="a3 a4" order="1"/>
+            <bond atomRefs2="a7 a1" order="1"/>
+            <bond atomRefs2="a9 a1" order="1"/>
+            <bond atomRefs2="a1 a8" order="1"/>
+            <bond atomRefs2="a4 a6" order="1"/>
+            <bond atomRefs2="a4 a5" order="2"/>
+            <bond atomRefs2="a6 a14" order="1"/>
+            <bond atomRefs2="a18 a15" order="1"/>
+            <bond atomRefs2="a20 a19" order="1"/>
+            <bond atomRefs2="a24 a22" order="1"/>
+            <bond atomRefs2="a30 a28" order="1"/>
+            <bond atomRefs2="a26 a25" order="1"/>
+            <bond atomRefs2="a16 a15" order="1"/>
+            <bond atomRefs2="a15 a19" order="1"/>
+            <bond atomRefs2="a15 a17" order="1"/>
+            <bond atomRefs2="a19 a22" order="1"/>
+            <bond atomRefs2="a19 a21" order="1"/>
+            <bond atomRefs2="a22 a25" order="1"/>
+            <bond atomRefs2="a22 a23" order="1"/>
+            <bond atomRefs2="a31 a28" order="1"/>
+            <bond atomRefs2="a31 a33" order="1"/>
+            <bond atomRefs2="a31 a32" order="1"/>
+            <bond atomRefs2="a28 a25" order="1"/>
+            <bond atomRefs2="a28 a29" order="1"/>
+            <bond atomRefs2="a25 a27" order="1"/>
+          </bondArray>
+        </Molecule>
+      </Molecules>
+      <Methods>
+        <Method Hamiltonian="AMBER_ff03" CategoryOfHamiltonian="forcefield" Basis="nobasis" CategoryOfBasis="unclassified" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-9.11"/>
+        </Method>
+        <Method Hamiltonian="CCSD(T)" CategoryOfHamiltonian="wavefunction" Basis="CBS" CategoryOfBasis="unclassified" CounterpoiseCorrection="CP">
+          <Result CalculatedValue="-10.76"/>
+        </Method>
+        <Method Hamiltonian="TPSS" CategoryOfHamiltonian="meta-GGA" Basis="TZVP" CategoryOfBasis="Ahlrichs" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-9.81"/>
+        </Method>
+        <Method Hamiltonian="TPSS-D" CategoryOfHamiltonian="hybrid-GGA" Basis="TZVP" CategoryOfBasis="Ahlrichs" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-12.6"/>
+        </Method>
+        <Method Hamiltonian="DFT-SAPT PBE0AC" CategoryOfHamiltonian="undefined" Basis="aug-cc-pVDZ" CategoryOfBasis="Dunnings" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-1.09"/>
+        </Method>
+        <Method Hamiltonian="DFT-SAPT PBE0AC" CategoryOfHamiltonian="undefined" Basis="aug-cc-pVDZ" CategoryOfBasis="Dunnings" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-9.87"/>
+        </Method>
+        <Method Hamiltonian="OPLS-AA" CategoryOfHamiltonian="forcefield" Basis="L" CategoryOfBasis="unclassified" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-8.8"/>
+        </Method>
+        <Method Hamiltonian="RI-TPSS-D" CategoryOfHamiltonian="meta-GGA" Basis="TZVP" CategoryOfBasis="Ahlrichs" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-12.51"/>
+        </Method>
+        <Method Hamiltonian="RI-MP2" CategoryOfHamiltonian="wavefunction" Basis="aug-cc-pVDZ" CategoryOfBasis="Dunnings" CounterpoiseCorrection="CP">
+          <Result CalculatedValue="-10.36"/>
+        </Method>
+        <Method Hamiltonian="RI-MP2" CategoryOfHamiltonian="wavefunction" Basis="aug-cc-pVTZ" CategoryOfBasis="Dunnings" CounterpoiseCorrection="CP">
+          <Result CalculatedValue="-10.65"/>
+        </Method>
+        <Method Hamiltonian="SCS-MI-MP2" CategoryOfHamiltonian="wavefunction" Basis="cc-pVTZ" CategoryOfBasis="Dunnings" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-10.5"/>
+        </Method>
+      </Methods>
+      <ReferenceResult>
+        <ReferenceMethod Hamiltonian="CCSD(T)" CategoryOfHamiltonian="wavefunction" Basis="CBS" CategoryOfBasis="unclassified" CounterpoiseCorrection="CP"/>
+        <ReferenceValue Value="-10.76"/>
+      </ReferenceResult>
+    </System>
+    <System Name="KE1">
+      <Molecules>
+        <Molecule Name="KE1" SmileString="CCCC(=O)[O].CCCCC[NH3]">
+          <atomArray>
+            <atom id="a1" elementType="C" x3="-1.372000" y3="1.314000" z3="-4.514000"/>
+            <atom id="a2" elementType="H" x3="-0.928000" y3="0.389000" z3="-4.902000"/>
+            <atom id="a3" elementType="C" x3="-0.717000" y3="2.551000" z3="-5.145000"/>
+            <atom id="a4" elementType="H" x3="-0.914000" y3="2.564000" z3="-6.225000"/>
+            <atom id="a5" elementType="H" x3="-1.180000" y3="3.453000" z3="-4.723000"/>
+            <atom id="a6" elementType="C" x3="0.804000" y3="2.631000" z3="-4.913000"/>
+            <atom id="a7" elementType="H" x3="1.314000" y3="1.865000" z3="-5.508000"/>
+            <atom id="a8" elementType="H" x3="1.161000" y3="3.615000" z3="-5.236000"/>
+            <atom id="a9" elementType="C" x3="1.196000" y3="2.436000" z3="-3.426000"/>
+            <atom id="a10" elementType="O" x3="0.871000" y3="3.327000" z3="-2.589000"/>
+            <atom id="a11" elementType="O" x3="1.823000" y3="1.389000" z3="-3.098000"/>
+            <atom id="a12" elementType="H" x3="-1.228000" y3="1.321000" z3="-3.428000"/>
+            <atom id="a13" elementType="H" x3="-2.450000" y3="1.288000" z3="-4.716000"/>
+            <atom id="a14" elementType="C" x3="-5.043000" y3="0.170000" z3="-0.704000"/>
+            <atom id="a15" elementType="H" x3="-5.876000" y3="0.874000" z3="-0.794000"/>
+            <atom id="a16" elementType="H" x3="-5.311000" y3="-0.578000" z3="0.052000"/>
+            <atom id="a17" elementType="H" x3="-4.933000" y3="-0.346000" z3="-1.665000"/>
+            <atom id="a18" elementType="C" x3="-3.748000" y3="0.909000" z3="-0.327000"/>
+            <atom id="a19" elementType="H" x3="-3.534000" y3="1.659000" z3="-1.100000"/>
+            <atom id="a20" elementType="H" x3="-3.905000" y3="1.468000" z3="0.606000"/>
+            <atom id="a21" elementType="C" x3="-2.526000" y3="0.012000" z3="-0.178000"/>
+            <atom id="a22" elementType="H" x3="-2.652000" y3="-0.678000" z3="0.668000"/>
+            <atom id="a23" elementType="H" x3="-2.416000" y3="-0.606000" z3="-1.080000"/>
+            <atom id="a24" elementType="C" x3="-1.260000" y3="0.860000" z3="0.000000"/>
+            <atom id="a25" elementType="H" x3="-1.187000" y3="1.587000" z3="-0.819000"/>
+            <atom id="a26" elementType="H" x3="-1.319000" y3="1.430000" z3="0.938000"/>
+            <atom id="a27" elementType="C" x3="0.000000" y3="0.000000" z3="0.000000"/>
+            <atom id="a28" elementType="H" x3="0.044000" y3="-0.652000" z3="0.878000"/>
+            <atom id="a29" elementType="H" x3="0.060000" y3="-0.613000" z3="-0.903000"/>
+            <atom id="a30" elementType="N" x3="1.240000" y3="0.847000" z3="0.000000"/>
+            <atom id="a31" elementType="H" x3="1.149000" y3="1.671000" z3="0.604000"/>
+            <atom id="a32" elementType="H" x3="2.074000" y3="0.322000" z3="0.279000"/>
+            <atom id="a33" elementType="H" x3="1.438000" y3="1.216000" z3="-1.012000"/>
+          </atomArray>
+          <bondArray>
+            <bond atomRefs2="a4 a3" order="1"/>
+            <bond atomRefs2="a7 a6" order="1"/>
+            <bond atomRefs2="a8 a6" order="1"/>
+            <bond atomRefs2="a3 a6" order="1"/>
+            <bond atomRefs2="a3 a5" order="1"/>
+            <bond atomRefs2="a3 a1" order="1"/>
+            <bond atomRefs2="a6 a9" order="1"/>
+            <bond atomRefs2="a2 a1" order="1"/>
+            <bond atomRefs2="a13 a1" order="1"/>
+            <bond atomRefs2="a1 a12" order="1"/>
+            <bond atomRefs2="a9 a11" order="2"/>
+            <bond atomRefs2="a9 a10" order="1"/>
+            <bond atomRefs2="a17 a14" order="1"/>
+            <bond atomRefs2="a19 a18" order="1"/>
+            <bond atomRefs2="a23 a21" order="1"/>
+            <bond atomRefs2="a33 a30" order="1"/>
+            <bond atomRefs2="a29 a27" order="1"/>
+            <bond atomRefs2="a25 a24" order="1"/>
+            <bond atomRefs2="a15 a14" order="1"/>
+            <bond atomRefs2="a14 a18" order="1"/>
+            <bond atomRefs2="a14 a16" order="1"/>
+            <bond atomRefs2="a18 a21" order="1"/>
+            <bond atomRefs2="a18 a20" order="1"/>
+            <bond atomRefs2="a21 a24" order="1"/>
+            <bond atomRefs2="a21 a22" order="1"/>
+            <bond atomRefs2="a24 a27" order="1"/>
+            <bond atomRefs2="a24 a26" order="1"/>
+            <bond atomRefs2="a27 a30" order="1"/>
+            <bond atomRefs2="a27 a28" order="1"/>
+            <bond atomRefs2="a30 a32" order="1"/>
+            <bond atomRefs2="a30 a31" order="1"/>
+          </bondArray>
+        </Molecule>
+      </Molecules>
+      <Methods>
+        <Method Hamiltonian="AMBER_ff03" CategoryOfHamiltonian="forcefield" Basis="nobasis" CategoryOfBasis="unclassified" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-103.57"/>
+        </Method>
+        <Method Hamiltonian="CCSD(T)" CategoryOfHamiltonian="wavefunction" Basis="CBS" CategoryOfBasis="unclassified" CounterpoiseCorrection="CP">
+          <Result CalculatedValue="-108.4"/>
+        </Method>
+        <Method Hamiltonian="TPSS" CategoryOfHamiltonian="meta-GGA" Basis="TZVP" CategoryOfBasis="Ahlrichs" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-108.27"/>
+        </Method>
+        <Method Hamiltonian="TPSS-D" CategoryOfHamiltonian="hybrid-GGA" Basis="TZVP" CategoryOfBasis="Ahlrichs" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-110.9"/>
+        </Method>
+        <Method Hamiltonian="DFT-SAPT PBE0AC" CategoryOfHamiltonian="undefined" Basis="aug-cc-pVDZ" CategoryOfBasis="Dunnings" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-3.16"/>
+        </Method>
+        <Method Hamiltonian="DFT-SAPT PBE0AC" CategoryOfHamiltonian="undefined" Basis="aug-cc-pVDZ" CategoryOfBasis="Dunnings" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-105.78"/>
+        </Method>
+        <Method Hamiltonian="OPLS-AA" CategoryOfHamiltonian="forcefield" Basis="L" CategoryOfBasis="unclassified" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-106.02"/>
+        </Method>
+        <Method Hamiltonian="RI-TPSS-D" CategoryOfHamiltonian="meta-GGA" Basis="TZVP" CategoryOfBasis="Ahlrichs" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-110.86"/>
+        </Method>
+        <Method Hamiltonian="RI-MP2" CategoryOfHamiltonian="wavefunction" Basis="aug-cc-pVDZ" CategoryOfBasis="Dunnings" CounterpoiseCorrection="CP">
+          <Result CalculatedValue="-107.36"/>
+        </Method>
+        <Method Hamiltonian="RI-MP2" CategoryOfHamiltonian="wavefunction" Basis="aug-cc-pVTZ" CategoryOfBasis="Dunnings" CounterpoiseCorrection="CP">
+          <Result CalculatedValue="-107.75"/>
+        </Method>
+        <Method Hamiltonian="SCS-MI-MP2" CategoryOfHamiltonian="wavefunction" Basis="cc-pVTZ" CategoryOfBasis="Dunnings" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-105.64"/>
+        </Method>
+      </Methods>
+      <ReferenceResult>
+        <ReferenceMethod Hamiltonian="CCSD(T)" CategoryOfHamiltonian="wavefunction" Basis="CBS" CategoryOfBasis="unclassified" CounterpoiseCorrection="CP"/>
+        <ReferenceValue Value="-108.4"/>
+      </ReferenceResult>
+    </System>
+    <System Name="LG1">
+      <Molecules>
+        <Molecule Name="LG1" SmileString="C.CCC(C)C">
+          <atomArray>
+            <atom id="a1" elementType="C" x3="-3.397000" y3="-3.032000" z3="-0.542000"/>
+            <atom id="a2" elementType="H" x3="-2.304000" y3="-3.035000" z3="-0.548000"/>
+            <atom id="a3" elementType="H" x3="-3.762000" y3="-2.002000" z3="-0.543000"/>
+            <atom id="a4" elementType="H" x3="-3.768000" y3="-3.550000" z3="-1.430000"/>
+            <atom id="a5" elementType="H" x3="-3.759000" y3="-3.546000" z3="0.353000"/>
+            <atom id="a6" elementType="C" x3="1.273000" y3="-1.821000" z3="1.299000"/>
+            <atom id="a7" elementType="H" x3="1.238000" y3="-2.434000" z3="2.208000"/>
+            <atom id="a8" elementType="H" x3="2.227000" y3="-1.284000" z3="1.308000"/>
+            <atom id="a9" elementType="H" x3="1.282000" y3="-2.502000" z3="0.438000"/>
+            <atom id="a10" elementType="C" x3="0.077000" y3="-0.874000" z3="1.244000"/>
+            <atom id="a11" elementType="H" x3="-0.845000" y3="-1.468000" z3="1.335000"/>
+            <atom id="a12" elementType="H" x3="0.095000" y3="-0.212000" z3="2.123000"/>
+            <atom id="a13" elementType="C" x3="0.000000" y3="0.000000" z3="0.000000"/>
+            <atom id="a14" elementType="C" x3="-1.204000" y3="0.893000" z3="0.000000"/>
+            <atom id="a15" elementType="H" x3="-1.192000" y3="1.554000" z3="0.876000"/>
+            <atom id="a16" elementType="H" x3="-1.229000" y3="1.531000" z3="-0.891000"/>
+            <atom id="a17" elementType="H" x3="-2.147000" y3="0.330000" z3="0.030000"/>
+            <atom id="a18" elementType="H" x3="-0.002000" y3="-0.640000" z3="-0.896000"/>
+            <atom id="a19" elementType="C" x3="1.206000" y3="0.895000" z3="0.000000"/>
+            <atom id="a20" elementType="H" x3="2.155000" y3="0.351000" z3="-0.064000"/>
+            <atom id="a21" elementType="H" x3="1.187000" y3="1.603000" z3="-0.840000"/>
+            <atom id="a22" elementType="H" x3="1.228000" y3="1.490000" z3="0.923000"/>
+          </atomArray>
+          <bondArray>
+            <bond atomRefs2="a4 a1" order="1"/>
+            <bond atomRefs2="a18 a13" order="1"/>
+            <bond atomRefs2="a16 a14" order="1"/>
+            <bond atomRefs2="a21 a19" order="1"/>
+            <bond atomRefs2="a2 a1" order="1"/>
+            <bond atomRefs2="a3 a1" order="1"/>
+            <bond atomRefs2="a1 a5" order="1"/>
+            <bond atomRefs2="a20 a19" order="1"/>
+            <bond atomRefs2="a19 a13" order="1"/>
+            <bond atomRefs2="a19 a22" order="1"/>
+            <bond atomRefs2="a13 a14" order="1"/>
+            <bond atomRefs2="a13 a10" order="1"/>
+            <bond atomRefs2="a14 a17" order="1"/>
+            <bond atomRefs2="a14 a15" order="1"/>
+            <bond atomRefs2="a9 a6" order="1"/>
+            <bond atomRefs2="a10 a6" order="1"/>
+            <bond atomRefs2="a10 a11" order="1"/>
+            <bond atomRefs2="a10 a12" order="1"/>
+            <bond atomRefs2="a6 a8" order="1"/>
+            <bond atomRefs2="a6 a7" order="1"/>
+          </bondArray>
+        </Molecule>
+      </Molecules>
+      <Methods>
+        <Method Hamiltonian="AMBER_ff03" CategoryOfHamiltonian="forcefield" Basis="nobasis" CategoryOfBasis="unclassified" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-0.63"/>
+        </Method>
+        <Method Hamiltonian="CCSD(T)" CategoryOfHamiltonian="wavefunction" Basis="CBS" CategoryOfBasis="unclassified" CounterpoiseCorrection="CP">
+          <Result CalculatedValue="-0.77"/>
+        </Method>
+        <Method Hamiltonian="TPSS" CategoryOfHamiltonian="meta-GGA" Basis="TZVP" CategoryOfBasis="Ahlrichs" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-0.09"/>
+        </Method>
+        <Method Hamiltonian="TPSS-D" CategoryOfHamiltonian="hybrid-GGA" Basis="TZVP" CategoryOfBasis="Ahlrichs" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-1.02"/>
+        </Method>
+        <Method Hamiltonian="DFT-SAPT PBE0AC" CategoryOfHamiltonian="undefined" Basis="aug-cc-pVDZ" CategoryOfBasis="Dunnings" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-0.02"/>
+        </Method>
+        <Method Hamiltonian="DFT-SAPT PBE0AC" CategoryOfHamiltonian="undefined" Basis="aug-cc-pVDZ" CategoryOfBasis="Dunnings" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-0.71"/>
+        </Method>
+        <Method Hamiltonian="OPLS-AA" CategoryOfHamiltonian="forcefield" Basis="L" CategoryOfBasis="unclassified" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-0.75"/>
+        </Method>
+        <Method Hamiltonian="RI-TPSS-D" CategoryOfHamiltonian="meta-GGA" Basis="TZVP" CategoryOfBasis="Ahlrichs" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-1"/>
+        </Method>
+        <Method Hamiltonian="RI-MP2" CategoryOfHamiltonian="wavefunction" Basis="aug-cc-pVDZ" CategoryOfBasis="Dunnings" CounterpoiseCorrection="CP">
+          <Result CalculatedValue="-0.66"/>
+        </Method>
+        <Method Hamiltonian="RI-MP2" CategoryOfHamiltonian="wavefunction" Basis="aug-cc-pVTZ" CategoryOfBasis="Dunnings" CounterpoiseCorrection="CP">
+          <Result CalculatedValue="-0.71"/>
+        </Method>
+        <Method Hamiltonian="SCS-MI-MP2" CategoryOfHamiltonian="wavefunction" Basis="cc-pVTZ" CategoryOfBasis="Dunnings" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-0.56"/>
+        </Method>
+      </Methods>
+      <ReferenceResult>
+        <ReferenceMethod Hamiltonian="CCSD(T)" CategoryOfHamiltonian="wavefunction" Basis="CBS" CategoryOfBasis="unclassified" CounterpoiseCorrection="CP"/>
+        <ReferenceValue Value="-0.77"/>
+      </ReferenceResult>
+    </System>
+    <System Name="LL1">
+      <Molecules>
+        <Molecule Name="LL1" SmileString="CCC(C)C.CCC(C)C">
+          <atomArray>
+            <atom id="a1" elementType="C" x3="-2.075000" y3="-2.672000" z3="-4.117000"/>
+            <atom id="a2" elementType="C" x3="-2.743000" y3="-1.422000" z3="-4.703000"/>
+            <atom id="a3" elementType="C" x3="-2.224000" y3="-0.097000" z3="-4.044000"/>
+            <atom id="a4" elementType="C" x3="-0.733000" y3="0.174000" z3="-4.262000"/>
+            <atom id="a5" elementType="C" x3="-3.080000" y3="1.072000" z3="-4.435000"/>
+            <atom id="a6" elementType="H" x3="-2.501000" y3="-3.587000" z3="-4.540000"/>
+            <atom id="a7" elementType="H" x3="-2.213000" y3="-2.711000" z3="-3.029000"/>
+            <atom id="a8" elementType="H" x3="-0.998000" y3="-2.687000" z3="-4.320000"/>
+            <atom id="a9" elementType="H" x3="-0.503000" y3="0.295000" z3="-5.329000"/>
+            <atom id="a10" elementType="H" x3="-0.432000" y3="1.097000" z3="-3.752000"/>
+            <atom id="a11" elementType="H" x3="-0.109000" y3="-0.638000" z3="-3.874000"/>
+            <atom id="a12" elementType="H" x3="-4.136000" y3="0.888000" z3="-4.203000"/>
+            <atom id="a13" elementType="H" x3="-2.779000" y3="1.986000" z3="-3.909000"/>
+            <atom id="a14" elementType="H" x3="-3.013000" y3="1.280000" z3="-5.512000"/>
+            <atom id="a15" elementType="H" x3="-2.359000" y3="-0.244000" z3="-2.960000"/>
+            <atom id="a16" elementType="H" x3="-3.828000" y3="-1.475000" z3="-4.546000"/>
+            <atom id="a17" elementType="H" x3="-2.579000" y3="-1.378000" z3="-5.789000"/>
+            <atom id="a18" elementType="C" x3="1.141000" y3="-1.914000" z3="1.277000"/>
+            <atom id="a19" elementType="C" x3="-0.032000" y3="-0.921000" z3="1.228000"/>
+            <atom id="a20" elementType="C" x3="0.000000" y3="0.000000" z3="0.000000"/>
+            <atom id="a21" elementType="C" x3="-1.241000" y3="0.877000" z3="0.000000"/>
+            <atom id="a22" elementType="C" x3="1.295000" y3="0.915000" z3="0.000000"/>
+            <atom id="a23" elementType="H" x3="1.061000" y3="-2.578000" z3="2.146000"/>
+            <atom id="a24" elementType="H" x3="2.104000" y3="-1.399000" z3="1.344000"/>
+            <atom id="a25" elementType="H" x3="1.157000" y3="-2.543000" z3="0.379000"/>
+            <atom id="a26" elementType="H" x3="-1.267000" y3="1.511000" z3="0.896000"/>
+            <atom id="a27" elementType="H" x3="-1.275000" y3="1.539000" z3="-0.874000"/>
+            <atom id="a28" elementType="H" x3="-2.158000" y3="0.273000" z3="-0.003000"/>
+            <atom id="a29" elementType="H" x3="2.211000" y3="0.321000" z3="-0.070000"/>
+            <atom id="a30" elementType="H" x3="1.272000" y3="1.604000" z3="-0.851000"/>
+            <atom id="a31" elementType="H" x3="1.332000" y3="1.507000" z3="0.923000"/>
+            <atom id="a32" elementType="H" x3="0.017000" y3="-0.617000" z3="-0.909000"/>
+            <atom id="a33" elementType="H" x3="-0.032000" y3="-0.302000" z3="2.137000"/>
+            <atom id="a34" elementType="H" x3="-0.979000" y3="-1.478000" z3="1.230000"/>
+          </atomArray>
+          <bondArray>
+            <bond atomRefs2="a17 a2" order="1"/>
+            <bond atomRefs2="a14 a5" order="1"/>
+            <bond atomRefs2="a9 a4" order="1"/>
+            <bond atomRefs2="a2 a16" order="1"/>
+            <bond atomRefs2="a2 a1" order="1"/>
+            <bond atomRefs2="a2 a3" order="1"/>
+            <bond atomRefs2="a6 a1" order="1"/>
+            <bond atomRefs2="a5 a12" order="1"/>
+            <bond atomRefs2="a5 a3" order="1"/>
+            <bond atomRefs2="a5 a13" order="1"/>
+            <bond atomRefs2="a8 a1" order="1"/>
+            <bond atomRefs2="a4 a3" order="1"/>
+            <bond atomRefs2="a4 a11" order="1"/>
+            <bond atomRefs2="a4 a10" order="1"/>
+            <bond atomRefs2="a1 a7" order="1"/>
+            <bond atomRefs2="a3 a15" order="1"/>
+            <bond atomRefs2="a32 a20" order="1"/>
+            <bond atomRefs2="a27 a21" order="1"/>
+            <bond atomRefs2="a30 a22" order="1"/>
+            <bond atomRefs2="a29 a22" order="1"/>
+            <bond atomRefs2="a28 a21" order="1"/>
+            <bond atomRefs2="a21 a20" order="1"/>
+            <bond atomRefs2="a21 a26" order="1"/>
+            <bond atomRefs2="a22 a20" order="1"/>
+            <bond atomRefs2="a22 a31" order="1"/>
+            <bond atomRefs2="a20 a19" order="1"/>
+            <bond atomRefs2="a25 a18" order="1"/>
+            <bond atomRefs2="a19 a34" order="1"/>
+            <bond atomRefs2="a19 a18" order="1"/>
+            <bond atomRefs2="a19 a33" order="1"/>
+            <bond atomRefs2="a18 a24" order="1"/>
+            <bond atomRefs2="a18 a23" order="1"/>
+          </bondArray>
+        </Molecule>
+      </Molecules>
+      <Methods>
+        <Method Hamiltonian="AMBER_ff03" CategoryOfHamiltonian="forcefield" Basis="nobasis" CategoryOfBasis="unclassified" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-1.56"/>
+        </Method>
+        <Method Hamiltonian="CCSD(T)" CategoryOfHamiltonian="wavefunction" Basis="CBS" CategoryOfBasis="unclassified" CounterpoiseCorrection="CP">
+          <Result CalculatedValue="-1.62"/>
+        </Method>
+        <Method Hamiltonian="TPSS" CategoryOfHamiltonian="meta-GGA" Basis="TZVP" CategoryOfBasis="Ahlrichs" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="0"/>
+        </Method>
+        <Method Hamiltonian="TPSS-D" CategoryOfHamiltonian="hybrid-GGA" Basis="TZVP" CategoryOfBasis="Ahlrichs" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-1.93"/>
+        </Method>
+        <Method Hamiltonian="DFT-SAPT PBE0AC" CategoryOfHamiltonian="undefined" Basis="aug-cc-pVDZ" CategoryOfBasis="Dunnings" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-0.03"/>
+        </Method>
+        <Method Hamiltonian="DFT-SAPT PBE0AC" CategoryOfHamiltonian="undefined" Basis="aug-cc-pVDZ" CategoryOfBasis="Dunnings" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-1.52"/>
+        </Method>
+        <Method Hamiltonian="OPLS-AA" CategoryOfHamiltonian="forcefield" Basis="L" CategoryOfBasis="unclassified" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-1.4"/>
+        </Method>
+        <Method Hamiltonian="RI-TPSS-D" CategoryOfHamiltonian="meta-GGA" Basis="TZVP" CategoryOfBasis="Ahlrichs" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-1.96"/>
+        </Method>
+        <Method Hamiltonian="RI-MP2" CategoryOfHamiltonian="wavefunction" Basis="aug-cc-pVDZ" CategoryOfBasis="Dunnings" CounterpoiseCorrection="CP">
+          <Result CalculatedValue="-1.54"/>
+        </Method>
+        <Method Hamiltonian="RI-MP2" CategoryOfHamiltonian="wavefunction" Basis="aug-cc-pVTZ" CategoryOfBasis="Dunnings" CounterpoiseCorrection="CP">
+          <Result CalculatedValue="-1.6"/>
+        </Method>
+        <Method Hamiltonian="SCS-MI-MP2" CategoryOfHamiltonian="wavefunction" Basis="cc-pVTZ" CategoryOfBasis="Dunnings" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-1.36"/>
+        </Method>
+      </Methods>
+      <ReferenceResult>
+        <ReferenceMethod Hamiltonian="CCSD(T)" CategoryOfHamiltonian="wavefunction" Basis="CBS" CategoryOfBasis="unclassified" CounterpoiseCorrection="CP"/>
+        <ReferenceValue Value="-1.62"/>
+      </ReferenceResult>
+    </System>
+    <System Name="LT1">
+      <Molecules>
+        <Molecule Name="LT1" SmileString="CC(O)C.CCC(C)C">
+          <atomArray>
+            <atom id="a1" elementType="C" x3="-2.320000" y3="-2.720000" z3="-3.841000"/>
+            <atom id="a2" elementType="H" x3="-1.237000" y3="-2.804000" z3="-3.983000"/>
+            <atom id="a3" elementType="H" x3="-2.542000" y3="-2.742000" z3="-2.770000"/>
+            <atom id="a4" elementType="H" x3="-2.804000" y3="-3.576000" z3="-4.321000"/>
+            <atom id="a5" elementType="C" x3="-2.831000" y3="-1.389000" z3="-4.449000"/>
+            <atom id="a6" elementType="H" x3="-3.921000" y3="-1.328000" z3="-4.286000"/>
+            <atom id="a7" elementType="O" x3="-2.532000" y3="-1.360000" z3="-5.826000"/>
+            <atom id="a8" elementType="H" x3="-2.844000" y3="-0.514000" z3="-6.184000"/>
+            <atom id="a9" elementType="C" x3="-2.137000" y3="-0.195000" z3="-3.832000"/>
+            <atom id="a10" elementType="H" x3="-1.058000" y3="-0.265000" z3="-4.011000"/>
+            <atom id="a11" elementType="H" x3="-2.496000" y3="0.741000" z3="-4.281000"/>
+            <atom id="a12" elementType="H" x3="-2.308000" y3="-0.122000" z3="-2.751000"/>
+            <atom id="a13" elementType="C" x3="1.027000" y3="-2.018000" z3="1.250000"/>
+            <atom id="a14" elementType="H" x3="0.897000" y3="-2.663000" z3="2.127000"/>
+            <atom id="a15" elementType="H" x3="2.034000" y3="-1.589000" z3="1.307000"/>
+            <atom id="a16" elementType="H" x3="0.990000" y3="-2.659000" z3="0.360000"/>
+            <atom id="a17" elementType="C" x3="-0.049000" y3="-0.950000" z3="1.201000"/>
+            <atom id="a18" elementType="H" x3="-1.033000" y3="-1.441000" z3="1.212000"/>
+            <atom id="a19" elementType="H" x3="-0.006000" y3="-0.343000" z3="2.119000"/>
+            <atom id="a20" elementType="C" x3="0.000000" y3="0.000000" z3="0.000000"/>
+            <atom id="a21" elementType="C" x3="-1.264000" y3="0.867000" z3="0.000000"/>
+            <atom id="a22" elementType="H" x3="-1.311000" y3="1.476000" z3="0.912000"/>
+            <atom id="a23" elementType="H" x3="-1.284000" y3="1.551000" z3="-0.857000"/>
+            <atom id="a24" elementType="H" x3="-2.170000" y3="0.251000" z3="-0.037000"/>
+            <atom id="a25" elementType="H" x3="-0.007000" y3="-0.613000" z3="-0.916000"/>
+            <atom id="a26" elementType="C" x3="1.238000" y3="0.849000" z3="0.000000"/>
+            <atom id="a27" elementType="H" x3="2.154000" y3="0.247000" z3="-0.027000"/>
+            <atom id="a28" elementType="H" x3="1.266000" y3="1.520000" z3="-0.868000"/>
+            <atom id="a29" elementType="H" x3="1.282000" y3="1.476000" z3="0.901000"/>
+          </atomArray>
+          <bondArray>
+            <bond atomRefs2="a8 a7" order="1"/>
+            <bond atomRefs2="a7 a5" order="1"/>
+            <bond atomRefs2="a5 a6" order="1"/>
+            <bond atomRefs2="a5 a1" order="1"/>
+            <bond atomRefs2="a5 a9" order="1"/>
+            <bond atomRefs2="a4 a1" order="1"/>
+            <bond atomRefs2="a11 a9" order="1"/>
+            <bond atomRefs2="a10 a9" order="1"/>
+            <bond atomRefs2="a2 a1" order="1"/>
+            <bond atomRefs2="a1 a3" order="1"/>
+            <bond atomRefs2="a9 a12" order="1"/>
+            <bond atomRefs2="a25 a20" order="1"/>
+            <bond atomRefs2="a28 a26" order="1"/>
+            <bond atomRefs2="a23 a21" order="1"/>
+            <bond atomRefs2="a24 a21" order="1"/>
+            <bond atomRefs2="a27 a26" order="1"/>
+            <bond atomRefs2="a26 a20" order="1"/>
+            <bond atomRefs2="a26 a29" order="1"/>
+            <bond atomRefs2="a20 a21" order="1"/>
+            <bond atomRefs2="a20 a17" order="1"/>
+            <bond atomRefs2="a21 a22" order="1"/>
+            <bond atomRefs2="a16 a13" order="1"/>
+            <bond atomRefs2="a17 a18" order="1"/>
+            <bond atomRefs2="a17 a13" order="1"/>
+            <bond atomRefs2="a17 a19" order="1"/>
+            <bond atomRefs2="a13 a15" order="1"/>
+            <bond atomRefs2="a13 a14" order="1"/>
+          </bondArray>
+        </Molecule>
+      </Molecules>
+      <Methods>
+        <Method Hamiltonian="AMBER_ff03" CategoryOfHamiltonian="forcefield" Basis="nobasis" CategoryOfBasis="unclassified" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-0.97"/>
+        </Method>
+        <Method Hamiltonian="CCSD(T)" CategoryOfHamiltonian="wavefunction" Basis="CBS" CategoryOfBasis="unclassified" CounterpoiseCorrection="CP">
+          <Result CalculatedValue="-1.09"/>
+        </Method>
+        <Method Hamiltonian="TPSS" CategoryOfHamiltonian="meta-GGA" Basis="TZVP" CategoryOfBasis="Ahlrichs" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="0.02"/>
+        </Method>
+        <Method Hamiltonian="TPSS-D" CategoryOfHamiltonian="hybrid-GGA" Basis="TZVP" CategoryOfBasis="Ahlrichs" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-1.4"/>
+        </Method>
+        <Method Hamiltonian="DFT-SAPT PBE0AC" CategoryOfHamiltonian="undefined" Basis="aug-cc-pVDZ" CategoryOfBasis="Dunnings" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-0.04"/>
+        </Method>
+        <Method Hamiltonian="DFT-SAPT PBE0AC" CategoryOfHamiltonian="undefined" Basis="aug-cc-pVDZ" CategoryOfBasis="Dunnings" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-0.99"/>
+        </Method>
+        <Method Hamiltonian="OPLS-AA" CategoryOfHamiltonian="forcefield" Basis="L" CategoryOfBasis="unclassified" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-0.91"/>
+        </Method>
+        <Method Hamiltonian="RI-TPSS-D" CategoryOfHamiltonian="meta-GGA" Basis="TZVP" CategoryOfBasis="Ahlrichs" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-1.36"/>
+        </Method>
+        <Method Hamiltonian="RI-MP2" CategoryOfHamiltonian="wavefunction" Basis="aug-cc-pVDZ" CategoryOfBasis="Dunnings" CounterpoiseCorrection="CP">
+          <Result CalculatedValue="-0.95"/>
+        </Method>
+        <Method Hamiltonian="RI-MP2" CategoryOfHamiltonian="wavefunction" Basis="aug-cc-pVTZ" CategoryOfBasis="Dunnings" CounterpoiseCorrection="CP">
+          <Result CalculatedValue="-1.02"/>
+        </Method>
+        <Method Hamiltonian="SCS-MI-MP2" CategoryOfHamiltonian="wavefunction" Basis="cc-pVTZ" CategoryOfBasis="Dunnings" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-0.83"/>
+        </Method>
+      </Methods>
+      <ReferenceResult>
+        <ReferenceMethod Hamiltonian="CCSD(T)" CategoryOfHamiltonian="wavefunction" Basis="CBS" CategoryOfBasis="unclassified" CounterpoiseCorrection="CP"/>
+        <ReferenceValue Value="-1.09"/>
+      </ReferenceResult>
+    </System>
+    <System Name="LW1">
+      <Molecules>
+        <Molecule Name="LW1" SmileString="CCc1c[nH]c2c1cccc2.CCC(C)C">
+          <atomArray>
+            <atom id="a1" elementType="C" x3="-5.279000" y3="-0.132000" z3="2.886000"/>
+            <atom id="a2" elementType="H" x3="-6.144000" y3="-0.762000" z3="3.126000"/>
+            <atom id="a3" elementType="H" x3="-4.389000" y3="-0.769000" z3="2.883000"/>
+            <atom id="a4" elementType="H" x3="-5.413000" y3="0.256000" z3="1.871000"/>
+            <atom id="a5" elementType="C" x3="-5.142000" y3="1.015000" z3="3.895000"/>
+            <atom id="a6" elementType="H" x3="-6.063000" y3="1.611000" z3="3.886000"/>
+            <atom id="a7" elementType="H" x3="-5.058000" y3="0.597000" z3="4.907000"/>
+            <atom id="a8" elementType="C" x3="-3.975000" y3="1.916000" z3="3.636000"/>
+            <atom id="a9" elementType="C" x3="-4.009000" y3="3.185000" z3="3.132000"/>
+            <atom id="a10" elementType="H" x3="-4.856000" y3="3.782000" z3="2.822000"/>
+            <atom id="a11" elementType="N" x3="-2.735000" y3="3.704000" z3="3.070000"/>
+            <atom id="a12" elementType="H" x3="-2.493000" y3="4.623000" z3="2.732000"/>
+            <atom id="a13" elementType="C" x3="-1.851000" y3="2.765000" z3="3.532000"/>
+            <atom id="a14" elementType="C" x3="-2.600000" y3="1.621000" z3="3.897000"/>
+            <atom id="a15" elementType="C" x3="-1.925000" y3="0.500000" z3="4.405000"/>
+            <atom id="a16" elementType="H" x3="-2.468000" y3="-0.395000" z3="4.696000"/>
+            <atom id="a17" elementType="C" x3="-0.531000" y3="0.554000" z3="4.535000"/>
+            <atom id="a18" elementType="H" x3="0.008000" y3="-0.302000" z3="4.929000"/>
+            <atom id="a19" elementType="C" x3="0.183000" y3="1.713000" z3="4.161000"/>
+            <atom id="a20" elementType="H" x3="1.264000" y3="1.724000" z3="4.273000"/>
+            <atom id="a21" elementType="C" x3="-0.455000" y3="2.821000" z3="3.660000"/>
+            <atom id="a22" elementType="H" x3="0.102000" y3="3.711000" z3="3.373000"/>
+            <atom id="a23" elementType="C" x3="-1.191000" y3="-1.885000" z3="1.339000"/>
+            <atom id="a24" elementType="H" x3="-1.078000" y3="-2.539000" z3="2.211000"/>
+            <atom id="a25" elementType="H" x3="-1.254000" y3="-2.525000" z3="0.449000"/>
+            <atom id="a26" elementType="H" x3="-2.146000" y3="-1.360000" z3="1.443000"/>
+            <atom id="a27" elementType="C" x3="-0.010000" y3="-0.909000" z3="1.242000"/>
+            <atom id="a28" elementType="H" x3="0.004000" y3="-0.274000" z3="2.135000"/>
+            <atom id="a29" elementType="H" x3="0.924000" y3="-1.490000" z3="1.260000"/>
+            <atom id="a30" elementType="C" x3="0.000000" y3="0.000000" z3="0.000000"/>
+            <atom id="a31" elementType="C" x3="-1.257000" y3="0.874000" z3="0.000000"/>
+            <atom id="a32" elementType="H" x3="-1.291000" y3="1.490000" z3="0.906000"/>
+            <atom id="a33" elementType="H" x3="-1.272000" y3="1.548000" z3="-0.867000"/>
+            <atom id="a34" elementType="H" x3="-2.173000" y3="0.276000" z3="-0.037000"/>
+            <atom id="a35" elementType="H" x3="0.001000" y3="-0.629000" z3="-0.903000"/>
+            <atom id="a36" elementType="C" x3="1.258000" y3="0.875000" z3="0.000000"/>
+            <atom id="a37" elementType="H" x3="2.169000" y3="0.266000" z3="0.028000"/>
+            <atom id="a38" elementType="H" x3="1.304000" y3="1.508000" z3="-0.895000"/>
+            <atom id="a39" elementType="H" x3="1.265000" y3="1.533000" z3="0.878000"/>
+          </atomArray>
+          <bondArray>
+            <bond atomRefs2="a35 a30" order="1"/>
+            <bond atomRefs2="a38 a36" order="1"/>
+            <bond atomRefs2="a33 a31" order="1"/>
+            <bond atomRefs2="a34 a31" order="1"/>
+            <bond atomRefs2="a30 a36" order="1"/>
+            <bond atomRefs2="a30 a31" order="1"/>
+            <bond atomRefs2="a30 a27" order="1"/>
+            <bond atomRefs2="a36 a37" order="1"/>
+            <bond atomRefs2="a36 a39" order="1"/>
+            <bond atomRefs2="a31 a32" order="1"/>
+            <bond atomRefs2="a25 a23" order="1"/>
+            <bond atomRefs2="a27 a29" order="1"/>
+            <bond atomRefs2="a27 a23" order="1"/>
+            <bond atomRefs2="a27 a28" order="1"/>
+            <bond atomRefs2="a23 a26" order="1"/>
+            <bond atomRefs2="a23 a24" order="1"/>
+            <bond atomRefs2="a4 a1" order="1"/>
+            <bond atomRefs2="a12 a11" order="1"/>
+            <bond atomRefs2="a10 a9" order="1"/>
+            <bond atomRefs2="a3 a1" order="1"/>
+            <bond atomRefs2="a1 a2" order="1"/>
+            <bond atomRefs2="a1 a5" order="1"/>
+            <bond atomRefs2="a11 a9" order="1"/>
+            <bond atomRefs2="a11 a13" order="1"/>
+            <bond atomRefs2="a9 a8" order="2"/>
+            <bond atomRefs2="a22 a21" order="1"/>
+            <bond atomRefs2="a13 a21" order="2"/>
+            <bond atomRefs2="a13 a14" order="1"/>
+            <bond atomRefs2="a8 a5" order="1"/>
+            <bond atomRefs2="a8 a14" order="1"/>
+            <bond atomRefs2="a21 a19" order="1"/>
+            <bond atomRefs2="a6 a5" order="1"/>
+            <bond atomRefs2="a5 a7" order="1"/>
+            <bond atomRefs2="a14 a15" order="2"/>
+            <bond atomRefs2="a19 a20" order="1"/>
+            <bond atomRefs2="a19 a17" order="2"/>
+            <bond atomRefs2="a15 a17" order="1"/>
+            <bond atomRefs2="a15 a16" order="1"/>
+            <bond atomRefs2="a17 a18" order="1"/>
+          </bondArray>
+        </Molecule>
+      </Molecules>
+      <Methods>
+        <Method Hamiltonian="AMBER_ff03" CategoryOfHamiltonian="forcefield" Basis="nobasis" CategoryOfBasis="unclassified" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-3.51"/>
+        </Method>
+        <Method Hamiltonian="CCSD(T)" CategoryOfHamiltonian="wavefunction" Basis="CBS" CategoryOfBasis="unclassified" CounterpoiseCorrection="CP">
+          <Result CalculatedValue="-4.04"/>
+        </Method>
+        <Method Hamiltonian="TPSS" CategoryOfHamiltonian="meta-GGA" Basis="TZVP" CategoryOfBasis="Ahlrichs" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="1"/>
+        </Method>
+        <Method Hamiltonian="TPSS-D" CategoryOfHamiltonian="hybrid-GGA" Basis="TZVP" CategoryOfBasis="Ahlrichs" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-3.97"/>
+        </Method>
+        <Method Hamiltonian="DFT-SAPT PBE0AC" CategoryOfHamiltonian="undefined" Basis="aug-cc-pVDZ" CategoryOfBasis="Dunnings" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-0.55"/>
+        </Method>
+        <Method Hamiltonian="DFT-SAPT PBE0AC" CategoryOfHamiltonian="undefined" Basis="aug-cc-pVDZ" CategoryOfBasis="Dunnings" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-3.58"/>
+        </Method>
+        <Method Hamiltonian="OPLS-AA" CategoryOfHamiltonian="forcefield" Basis="L" CategoryOfBasis="unclassified" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-3.46"/>
+        </Method>
+        <Method Hamiltonian="RI-TPSS-D" CategoryOfHamiltonian="meta-GGA" Basis="TZVP" CategoryOfBasis="Ahlrichs" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-3.91"/>
+        </Method>
+        <Method Hamiltonian="RI-MP2" CategoryOfHamiltonian="wavefunction" Basis="aug-cc-pVDZ" CategoryOfBasis="Dunnings" CounterpoiseCorrection="CP">
+          <Result CalculatedValue="-4.38"/>
+        </Method>
+        <Method Hamiltonian="RI-MP2" CategoryOfHamiltonian="wavefunction" Basis="aug-cc-pVTZ" CategoryOfBasis="Dunnings" CounterpoiseCorrection="CP">
+          <Result CalculatedValue="-4.74"/>
+        </Method>
+        <Method Hamiltonian="SCS-MI-MP2" CategoryOfHamiltonian="wavefunction" Basis="cc-pVTZ" CategoryOfBasis="Dunnings" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-3.88"/>
+        </Method>
+      </Methods>
+      <ReferenceResult>
+        <ReferenceMethod Hamiltonian="CCSD(T)" CategoryOfHamiltonian="wavefunction" Basis="CBS" CategoryOfBasis="unclassified" CounterpoiseCorrection="CP"/>
+        <ReferenceValue Value="-4.04"/>
+      </ReferenceResult>
+    </System>
+    <System Name="LY1">
+      <Molecules>
+        <Molecule Name="LY1" SmileString="c1c(CC)ccc(O)c1.CCC(C)C">
+          <atomArray>
+            <atom id="a1" elementType="C" x3="-2.810000" y3="0.275000" z3="4.347000"/>
+            <atom id="a2" elementType="H" x3="-2.025000" y3="-0.087000" z3="3.686000"/>
+            <atom id="a3" elementType="C" x3="-4.021000" y3="0.685000" z3="3.789000"/>
+            <atom id="a4" elementType="C" x3="-4.293000" y3="0.537000" z3="2.321000"/>
+            <atom id="a5" elementType="C" x3="-5.298000" y3="-0.599000" z3="1.985000"/>
+            <atom id="a6" elementType="H" x3="-5.459000" y3="-0.664000" z3="0.903000"/>
+            <atom id="a7" elementType="H" x3="-6.268000" y3="-0.420000" z3="2.463000"/>
+            <atom id="a8" elementType="H" x3="-4.924000" y3="-1.565000" z3="2.340000"/>
+            <atom id="a9" elementType="H" x3="-3.355000" y3="0.344000" z3="1.794000"/>
+            <atom id="a10" elementType="H" x3="-4.688000" y3="1.479000" z3="1.918000"/>
+            <atom id="a11" elementType="C" x3="-5.048000" y3="1.120000" z3="4.625000"/>
+            <atom id="a12" elementType="H" x3="-6.003000" y3="1.432000" z3="4.211000"/>
+            <atom id="a13" elementType="C" x3="-4.823000" y3="1.202000" z3="6.001000"/>
+            <atom id="a14" elementType="H" x3="-5.608000" y3="1.551000" z3="6.671000"/>
+            <atom id="a15" elementType="C" x3="-3.602000" y3="0.774000" z3="6.535000"/>
+            <atom id="a16" elementType="O" x3="-3.448000" y3="0.789000" z3="7.903000"/>
+            <atom id="a17" elementType="H" x3="-4.268000" y3="1.123000" z3="8.300000"/>
+            <atom id="a18" elementType="C" x3="-2.563000" y3="0.323000" z3="5.722000"/>
+            <atom id="a19" elementType="H" x3="-1.624000" y3="-0.004000" z3="6.155000"/>
+            <atom id="a20" elementType="C" x3="-1.061000" y3="-2.280000" z3="0.934000"/>
+            <atom id="a21" elementType="H" x3="-0.941000" y3="-2.993000" z3="1.755000"/>
+            <atom id="a22" elementType="H" x3="-0.869000" y3="-2.803000" z3="-0.009000"/>
+            <atom id="a23" elementType="H" x3="-2.099000" y3="-1.933000" z3="0.930000"/>
+            <atom id="a24" elementType="C" x3="-0.039000" y3="-1.082000" z3="1.120000"/>
+            <atom id="a25" elementType="H" x3="-0.240000" y3="-0.591000" z3="2.083000"/>
+            <atom id="a26" elementType="H" x3="0.962000" y3="-1.526000" z3="1.208000"/>
+            <atom id="a27" elementType="C" x3="0.000000" y3="0.000000" z3="0.000000"/>
+            <atom id="a28" elementType="C" x3="-1.289000" y3="0.819000" z3="0.000000"/>
+            <atom id="a29" elementType="H" x3="-1.429000" y3="1.342000" z3="0.954000"/>
+            <atom id="a30" elementType="H" x3="-1.282000" y3="1.578000" z3="-0.792000"/>
+            <atom id="a31" elementType="H" x3="-2.156000" y3="0.174000" z3="-0.171000"/>
+            <atom id="a32" elementType="H" x3="0.023000" y3="-0.551000" z3="-0.954000"/>
+            <atom id="a33" elementType="C" x3="1.339000" y3="0.851000" z3="0.000000"/>
+            <atom id="a34" elementType="H" x3="2.201000" y3="0.185000" z3="-0.105000"/>
+            <atom id="a35" elementType="H" x3="1.333000" y3="1.555000" z3="-0.838000"/>
+            <atom id="a36" elementType="H" x3="1.450000" y3="1.421000" z3="0.930000"/>
+          </atomArray>
+          <bondArray>
+            <bond atomRefs2="a32 a27" order="1"/>
+            <bond atomRefs2="a35 a33" order="1"/>
+            <bond atomRefs2="a30 a28" order="1"/>
+            <bond atomRefs2="a31 a28" order="1"/>
+            <bond atomRefs2="a34 a33" order="1"/>
+            <bond atomRefs2="a22 a20" order="1"/>
+            <bond atomRefs2="a27 a28" order="1"/>
+            <bond atomRefs2="a27 a33" order="1"/>
+            <bond atomRefs2="a27 a24" order="1"/>
+            <bond atomRefs2="a28 a29" order="1"/>
+            <bond atomRefs2="a33 a36" order="1"/>
+            <bond atomRefs2="a6 a5" order="1"/>
+            <bond atomRefs2="a23 a20" order="1"/>
+            <bond atomRefs2="a20 a24" order="1"/>
+            <bond atomRefs2="a20 a21" order="1"/>
+            <bond atomRefs2="a24 a26" order="1"/>
+            <bond atomRefs2="a24 a25" order="1"/>
+            <bond atomRefs2="a9 a4" order="1"/>
+            <bond atomRefs2="a10 a4" order="1"/>
+            <bond atomRefs2="a5 a4" order="1"/>
+            <bond atomRefs2="a5 a8" order="1"/>
+            <bond atomRefs2="a5 a7" order="1"/>
+            <bond atomRefs2="a4 a3" order="1"/>
+            <bond atomRefs2="a2 a1" order="1"/>
+            <bond atomRefs2="a3 a1" order="2"/>
+            <bond atomRefs2="a3 a11" order="1"/>
+            <bond atomRefs2="a12 a11" order="1"/>
+            <bond atomRefs2="a1 a18" order="1"/>
+            <bond atomRefs2="a11 a13" order="2"/>
+            <bond atomRefs2="a18 a19" order="1"/>
+            <bond atomRefs2="a18 a15" order="2"/>
+            <bond atomRefs2="a13 a15" order="1"/>
+            <bond atomRefs2="a13 a14" order="1"/>
+            <bond atomRefs2="a15 a16" order="1"/>
+            <bond atomRefs2="a16 a17" order="1"/>
+          </bondArray>
+        </Molecule>
+      </Molecules>
+      <Methods>
+        <Method Hamiltonian="AMBER_ff03" CategoryOfHamiltonian="forcefield" Basis="nobasis" CategoryOfBasis="unclassified" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-1.57"/>
+        </Method>
+        <Method Hamiltonian="CCSD(T)" CategoryOfHamiltonian="wavefunction" Basis="CBS" CategoryOfBasis="unclassified" CounterpoiseCorrection="CP">
+          <Result CalculatedValue="-1.72"/>
+        </Method>
+        <Method Hamiltonian="TPSS" CategoryOfHamiltonian="meta-GGA" Basis="TZVP" CategoryOfBasis="Ahlrichs" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="0.96"/>
+        </Method>
+        <Method Hamiltonian="TPSS-D" CategoryOfHamiltonian="hybrid-GGA" Basis="TZVP" CategoryOfBasis="Ahlrichs" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-2.07"/>
+        </Method>
+        <Method Hamiltonian="DFT-SAPT PBE0AC" CategoryOfHamiltonian="undefined" Basis="aug-cc-pVDZ" CategoryOfBasis="Dunnings" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-0.22"/>
+        </Method>
+        <Method Hamiltonian="DFT-SAPT PBE0AC" CategoryOfHamiltonian="undefined" Basis="aug-cc-pVDZ" CategoryOfBasis="Dunnings" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-1.34"/>
+        </Method>
+        <Method Hamiltonian="OPLS-AA" CategoryOfHamiltonian="forcefield" Basis="L" CategoryOfBasis="unclassified" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-1.86"/>
+        </Method>
+        <Method Hamiltonian="RI-TPSS-D" CategoryOfHamiltonian="meta-GGA" Basis="TZVP" CategoryOfBasis="Ahlrichs" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-1.88"/>
+        </Method>
+        <Method Hamiltonian="RI-MP2" CategoryOfHamiltonian="wavefunction" Basis="aug-cc-pVDZ" CategoryOfBasis="Dunnings" CounterpoiseCorrection="CP">
+          <Result CalculatedValue="-1.43"/>
+        </Method>
+        <Method Hamiltonian="RI-MP2" CategoryOfHamiltonian="wavefunction" Basis="aug-cc-pVTZ" CategoryOfBasis="Dunnings" CounterpoiseCorrection="CP">
+          <Result CalculatedValue="-1.66"/>
+        </Method>
+        <Method Hamiltonian="SCS-MI-MP2" CategoryOfHamiltonian="wavefunction" Basis="cc-pVTZ" CategoryOfBasis="Dunnings" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-1.21"/>
+        </Method>
+      </Methods>
+      <ReferenceResult>
+        <ReferenceMethod Hamiltonian="CCSD(T)" CategoryOfHamiltonian="wavefunction" Basis="CBS" CategoryOfBasis="unclassified" CounterpoiseCorrection="CP"/>
+        <ReferenceValue Value="-1.72"/>
+      </ReferenceResult>
+    </System>
+    <System Name="MC1">
+      <Molecules>
+        <Molecule Name="MC1" SmileString="CCS.CCCSC">
+          <atomArray>
+            <atom id="a1" elementType="C" x3="-2.001000" y3="7.043000" z3="-1.440000"/>
+            <atom id="a2" elementType="H" x3="-2.341000" y3="7.647000" z3="-2.288000"/>
+            <atom id="a3" elementType="H" x3="-1.539000" y3="7.715000" z3="-0.709000"/>
+            <atom id="a4" elementType="H" x3="-2.881000" y3="6.587000" z3="-0.975000"/>
+            <atom id="a5" elementType="C" x3="-1.018000" y3="5.989000" z3="-1.923000"/>
+            <atom id="a6" elementType="H" x3="-1.500000" y3="5.346000" z3="-2.666000"/>
+            <atom id="a7" elementType="H" x3="-0.160000" y3="6.474000" z3="-2.400000"/>
+            <atom id="a8" elementType="S" x3="-0.431000" y3="4.969000" z3="-0.551000"/>
+            <atom id="a9" elementType="H" x3="0.389000" y3="4.176000" z3="-1.279000"/>
+            <atom id="a10" elementType="C" x3="-3.810000" y3="1.507000" z3="-0.455000"/>
+            <atom id="a11" elementType="H" x3="-4.742000" y3="0.992000" z3="-0.713000"/>
+            <atom id="a12" elementType="H" x3="-3.974000" y3="2.037000" z3="0.491000"/>
+            <atom id="a13" elementType="H" x3="-3.621000" y3="2.263000" z3="-1.226000"/>
+            <atom id="a14" elementType="C" x3="-2.660000" y3="0.526000" z3="-0.352000"/>
+            <atom id="a15" elementType="H" x3="-2.902000" y3="-0.241000" z3="0.397000"/>
+            <atom id="a16" elementType="H" x3="-2.550000" y3="-0.009000" z3="-1.305000"/>
+            <atom id="a17" elementType="C" x3="-1.358000" y3="1.175000" z3="0.000000"/>
+            <atom id="a18" elementType="H" x3="-1.125000" y3="1.969000" z3="-0.720000"/>
+            <atom id="a19" elementType="H" x3="-1.422000" y3="1.655000" z3="0.986000"/>
+            <atom id="a20" elementType="S" x3="0.000000" y3="0.000000" z3="0.000000"/>
+            <atom id="a21" elementType="C" x3="1.334000" y3="1.154000" z3="0.000000"/>
+            <atom id="a22" elementType="H" x3="1.327000" y3="1.794000" z3="0.890000"/>
+            <atom id="a23" elementType="H" x3="2.270000" y3="0.587000" z3="0.001000"/>
+            <atom id="a24" elementType="H" x3="1.325000" y3="1.787000" z3="-0.895000"/>
+          </atomArray>
+          <bondArray>
+            <bond atomRefs2="a6 a5" order="1"/>
+            <bond atomRefs2="a7 a5" order="1"/>
+            <bond atomRefs2="a2 a1" order="1"/>
+            <bond atomRefs2="a5 a1" order="1"/>
+            <bond atomRefs2="a5 a8" order="1"/>
+            <bond atomRefs2="a1 a4" order="1"/>
+            <bond atomRefs2="a1 a3" order="1"/>
+            <bond atomRefs2="a16 a14" order="1"/>
+            <bond atomRefs2="a9 a8" order="1"/>
+            <bond atomRefs2="a13 a10" order="1"/>
+            <bond atomRefs2="a24 a21" order="1"/>
+            <bond atomRefs2="a18 a17" order="1"/>
+            <bond atomRefs2="a11 a10" order="1"/>
+            <bond atomRefs2="a10 a14" order="1"/>
+            <bond atomRefs2="a10 a12" order="1"/>
+            <bond atomRefs2="a14 a17" order="1"/>
+            <bond atomRefs2="a14 a15" order="1"/>
+            <bond atomRefs2="a17 a20" order="1"/>
+            <bond atomRefs2="a17 a19" order="1"/>
+            <bond atomRefs2="a20 a21" order="1"/>
+            <bond atomRefs2="a21 a23" order="1"/>
+            <bond atomRefs2="a21 a22" order="1"/>
+          </bondArray>
+        </Molecule>
+      </Molecules>
+      <Methods>
+        <Method Hamiltonian="AMBER_ff03" CategoryOfHamiltonian="forcefield" Basis="nobasis" CategoryOfBasis="unclassified" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-1.78"/>
+        </Method>
+        <Method Hamiltonian="CCSD(T)" CategoryOfHamiltonian="wavefunction" Basis="CBS" CategoryOfBasis="unclassified" CounterpoiseCorrection="CP">
+          <Result CalculatedValue="-1.46"/>
+        </Method>
+        <Method Hamiltonian="TPSS" CategoryOfHamiltonian="meta-GGA" Basis="TZVP" CategoryOfBasis="Ahlrichs" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="0.25"/>
+        </Method>
+        <Method Hamiltonian="TPSS-D" CategoryOfHamiltonian="hybrid-GGA" Basis="TZVP" CategoryOfBasis="Ahlrichs" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-1.48"/>
+        </Method>
+        <Method Hamiltonian="DFT-SAPT PBE0AC" CategoryOfHamiltonian="undefined" Basis="aug-cc-pVDZ" CategoryOfBasis="Dunnings" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-0.19"/>
+        </Method>
+        <Method Hamiltonian="DFT-SAPT PBE0AC" CategoryOfHamiltonian="undefined" Basis="aug-cc-pVDZ" CategoryOfBasis="Dunnings" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-1.27"/>
+        </Method>
+        <Method Hamiltonian="OPLS-AA" CategoryOfHamiltonian="forcefield" Basis="L" CategoryOfBasis="unclassified" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-2.01"/>
+        </Method>
+        <Method Hamiltonian="RI-TPSS-D" CategoryOfHamiltonian="meta-GGA" Basis="TZVP" CategoryOfBasis="Ahlrichs" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-1.44"/>
+        </Method>
+        <Method Hamiltonian="RI-MP2" CategoryOfHamiltonian="wavefunction" Basis="aug-cc-pVDZ" CategoryOfBasis="Dunnings" CounterpoiseCorrection="CP">
+          <Result CalculatedValue="-1.22"/>
+        </Method>
+        <Method Hamiltonian="RI-MP2" CategoryOfHamiltonian="wavefunction" Basis="aug-cc-pVTZ" CategoryOfBasis="Dunnings" CounterpoiseCorrection="CP">
+          <Result CalculatedValue="-1.43"/>
+        </Method>
+        <Method Hamiltonian="SCS-MI-MP2" CategoryOfHamiltonian="wavefunction" Basis="cc-pVTZ" CategoryOfBasis="Dunnings" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-0.93"/>
+        </Method>
+      </Methods>
+      <ReferenceResult>
+        <ReferenceMethod Hamiltonian="CCSD(T)" CategoryOfHamiltonian="wavefunction" Basis="CBS" CategoryOfBasis="unclassified" CounterpoiseCorrection="CP"/>
+        <ReferenceValue Value="-1.46"/>
+      </ReferenceResult>
+    </System>
+    <System Name="MM1">
+      <Molecules>
+        <Molecule Name="MM1" SmileString="CCCSC.CCCSC">
+          <atomArray>
+            <atom id="a1" elementType="C" x3="-0.545000" y3="-2.189000" z3="-6.729000"/>
+            <atom id="a2" elementType="H" x3="-1.467000" y3="-2.775000" z3="-6.663000"/>
+            <atom id="a3" elementType="H" x3="-0.822000" y3="-1.150000" z3="-6.948000"/>
+            <atom id="a4" elementType="H" x3="0.036000" y3="-2.567000" z3="-7.578000"/>
+            <atom id="a5" elementType="C" x3="0.257000" y3="-2.298000" z3="-5.418000"/>
+            <atom id="a6" elementType="H" x3="-0.372000" y3="-1.970000" z3="-4.581000"/>
+            <atom id="a7" elementType="H" x3="0.491000" y3="-3.353000" z3="-5.231000"/>
+            <atom id="a8" elementType="C" x3="1.566000" y3="-1.512000" z3="-5.409000"/>
+            <atom id="a9" elementType="H" x3="2.142000" y3="-1.723000" z3="-6.317000"/>
+            <atom id="a10" elementType="H" x3="1.393000" y3="-0.430000" z3="-5.377000"/>
+            <atom id="a11" elementType="S" x3="2.729000" y3="-1.966000" z3="-4.050000"/>
+            <atom id="a12" elementType="C" x3="1.940000" y3="-1.214000" z3="-2.620000"/>
+            <atom id="a13" elementType="H" x3="0.952000" y3="-1.629000" z3="-2.417000"/>
+            <atom id="a14" elementType="H" x3="2.585000" y3="-1.437000" z3="-1.765000"/>
+            <atom id="a15" elementType="H" x3="1.865000" y3="-0.129000" z3="-2.731000"/>
+            <atom id="a16" elementType="C" x3="-1.770000" y3="0.815000" z3="-2.566000"/>
+            <atom id="a17" elementType="H" x3="-2.542000" y3="0.675000" z3="-3.331000"/>
+            <atom id="a18" elementType="H" x3="-1.202000" y3="1.717000" z3="-2.822000"/>
+            <atom id="a19" elementType="H" x3="-1.085000" y3="-0.036000" z3="-2.598000"/>
+            <atom id="a20" elementType="C" x3="-2.417000" y3="0.938000" z3="-1.173000"/>
+            <atom id="a21" elementType="H" x3="-3.131000" y3="1.773000" z3="-1.162000"/>
+            <atom id="a22" elementType="H" x3="-3.006000" y3="0.031000" z3="-0.984000"/>
+            <atom id="a23" elementType="C" x3="-1.447000" y3="1.148000" z3="0.000000"/>
+            <atom id="a24" elementType="H" x3="-1.034000" y3="2.162000" z3="-0.027000"/>
+            <atom id="a25" elementType="H" x3="-1.971000" y3="1.028000" z3="0.952000"/>
+            <atom id="a26" elementType="S" x3="0.000000" y3="0.000000" z3="0.000000"/>
+            <atom id="a27" elementType="C" x3="1.441000" y3="1.144000" z3="0.000000"/>
+            <atom id="a28" elementType="H" x3="1.442000" y3="1.769000" z3="0.897000"/>
+            <atom id="a29" elementType="H" x3="2.327000" y3="0.508000" z3="0.011000"/>
+            <atom id="a30" elementType="H" x3="1.455000" y3="1.769000" z3="-0.897000"/>
+          </atomArray>
+          <bondArray>
+            <bond atomRefs2="a4 a1" order="1"/>
+            <bond atomRefs2="a3 a1" order="1"/>
+            <bond atomRefs2="a1 a2" order="1"/>
+            <bond atomRefs2="a1 a5" order="1"/>
+            <bond atomRefs2="a9 a8" order="1"/>
+            <bond atomRefs2="a5 a8" order="1"/>
+            <bond atomRefs2="a5 a7" order="1"/>
+            <bond atomRefs2="a5 a6" order="1"/>
+            <bond atomRefs2="a8 a10" order="1"/>
+            <bond atomRefs2="a8 a11" order="1"/>
+            <bond atomRefs2="a11 a12" order="1"/>
+            <bond atomRefs2="a17 a16" order="1"/>
+            <bond atomRefs2="a18 a16" order="1"/>
+            <bond atomRefs2="a15 a12" order="1"/>
+            <bond atomRefs2="a12 a13" order="1"/>
+            <bond atomRefs2="a12 a14" order="1"/>
+            <bond atomRefs2="a19 a16" order="1"/>
+            <bond atomRefs2="a16 a20" order="1"/>
+            <bond atomRefs2="a20 a21" order="1"/>
+            <bond atomRefs2="a20 a22" order="1"/>
+            <bond atomRefs2="a20 a23" order="1"/>
+            <bond atomRefs2="a30 a27" order="1"/>
+            <bond atomRefs2="a24 a23" order="1"/>
+            <bond atomRefs2="a23 a26" order="1"/>
+            <bond atomRefs2="a23 a25" order="1"/>
+            <bond atomRefs2="a26 a27" order="1"/>
+            <bond atomRefs2="a27 a29" order="1"/>
+            <bond atomRefs2="a27 a28" order="1"/>
+          </bondArray>
+        </Molecule>
+      </Molecules>
+      <Methods>
+        <Method Hamiltonian="AMBER_ff03" CategoryOfHamiltonian="forcefield" Basis="nobasis" CategoryOfBasis="unclassified" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-2.67"/>
+        </Method>
+        <Method Hamiltonian="CCSD(T)" CategoryOfHamiltonian="wavefunction" Basis="CBS" CategoryOfBasis="unclassified" CounterpoiseCorrection="CP">
+          <Result CalculatedValue="-2.03"/>
+        </Method>
+        <Method Hamiltonian="TPSS" CategoryOfHamiltonian="meta-GGA" Basis="TZVP" CategoryOfBasis="Ahlrichs" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="1.22"/>
+        </Method>
+        <Method Hamiltonian="TPSS-D" CategoryOfHamiltonian="hybrid-GGA" Basis="TZVP" CategoryOfBasis="Ahlrichs" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-2.01"/>
+        </Method>
+        <Method Hamiltonian="DFT-SAPT PBE0AC" CategoryOfHamiltonian="undefined" Basis="aug-cc-pVDZ" CategoryOfBasis="Dunnings" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-0.38"/>
+        </Method>
+        <Method Hamiltonian="DFT-SAPT PBE0AC" CategoryOfHamiltonian="undefined" Basis="aug-cc-pVDZ" CategoryOfBasis="Dunnings" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-1.56"/>
+        </Method>
+        <Method Hamiltonian="OPLS-AA" CategoryOfHamiltonian="forcefield" Basis="L" CategoryOfBasis="unclassified" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-3.14"/>
+        </Method>
+        <Method Hamiltonian="RI-TPSS-D" CategoryOfHamiltonian="meta-GGA" Basis="TZVP" CategoryOfBasis="Ahlrichs" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-1.94"/>
+        </Method>
+        <Method Hamiltonian="RI-MP2" CategoryOfHamiltonian="wavefunction" Basis="aug-cc-pVDZ" CategoryOfBasis="Dunnings" CounterpoiseCorrection="CP">
+          <Result CalculatedValue="-1.67"/>
+        </Method>
+        <Method Hamiltonian="RI-MP2" CategoryOfHamiltonian="wavefunction" Basis="aug-cc-pVTZ" CategoryOfBasis="Dunnings" CounterpoiseCorrection="CP">
+          <Result CalculatedValue="-2.01"/>
+        </Method>
+        <Method Hamiltonian="SCS-MI-MP2" CategoryOfHamiltonian="wavefunction" Basis="cc-pVTZ" CategoryOfBasis="Dunnings" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-1.27"/>
+        </Method>
+      </Methods>
+      <ReferenceResult>
+        <ReferenceMethod Hamiltonian="CCSD(T)" CategoryOfHamiltonian="wavefunction" Basis="CBS" CategoryOfBasis="unclassified" CounterpoiseCorrection="CP"/>
+        <ReferenceValue Value="-2.03"/>
+      </ReferenceResult>
+    </System>
+    <System Name="QN1">
+      <Molecules>
+        <Molecule Name="QN1" SmileString="CCCC(=O)N.CCC(=O)N">
+          <atomArray>
+            <atom id="a1" elementType="C" x3="0.139000" y3="1.710000" z3="5.044000"/>
+            <atom id="a2" elementType="H" x3="0.393000" y3="1.520000" z3="6.093000"/>
+            <atom id="a3" elementType="H" x3="-0.952000" y3="1.698000" z3="4.955000"/>
+            <atom id="a4" elementType="H" x3="0.538000" y3="0.881000" z3="4.446000"/>
+            <atom id="a5" elementType="C" x3="0.712000" y3="3.059000" z3="4.582000"/>
+            <atom id="a6" elementType="H" x3="0.301000" y3="3.857000" z3="5.213000"/>
+            <atom id="a7" elementType="H" x3="1.801000" y3="3.070000" z3="4.723000"/>
+            <atom id="a8" elementType="C" x3="0.404000" y3="3.401000" z3="3.123000"/>
+            <atom id="a9" elementType="H" x3="0.819000" y3="4.387000" z3="2.884000"/>
+            <atom id="a10" elementType="H" x3="0.888000" y3="2.666000" z3="2.464000"/>
+            <atom id="a11" elementType="C" x3="-1.090000" y3="3.472000" z3="2.844000"/>
+            <atom id="a12" elementType="N" x3="-1.565000" y3="2.634000" z3="1.925000"/>
+            <atom id="a13" elementType="H" x3="-2.556000" y3="2.693000" z3="1.719000"/>
+            <atom id="a14" elementType="H" x3="-1.043000" y3="1.976000" z3="1.352000"/>
+            <atom id="a15" elementType="O" x3="-1.810000" y3="4.273000" z3="3.449000"/>
+            <atom id="a16" elementType="C" x3="-1.248000" y3="-2.184000" z3="0.419000"/>
+            <atom id="a17" elementType="H" x3="-1.147000" y3="-3.274000" z3="0.387000"/>
+            <atom id="a18" elementType="H" x3="-1.512000" y3="-1.889000" z3="1.438000"/>
+            <atom id="a19" elementType="H" x3="-2.067000" y3="-1.884000" z3="-0.239000"/>
+            <atom id="a20" elementType="C" x3="0.067000" y3="-1.522000" z3="-0.018000"/>
+            <atom id="a21" elementType="H" x3="0.895000" y3="-1.857000" z3="0.622000"/>
+            <atom id="a22" elementType="H" x3="0.325000" y3="-1.833000" z3="-1.040000"/>
+            <atom id="a23" elementType="C" x3="0.000000" y3="0.000000" z3="0.000000"/>
+            <atom id="a24" elementType="N" x3="1.166000" y3="0.639000" z3="0.000000"/>
+            <atom id="a25" elementType="H" x3="1.188000" y3="1.647000" z3="-0.104000"/>
+            <atom id="a26" elementType="H" x3="2.049000" y3="0.146000" z3="-0.022000"/>
+            <atom id="a27" elementType="O" x3="-1.080000" y3="0.592000" z3="0.000000"/>
+          </atomArray>
+          <bondArray>
+            <bond atomRefs2="a22 a20" order="1"/>
+            <bond atomRefs2="a19 a16" order="1"/>
+            <bond atomRefs2="a25 a24" order="1"/>
+            <bond atomRefs2="a26 a24" order="1"/>
+            <bond atomRefs2="a20 a23" order="1"/>
+            <bond atomRefs2="a20 a16" order="1"/>
+            <bond atomRefs2="a20 a21" order="1"/>
+            <bond atomRefs2="a27 a23" order="2"/>
+            <bond atomRefs2="a24 a23" order="1"/>
+            <bond atomRefs2="a17 a16" order="1"/>
+            <bond atomRefs2="a16 a18" order="1"/>
+            <bond atomRefs2="a14 a12" order="1"/>
+            <bond atomRefs2="a13 a12" order="1"/>
+            <bond atomRefs2="a12 a11" order="1"/>
+            <bond atomRefs2="a10 a8" order="1"/>
+            <bond atomRefs2="a11 a8" order="1"/>
+            <bond atomRefs2="a11 a15" order="2"/>
+            <bond atomRefs2="a9 a8" order="1"/>
+            <bond atomRefs2="a8 a5" order="1"/>
+            <bond atomRefs2="a4 a1" order="1"/>
+            <bond atomRefs2="a5 a7" order="1"/>
+            <bond atomRefs2="a5 a1" order="1"/>
+            <bond atomRefs2="a5 a6" order="1"/>
+            <bond atomRefs2="a3 a1" order="1"/>
+            <bond atomRefs2="a1 a2" order="1"/>
+          </bondArray>
+        </Molecule>
+      </Molecules>
+      <Methods>
+        <Method Hamiltonian="AMBER_ff03" CategoryOfHamiltonian="forcefield" Basis="nobasis" CategoryOfBasis="unclassified" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-8.84"/>
+        </Method>
+        <Method Hamiltonian="CCSD(T)" CategoryOfHamiltonian="wavefunction" Basis="CBS" CategoryOfBasis="unclassified" CounterpoiseCorrection="CP">
+          <Result CalculatedValue="-7.37"/>
+        </Method>
+        <Method Hamiltonian="TPSS" CategoryOfHamiltonian="meta-GGA" Basis="TZVP" CategoryOfBasis="Ahlrichs" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-5.66"/>
+        </Method>
+        <Method Hamiltonian="TPSS-D" CategoryOfHamiltonian="hybrid-GGA" Basis="TZVP" CategoryOfBasis="Ahlrichs" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-7.35"/>
+        </Method>
+        <Method Hamiltonian="DFT-SAPT PBE0AC" CategoryOfHamiltonian="undefined" Basis="aug-cc-pVDZ" CategoryOfBasis="Dunnings" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-1.66"/>
+        </Method>
+        <Method Hamiltonian="DFT-SAPT PBE0AC" CategoryOfHamiltonian="undefined" Basis="aug-cc-pVDZ" CategoryOfBasis="Dunnings" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-6.83"/>
+        </Method>
+        <Method Hamiltonian="OPLS-AA" CategoryOfHamiltonian="forcefield" Basis="L" CategoryOfBasis="unclassified" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-8.61"/>
+        </Method>
+        <Method Hamiltonian="RI-TPSS-D" CategoryOfHamiltonian="meta-GGA" Basis="TZVP" CategoryOfBasis="Ahlrichs" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-7.31"/>
+        </Method>
+        <Method Hamiltonian="RI-MP2" CategoryOfHamiltonian="wavefunction" Basis="aug-cc-pVDZ" CategoryOfBasis="Dunnings" CounterpoiseCorrection="CP">
+          <Result CalculatedValue="-6.41"/>
+        </Method>
+        <Method Hamiltonian="RI-MP2" CategoryOfHamiltonian="wavefunction" Basis="aug-cc-pVTZ" CategoryOfBasis="Dunnings" CounterpoiseCorrection="CP">
+          <Result CalculatedValue="-6.92"/>
+        </Method>
+        <Method Hamiltonian="SCS-MI-MP2" CategoryOfHamiltonian="wavefunction" Basis="cc-pVTZ" CategoryOfBasis="Dunnings" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-7.06"/>
+        </Method>
+      </Methods>
+      <ReferenceResult>
+        <ReferenceMethod Hamiltonian="CCSD(T)" CategoryOfHamiltonian="wavefunction" Basis="CBS" CategoryOfBasis="unclassified" CounterpoiseCorrection="CP"/>
+        <ReferenceValue Value="-7.37"/>
+      </ReferenceResult>
+    </System>
+    <System Name="RDN1">
+      <Molecules>
+        <Molecule Name="RDN1" SmileString="CCC(=O)O.CCCCNC(=N)N">
+          <atomArray>
+            <atom id="a1" elementType="C" x3="4.728000" y3="-2.591000" z3="-2.541000"/>
+            <atom id="a2" elementType="C" x3="4.657000" y3="-3.066000" z3="-1.076000"/>
+            <atom id="a3" elementType="C" x3="3.652000" y3="-2.308000" z3="-0.228000"/>
+            <atom id="a4" elementType="O" x3="3.990000" y3="-1.194000" z3="0.250000"/>
+            <atom id="a5" elementType="O" x3="2.505000" y3="-2.756000" z3="-0.007000"/>
+            <atom id="a6" elementType="H" x3="3.761000" y3="-2.711000" z3="-3.039000"/>
+            <atom id="a7" elementType="H" x3="5.472000" y3="-3.186000" z3="-3.080000"/>
+            <atom id="a8" elementType="H" x3="5.018000" y3="-1.538000" z3="-2.602000"/>
+            <atom id="a9" elementType="H" x3="4.366000" y3="-4.117000" z3="-1.035000"/>
+            <atom id="a10" elementType="H" x3="5.650000" y3="-2.963000" z3="-0.620000"/>
+            <atom id="a11" elementType="H" x3="3.180000" y3="-0.675000" z3="0.513000"/>
+            <atom id="a12" elementType="C" x3="-1.473000" y3="-6.039000" z3="-0.065000"/>
+            <atom id="a13" elementType="C" x3="-1.933000" y3="-4.552000" z3="-0.038000"/>
+            <atom id="a14" elementType="C" x3="-0.768000" y3="-3.596000" z3="-0.303000"/>
+            <atom id="a15" elementType="C" x3="-1.198000" y3="-2.163000" z3="-0.026000"/>
+            <atom id="a16" elementType="N" x3="0.031000" y3="-1.343000" z3="-0.008000"/>
+            <atom id="a17" elementType="C" x3="0.000000" y3="0.000000" z3="0.000000"/>
+            <atom id="a18" elementType="N" x3="-1.149000" y3="0.662000" z3="0.000000"/>
+            <atom id="a19" elementType="N" x3="1.161000" y3="0.668000" z3="0.000000"/>
+            <atom id="a20" elementType="H" x3="-1.045000" y3="-6.296000" z3="-1.040000"/>
+            <atom id="a21" elementType="H" x3="-2.310000" y3="-6.719000" z3="0.127000"/>
+            <atom id="a22" elementType="H" x3="-0.708000" y3="-6.216000" z3="0.697000"/>
+            <atom id="a23" elementType="H" x3="-2.730000" y3="-4.398000" z3="-0.778000"/>
+            <atom id="a24" elementType="H" x3="-2.366000" y3="-4.335000" z3="0.947000"/>
+            <atom id="a25" elementType="H" x3="0.069000" y3="-3.847000" z3="0.357000"/>
+            <atom id="a26" elementType="H" x3="-0.407000" y3="-3.688000" z3="-1.333000"/>
+            <atom id="a27" elementType="H" x3="-1.880000" y3="-1.808000" z3="-0.812000"/>
+            <atom id="a28" elementType="H" x3="-1.723000" y3="-2.109000" z3="0.941000"/>
+            <atom id="a29" elementType="H" x3="0.945000" y3="-1.800000" z3="0.057000"/>
+            <atom id="a30" elementType="H" x3="1.002000" y3="1.674000" z3="0.054000"/>
+            <atom id="a31" elementType="H" x3="-1.135000" y3="1.668000" z3="0.006000"/>
+            <atom id="a32" elementType="H" x3="-2.051000" y3="0.215000" z3="0.087000"/>
+          </atomArray>
+          <bondArray>
+            <bond atomRefs2="a7 a1" order="1"/>
+            <bond atomRefs2="a6 a1" order="1"/>
+            <bond atomRefs2="a8 a1" order="1"/>
+            <bond atomRefs2="a1 a2" order="1"/>
+            <bond atomRefs2="a26 a14" order="1"/>
+            <bond atomRefs2="a2 a9" order="1"/>
+            <bond atomRefs2="a2 a10" order="1"/>
+            <bond atomRefs2="a2 a3" order="1"/>
+            <bond atomRefs2="a20 a12" order="1"/>
+            <bond atomRefs2="a27 a15" order="1"/>
+            <bond atomRefs2="a23 a13" order="1"/>
+            <bond atomRefs2="a14 a13" order="1"/>
+            <bond atomRefs2="a14 a15" order="1"/>
+            <bond atomRefs2="a14 a25" order="1"/>
+            <bond atomRefs2="a3 a5" order="2"/>
+            <bond atomRefs2="a3 a4" order="1"/>
+            <bond atomRefs2="a12 a13" order="1"/>
+            <bond atomRefs2="a12 a21" order="1"/>
+            <bond atomRefs2="a12 a22" order="1"/>
+            <bond atomRefs2="a13 a24" order="1"/>
+            <bond atomRefs2="a15 a16" order="1"/>
+            <bond atomRefs2="a15 a28" order="1"/>
+            <bond atomRefs2="a16 a17" order="1"/>
+            <bond atomRefs2="a16 a29" order="1"/>
+            <bond atomRefs2="a19 a17" order="2"/>
+            <bond atomRefs2="a19 a30" order="1"/>
+            <bond atomRefs2="a18 a17" order="1"/>
+            <bond atomRefs2="a18 a31" order="1"/>
+            <bond atomRefs2="a18 a32" order="1"/>
+            <bond atomRefs2="a4 a11" order="1"/>
+          </bondArray>
+        </Molecule>
+      </Molecules>
+      <Methods>
+        <Method Hamiltonian="AMBER_ff03" CategoryOfHamiltonian="forcefield" Basis="nobasis" CategoryOfBasis="unclassified" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="0"/>
+        </Method>
+        <Method Hamiltonian="CCSD(T)" CategoryOfHamiltonian="wavefunction" Basis="CBS" CategoryOfBasis="unclassified" CounterpoiseCorrection="CP">
+          <Result CalculatedValue="-16.32"/>
+        </Method>
+        <Method Hamiltonian="TPSS" CategoryOfHamiltonian="meta-GGA" Basis="TZVP" CategoryOfBasis="Ahlrichs" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-14.71"/>
+        </Method>
+        <Method Hamiltonian="TPSS-D" CategoryOfHamiltonian="hybrid-GGA" Basis="TZVP" CategoryOfBasis="Ahlrichs" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-17.17"/>
+        </Method>
+        <Method Hamiltonian="DFT-SAPT PBE0AC" CategoryOfHamiltonian="undefined" Basis="aug-cc-pVDZ" CategoryOfBasis="Dunnings" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-2.57"/>
+        </Method>
+        <Method Hamiltonian="DFT-SAPT PBE0AC" CategoryOfHamiltonian="undefined" Basis="aug-cc-pVDZ" CategoryOfBasis="Dunnings" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-14.68"/>
+        </Method>
+        <Method Hamiltonian="OPLS-AA" CategoryOfHamiltonian="forcefield" Basis="L" CategoryOfBasis="unclassified" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-8.94"/>
+        </Method>
+        <Method Hamiltonian="RI-TPSS-D" CategoryOfHamiltonian="meta-GGA" Basis="TZVP" CategoryOfBasis="Ahlrichs" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-17.01"/>
+        </Method>
+        <Method Hamiltonian="RI-MP2" CategoryOfHamiltonian="wavefunction" Basis="aug-cc-pVDZ" CategoryOfBasis="Dunnings" CounterpoiseCorrection="CP">
+          <Result CalculatedValue="-15.29"/>
+        </Method>
+        <Method Hamiltonian="RI-MP2" CategoryOfHamiltonian="wavefunction" Basis="aug-cc-pVTZ" CategoryOfBasis="Dunnings" CounterpoiseCorrection="CP">
+          <Result CalculatedValue="-15.92"/>
+        </Method>
+        <Method Hamiltonian="SCS-MI-MP2" CategoryOfHamiltonian="wavefunction" Basis="cc-pVTZ" CategoryOfBasis="Dunnings" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-16.18"/>
+        </Method>
+      </Methods>
+      <ReferenceResult>
+        <ReferenceMethod Hamiltonian="CCSD(T)" CategoryOfHamiltonian="wavefunction" Basis="CBS" CategoryOfBasis="unclassified" CounterpoiseCorrection="CP"/>
+        <ReferenceValue Value="-16.32"/>
+      </ReferenceResult>
+    </System>
+    <System Name="RD1">
+      <Molecules>
+        <Molecule Name="RD1" SmileString="CCC(=O)[O].CCCCNC(=[NH2])N">
+          <atomArray>
+            <atom id="a1" elementType="C" x3="4.709000" y3="-2.580000" z3="-2.531000"/>
+            <atom id="a2" elementType="C" x3="4.638000" y3="-3.053000" z3="-1.072000"/>
+            <atom id="a3" elementType="H" x3="4.390000" y3="-4.122000" z3="-1.055000"/>
+            <atom id="a4" elementType="H" x3="5.625000" y3="-2.927000" z3="-0.612000"/>
+            <atom id="a5" elementType="C" x3="3.637000" y3="-2.299000" z3="-0.227000"/>
+            <atom id="a6" elementType="O" x3="3.974000" y3="-1.189000" z3="0.249000"/>
+            <atom id="a7" elementType="O" x3="2.495000" y3="-2.745000" z3="-0.007000"/>
+            <atom id="a8" elementType="H" x3="3.741000" y3="-2.697000" z3="-3.032000"/>
+            <atom id="a9" elementType="H" x3="5.446000" y3="-3.164000" z3="-3.093000"/>
+            <atom id="a10" elementType="H" x3="4.997000" y3="-1.525000" z3="-2.582000"/>
+            <atom id="a11" elementType="C" x3="-1.467000" y3="-6.014000" z3="-0.065000"/>
+            <atom id="a12" elementType="C" x3="-1.925000" y3="-4.534000" z3="-0.038000"/>
+            <atom id="a13" elementType="H" x3="-2.723000" y3="-4.380000" z3="-0.778000"/>
+            <atom id="a14" elementType="H" x3="-2.361000" y3="-4.315000" z3="0.947000"/>
+            <atom id="a15" elementType="C" x3="-0.765000" y3="-3.581000" z3="-0.302000"/>
+            <atom id="a16" elementType="H" x3="0.085000" y3="-3.827000" z3="0.347000"/>
+            <atom id="a17" elementType="H" x3="-0.405000" y3="-3.668000" z3="-1.332000"/>
+            <atom id="a18" elementType="C" x3="-1.193000" y3="-2.154000" z3="-0.026000"/>
+            <atom id="a19" elementType="H" x3="-1.876000" y3="-1.797000" z3="-0.810000"/>
+            <atom id="a20" elementType="H" x3="-1.705000" y3="-2.089000" z3="0.944000"/>
+            <atom id="a21" elementType="N" x3="0.031000" y3="-1.337000" z3="-0.008000"/>
+            <atom id="a22" elementType="H" x3="0.989000" y3="-1.827000" z3="0.050000"/>
+            <atom id="a23" elementType="C" x3="0.000000" y3="0.000000" z3="0.000000"/>
+            <atom id="a24" elementType="N" x3="-1.144000" y3="0.659000" z3="0.000000"/>
+            <atom id="a25" elementType="H" x3="-2.023000" y3="0.166000" z3="0.006000"/>
+            <atom id="a26" elementType="H" x3="-1.173000" y3="1.667000" z3="-0.049000"/>
+            <atom id="a27" elementType="N" x3="1.156000" y3="0.665000" z3="0.000000"/>
+            <atom id="a28" elementType="H" x3="2.042000" y3="0.137000" z3="0.116000"/>
+            <atom id="a29" elementType="H" x3="1.188000" y3="1.651000" z3="0.219000"/>
+            <atom id="a30" elementType="H" x3="-1.037000" y3="-6.275000" z3="-1.038000"/>
+            <atom id="a31" elementType="H" x3="-2.306000" y3="-6.691000" z3="0.122000"/>
+            <atom id="a32" elementType="H" x3="-0.705000" y3="-6.193000" z3="0.699000"/>
+          </atomArray>
+          <bondArray>
+            <bond atomRefs2="a9 a1" order="1"/>
+            <bond atomRefs2="a8 a1" order="1"/>
+            <bond atomRefs2="a10 a1" order="1"/>
+            <bond atomRefs2="a1 a2" order="1"/>
+            <bond atomRefs2="a17 a15" order="1"/>
+            <bond atomRefs2="a2 a3" order="1"/>
+            <bond atomRefs2="a2 a4" order="1"/>
+            <bond atomRefs2="a2 a5" order="1"/>
+            <bond atomRefs2="a30 a11" order="1"/>
+            <bond atomRefs2="a19 a18" order="1"/>
+            <bond atomRefs2="a13 a12" order="1"/>
+            <bond atomRefs2="a15 a12" order="1"/>
+            <bond atomRefs2="a15 a18" order="1"/>
+            <bond atomRefs2="a15 a16" order="1"/>
+            <bond atomRefs2="a5 a7" order="2"/>
+            <bond atomRefs2="a5 a6" order="1"/>
+            <bond atomRefs2="a11 a12" order="1"/>
+            <bond atomRefs2="a11 a31" order="1"/>
+            <bond atomRefs2="a11 a32" order="1"/>
+            <bond atomRefs2="a26 a24" order="1"/>
+            <bond atomRefs2="a12 a14" order="1"/>
+            <bond atomRefs2="a18 a21" order="1"/>
+            <bond atomRefs2="a18 a20" order="1"/>
+            <bond atomRefs2="a21 a23" order="1"/>
+            <bond atomRefs2="a21 a22" order="1"/>
+            <bond atomRefs2="a23 a24" order="2"/>
+            <bond atomRefs2="a23 a27" order="1"/>
+            <bond atomRefs2="a24 a25" order="1"/>
+            <bond atomRefs2="a27 a28" order="1"/>
+            <bond atomRefs2="a27 a29" order="1"/>
+          </bondArray>
+        </Molecule>
+      </Molecules>
+      <Methods>
+        <Method Hamiltonian="AMBER_ff03" CategoryOfHamiltonian="forcefield" Basis="nobasis" CategoryOfBasis="unclassified" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-90.37"/>
+        </Method>
+        <Method Hamiltonian="CCSD(T)" CategoryOfHamiltonian="wavefunction" Basis="CBS" CategoryOfBasis="unclassified" CounterpoiseCorrection="CP">
+          <Result CalculatedValue="-110.8"/>
+        </Method>
+        <Method Hamiltonian="TPSS" CategoryOfHamiltonian="meta-GGA" Basis="TZVP" CategoryOfBasis="Ahlrichs" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-110.6"/>
+        </Method>
+        <Method Hamiltonian="TPSS-D" CategoryOfHamiltonian="hybrid-GGA" Basis="TZVP" CategoryOfBasis="Ahlrichs" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-112.93"/>
+        </Method>
+        <Method Hamiltonian="DFT-SAPT PBE0AC" CategoryOfHamiltonian="undefined" Basis="aug-cc-pVDZ" CategoryOfBasis="Dunnings" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-6.25"/>
+        </Method>
+        <Method Hamiltonian="DFT-SAPT PBE0AC" CategoryOfHamiltonian="undefined" Basis="aug-cc-pVDZ" CategoryOfBasis="Dunnings" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-107.52"/>
+        </Method>
+        <Method Hamiltonian="OPLS-AA" CategoryOfHamiltonian="forcefield" Basis="L" CategoryOfBasis="unclassified" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-105.71"/>
+        </Method>
+        <Method Hamiltonian="RI-TPSS-D" CategoryOfHamiltonian="meta-GGA" Basis="TZVP" CategoryOfBasis="Ahlrichs" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-112.73"/>
+        </Method>
+        <Method Hamiltonian="RI-MP2" CategoryOfHamiltonian="wavefunction" Basis="aug-cc-pVDZ" CategoryOfBasis="Dunnings" CounterpoiseCorrection="CP">
+          <Result CalculatedValue="-109.37"/>
+        </Method>
+        <Method Hamiltonian="RI-MP2" CategoryOfHamiltonian="wavefunction" Basis="aug-cc-pVTZ" CategoryOfBasis="Dunnings" CounterpoiseCorrection="CP">
+          <Result CalculatedValue="-110.21"/>
+        </Method>
+        <Method Hamiltonian="SCS-MI-MP2" CategoryOfHamiltonian="wavefunction" Basis="cc-pVTZ" CategoryOfBasis="Dunnings" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-111.71"/>
+        </Method>
+      </Methods>
+      <ReferenceResult>
+        <ReferenceMethod Hamiltonian="CCSD(T)" CategoryOfHamiltonian="wavefunction" Basis="CBS" CategoryOfBasis="unclassified" CounterpoiseCorrection="CP"/>
+        <ReferenceValue Value="-110.8"/>
+      </ReferenceResult>
+    </System>
+    <System Name="TS1">
+      <Molecules>
+        <Molecule Name="TS1" SmileString="CCO.CC(C)O">
+          <atomArray>
+            <atom id="a1" elementType="C" x3="-1.298000" y3="2.042000" z3="-4.240000"/>
+            <atom id="a2" elementType="C" x3="-1.938000" y3="2.938000" z3="-3.173000"/>
+            <atom id="a3" elementType="O" x3="-0.939000" y3="3.450000" z3="-2.297000"/>
+            <atom id="a4" elementType="H" x3="-2.052000" y3="1.654000" z3="-4.938000"/>
+            <atom id="a5" elementType="H" x3="-0.558000" y3="2.613000" z3="-4.810000"/>
+            <atom id="a6" elementType="H" x3="-0.793000" y3="1.188000" z3="-3.777000"/>
+            <atom id="a7" elementType="H" x3="-2.411000" y3="3.807000" z3="-3.644000"/>
+            <atom id="a8" elementType="H" x3="-2.713000" y3="2.392000" z3="-2.617000"/>
+            <atom id="a9" elementType="H" x3="-0.808000" y3="2.784000" z3="-1.600000"/>
+            <atom id="a10" elementType="C" x3="-0.036000" y3="-0.876000" z3="-1.262000"/>
+            <atom id="a11" elementType="C" x3="0.000000" y3="0.000000" z3="0.000000"/>
+            <atom id="a12" elementType="C" x3="1.223000" y3="0.911000" z3="0.000000"/>
+            <atom id="a13" elementType="O" x3="-1.153000" y3="0.859000" z3="0.000000"/>
+            <atom id="a14" elementType="H" x3="-0.024000" y3="-0.247000" z3="-2.157000"/>
+            <atom id="a15" elementType="H" x3="0.845000" y3="-1.525000" z3="-1.281000"/>
+            <atom id="a16" elementType="H" x3="-0.934000" y3="-1.500000" z3="-1.282000"/>
+            <atom id="a17" elementType="H" x3="-0.013000" y3="-0.644000" z3="0.892000"/>
+            <atom id="a18" elementType="H" x3="-1.161000" y3="1.344000" z3="0.841000"/>
+            <atom id="a19" elementType="H" x3="1.202000" y3="1.557000" z3="-0.884000"/>
+            <atom id="a20" elementType="H" x3="1.236000" y3="1.552000" z3="0.891000"/>
+            <atom id="a21" elementType="H" x3="2.162000" y3="0.343000" z3="-0.010000"/>
+          </atomArray>
+          <bondArray>
+            <bond atomRefs2="a4 a1" order="1"/>
+            <bond atomRefs2="a5 a1" order="1"/>
+            <bond atomRefs2="a1 a6" order="1"/>
+            <bond atomRefs2="a1 a2" order="1"/>
+            <bond atomRefs2="a7 a2" order="1"/>
+            <bond atomRefs2="a2 a8" order="1"/>
+            <bond atomRefs2="a2 a3" order="1"/>
+            <bond atomRefs2="a3 a9" order="1"/>
+            <bond atomRefs2="a14 a10" order="1"/>
+            <bond atomRefs2="a16 a10" order="1"/>
+            <bond atomRefs2="a15 a10" order="1"/>
+            <bond atomRefs2="a10 a11" order="1"/>
+            <bond atomRefs2="a19 a12" order="1"/>
+            <bond atomRefs2="a21 a12" order="1"/>
+            <bond atomRefs2="a13 a11" order="1"/>
+            <bond atomRefs2="a13 a18" order="1"/>
+            <bond atomRefs2="a12 a11" order="1"/>
+            <bond atomRefs2="a12 a20" order="1"/>
+            <bond atomRefs2="a11 a17" order="1"/>
+          </bondArray>
+        </Molecule>
+      </Molecules>
+      <Methods>
+        <Method Hamiltonian="AMBER_ff03" CategoryOfHamiltonian="forcefield" Basis="nobasis" CategoryOfBasis="unclassified" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-4.17"/>
+        </Method>
+        <Method Hamiltonian="CCSD(T)" CategoryOfHamiltonian="wavefunction" Basis="CBS" CategoryOfBasis="unclassified" CounterpoiseCorrection="CP">
+          <Result CalculatedValue="-4.5"/>
+        </Method>
+        <Method Hamiltonian="TPSS" CategoryOfHamiltonian="meta-GGA" Basis="TZVP" CategoryOfBasis="Ahlrichs" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-3.36"/>
+        </Method>
+        <Method Hamiltonian="TPSS-D" CategoryOfHamiltonian="hybrid-GGA" Basis="TZVP" CategoryOfBasis="Ahlrichs" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-5.47"/>
+        </Method>
+        <Method Hamiltonian="DFT-SAPT PBE0AC" CategoryOfHamiltonian="undefined" Basis="aug-cc-pVDZ" CategoryOfBasis="Dunnings" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-0.25"/>
+        </Method>
+        <Method Hamiltonian="DFT-SAPT PBE0AC" CategoryOfHamiltonian="undefined" Basis="aug-cc-pVDZ" CategoryOfBasis="Dunnings" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-4.05"/>
+        </Method>
+        <Method Hamiltonian="OPLS-AA" CategoryOfHamiltonian="forcefield" Basis="L" CategoryOfBasis="unclassified" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-4.38"/>
+        </Method>
+        <Method Hamiltonian="RI-TPSS-D" CategoryOfHamiltonian="meta-GGA" Basis="TZVP" CategoryOfBasis="Ahlrichs" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-5.41"/>
+        </Method>
+        <Method Hamiltonian="RI-MP2" CategoryOfHamiltonian="wavefunction" Basis="aug-cc-pVDZ" CategoryOfBasis="Dunnings" CounterpoiseCorrection="CP">
+          <Result CalculatedValue="-4.12"/>
+        </Method>
+        <Method Hamiltonian="RI-MP2" CategoryOfHamiltonian="wavefunction" Basis="aug-cc-pVTZ" CategoryOfBasis="Dunnings" CounterpoiseCorrection="CP">
+          <Result CalculatedValue="-4.3"/>
+        </Method>
+        <Method Hamiltonian="SCS-MI-MP2" CategoryOfHamiltonian="wavefunction" Basis="cc-pVTZ" CategoryOfBasis="Dunnings" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-3.99"/>
+        </Method>
+      </Methods>
+      <ReferenceResult>
+        <ReferenceMethod Hamiltonian="CCSD(T)" CategoryOfHamiltonian="wavefunction" Basis="CBS" CategoryOfBasis="unclassified" CounterpoiseCorrection="CP"/>
+        <ReferenceValue Value="-4.5"/>
+      </ReferenceResult>
+    </System>
+    <System Name="TT1">
+      <Molecules>
+        <Molecule Name="TT1" SmileString="CC(C)O.CC(C)O">
+          <atomArray>
+            <atom id="a1" elementType="C" x3="-1.551000" y3="2.180000" z3="-3.887000"/>
+            <atom id="a2" elementType="C" x3="-2.380000" y3="3.004000" z3="-2.884000"/>
+            <atom id="a3" elementType="C" x3="-3.676000" y3="2.299000" z3="-2.548000"/>
+            <atom id="a4" elementType="O" x3="-1.582000" y3="3.081000" z3="-1.691000"/>
+            <atom id="a5" elementType="H" x3="-1.409000" y3="1.168000" z3="-3.492000"/>
+            <atom id="a6" elementType="H" x3="-2.038000" y3="2.091000" z3="-4.867000"/>
+            <atom id="a7" elementType="H" x3="-0.569000" y3="2.642000" z3="-4.029000"/>
+            <atom id="a8" elementType="H" x3="-2.534000" y3="4.032000" z3="-3.225000"/>
+            <atom id="a9" elementType="H" x3="-1.502000" y3="2.183000" z3="-1.306000"/>
+            <atom id="a10" elementType="H" x3="-3.464000" y3="1.292000" z3="-2.169000"/>
+            <atom id="a11" elementType="H" x3="-4.224000" y3="2.845000" z3="-1.773000"/>
+            <atom id="a12" elementType="H" x3="-4.330000" y3="2.198000" z3="-3.424000"/>
+            <atom id="a13" elementType="C" x3="-0.109000" y3="-0.834000" z3="-1.286000"/>
+            <atom id="a14" elementType="C" x3="0.000000" y3="0.000000" z3="0.000000"/>
+            <atom id="a15" elementType="C" x3="1.233000" y3="0.890000" z3="0.000000"/>
+            <atom id="a16" elementType="O" x3="-1.169000" y3="0.844000" z3="0.000000"/>
+            <atom id="a17" elementType="H" x3="-0.076000" y3="-0.177000" z3="-2.160000"/>
+            <atom id="a18" elementType="H" x3="0.724000" y3="-1.541000" z3="-1.353000"/>
+            <atom id="a19" elementType="H" x3="-1.047000" y3="-1.397000" z3="-1.299000"/>
+            <atom id="a20" elementType="H" x3="-0.020000" y3="-0.656000" z3="0.882000"/>
+            <atom id="a21" elementType="H" x3="-1.150000" y3="1.399000" z3="0.798000"/>
+            <atom id="a22" elementType="H" x3="1.206000" y3="1.560000" z3="-0.865000"/>
+            <atom id="a23" elementType="H" x3="1.276000" y3="1.504000" z3="0.909000"/>
+            <atom id="a24" elementType="H" x3="2.155000" y3="0.297000" z3="-0.041000"/>
+          </atomArray>
+          <bondArray>
+            <bond atomRefs2="a6 a1" order="1"/>
+            <bond atomRefs2="a7 a1" order="1"/>
+            <bond atomRefs2="a1 a5" order="1"/>
+            <bond atomRefs2="a1 a2" order="1"/>
+            <bond atomRefs2="a12 a3" order="1"/>
+            <bond atomRefs2="a8 a2" order="1"/>
+            <bond atomRefs2="a2 a3" order="1"/>
+            <bond atomRefs2="a2 a4" order="1"/>
+            <bond atomRefs2="a3 a10" order="1"/>
+            <bond atomRefs2="a3 a11" order="1"/>
+            <bond atomRefs2="a17 a13" order="1"/>
+            <bond atomRefs2="a4 a9" order="1"/>
+            <bond atomRefs2="a18 a13" order="1"/>
+            <bond atomRefs2="a19 a13" order="1"/>
+            <bond atomRefs2="a13 a14" order="1"/>
+            <bond atomRefs2="a22 a15" order="1"/>
+            <bond atomRefs2="a24 a15" order="1"/>
+            <bond atomRefs2="a16 a14" order="1"/>
+            <bond atomRefs2="a16 a21" order="1"/>
+            <bond atomRefs2="a15 a14" order="1"/>
+            <bond atomRefs2="a15 a23" order="1"/>
+            <bond atomRefs2="a14 a20" order="1"/>
+          </bondArray>
+        </Molecule>
+      </Molecules>
+      <Methods>
+        <Method Hamiltonian="AMBER_ff03" CategoryOfHamiltonian="forcefield" Basis="nobasis" CategoryOfBasis="unclassified" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-7.46"/>
+        </Method>
+        <Method Hamiltonian="CCSD(T)" CategoryOfHamiltonian="wavefunction" Basis="CBS" CategoryOfBasis="unclassified" CounterpoiseCorrection="CP">
+          <Result CalculatedValue="-6.5"/>
+        </Method>
+        <Method Hamiltonian="TPSS" CategoryOfHamiltonian="meta-GGA" Basis="TZVP" CategoryOfBasis="Ahlrichs" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-4.81"/>
+        </Method>
+        <Method Hamiltonian="TPSS-D" CategoryOfHamiltonian="hybrid-GGA" Basis="TZVP" CategoryOfBasis="Ahlrichs" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-7.53"/>
+        </Method>
+        <Method Hamiltonian="DFT-SAPT PBE0AC" CategoryOfHamiltonian="undefined" Basis="aug-cc-pVDZ" CategoryOfBasis="Dunnings" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-1.37"/>
+        </Method>
+        <Method Hamiltonian="DFT-SAPT PBE0AC" CategoryOfHamiltonian="undefined" Basis="aug-cc-pVDZ" CategoryOfBasis="Dunnings" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-5.27"/>
+        </Method>
+        <Method Hamiltonian="OPLS-AA" CategoryOfHamiltonian="forcefield" Basis="L" CategoryOfBasis="unclassified" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-7.96"/>
+        </Method>
+        <Method Hamiltonian="RI-TPSS-D" CategoryOfHamiltonian="meta-GGA" Basis="TZVP" CategoryOfBasis="Ahlrichs" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-7.32"/>
+        </Method>
+        <Method Hamiltonian="RI-MP2" CategoryOfHamiltonian="wavefunction" Basis="aug-cc-pVDZ" CategoryOfBasis="Dunnings" CounterpoiseCorrection="CP">
+          <Result CalculatedValue="-5.74"/>
+        </Method>
+        <Method Hamiltonian="RI-MP2" CategoryOfHamiltonian="wavefunction" Basis="aug-cc-pVTZ" CategoryOfBasis="Dunnings" CounterpoiseCorrection="CP">
+          <Result CalculatedValue="-6.28"/>
+        </Method>
+        <Method Hamiltonian="SCS-MI-MP2" CategoryOfHamiltonian="wavefunction" Basis="cc-pVTZ" CategoryOfBasis="Dunnings" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-5.93"/>
+        </Method>
+      </Methods>
+      <ReferenceResult>
+        <ReferenceMethod Hamiltonian="CCSD(T)" CategoryOfHamiltonian="wavefunction" Basis="CBS" CategoryOfBasis="unclassified" CounterpoiseCorrection="CP"/>
+        <ReferenceValue Value="-6.5"/>
+      </ReferenceResult>
+    </System>
+    <System Name="VL1">
+      <Molecules>
+        <Molecule Name="VL1" SmileString="CCC(C)C.CC(C)C">
+          <atomArray>
+            <atom id="a1" elementType="C" x3="-5.363000" y3="-0.766000" z3="4.307000"/>
+            <atom id="a2" elementType="H" x3="-5.905000" y3="-1.652000" z3="4.656000"/>
+            <atom id="a3" elementType="H" x3="-5.668000" y3="0.078000" z3="4.933000"/>
+            <atom id="a4" elementType="H" x3="-4.293000" y3="-0.938000" z3="4.473000"/>
+            <atom id="a5" elementType="C" x3="-5.652000" y3="-0.505000" z3="2.807000"/>
+            <atom id="a6" elementType="H" x3="-5.322000" y3="-1.387000" z3="2.238000"/>
+            <atom id="a7" elementType="H" x3="-6.740000" y3="-0.439000" z3="2.660000"/>
+            <atom id="a8" elementType="C" x3="-5.007000" y3="0.731000" z3="2.231000"/>
+            <atom id="a9" elementType="C" x3="-5.198000" y3="0.833000" z3="0.706000"/>
+            <atom id="a10" elementType="H" x3="-6.266000" y3="0.871000" z3="0.459000"/>
+            <atom id="a11" elementType="H" x3="-4.728000" y3="1.741000" z3="0.312000"/>
+            <atom id="a12" elementType="H" x3="-4.764000" y3="-0.029000" z3="0.184000"/>
+            <atom id="a13" elementType="H" x3="-3.929000" y3="0.713000" z3="2.452000"/>
+            <atom id="a14" elementType="C" x3="-5.622000" y3="1.998000" z3="2.864000"/>
+            <atom id="a15" elementType="H" x3="-5.519000" y3="2.013000" z3="3.955000"/>
+            <atom id="a16" elementType="H" x3="-5.147000" y3="2.906000" z3="2.476000"/>
+            <atom id="a17" elementType="H" x3="-6.691000" y3="2.051000" z3="2.625000"/>
+            <atom id="a18" elementType="C" x3="0.033000" y3="-0.891000" z3="1.271000"/>
+            <atom id="a19" elementType="H" x3="-0.840000" y3="-1.553000" z3="1.326000"/>
+            <atom id="a20" elementType="H" x3="0.037000" y3="-0.262000" z3="2.169000"/>
+            <atom id="a21" elementType="H" x3="0.934000" y3="-1.515000" z3="1.292000"/>
+            <atom id="a22" elementType="C" x3="0.000000" y3="0.000000" z3="0.000000"/>
+            <atom id="a23" elementType="C" x3="1.262000" y3="0.835000" z3="0.000000"/>
+            <atom id="a24" elementType="H" x3="2.157000" y3="0.203000" z3="0.026000"/>
+            <atom id="a25" elementType="H" x3="1.334000" y3="1.479000" z3="-0.887000"/>
+            <atom id="a26" elementType="H" x3="1.291000" y3="1.488000" z3="0.882000"/>
+            <atom id="a27" elementType="H" x3="-0.005000" y3="-0.653000" z3="-0.884000"/>
+            <atom id="a28" elementType="C" x3="-1.274000" y3="0.843000" z3="0.000000"/>
+            <atom id="a29" elementType="H" x3="-1.298000" y3="1.506000" z3="0.874000"/>
+            <atom id="a30" elementType="H" x3="-1.344000" y3="1.472000" z3="-0.897000"/>
+            <atom id="a31" elementType="H" x3="-2.165000" y3="0.208000" z3="0.035000"/>
+          </atomArray>
+          <bondArray>
+            <bond atomRefs2="a30 a28" order="1"/>
+            <bond atomRefs2="a25 a23" order="1"/>
+            <bond atomRefs2="a27 a22" order="1"/>
+            <bond atomRefs2="a22 a28" order="1"/>
+            <bond atomRefs2="a22 a23" order="1"/>
+            <bond atomRefs2="a22 a18" order="1"/>
+            <bond atomRefs2="a28 a31" order="1"/>
+            <bond atomRefs2="a28 a29" order="1"/>
+            <bond atomRefs2="a23 a24" order="1"/>
+            <bond atomRefs2="a23 a26" order="1"/>
+            <bond atomRefs2="a12 a9" order="1"/>
+            <bond atomRefs2="a11 a9" order="1"/>
+            <bond atomRefs2="a10 a9" order="1"/>
+            <bond atomRefs2="a9 a8" order="1"/>
+            <bond atomRefs2="a18 a21" order="1"/>
+            <bond atomRefs2="a18 a19" order="1"/>
+            <bond atomRefs2="a18 a20" order="1"/>
+            <bond atomRefs2="a8 a13" order="1"/>
+            <bond atomRefs2="a8 a5" order="1"/>
+            <bond atomRefs2="a8 a14" order="1"/>
+            <bond atomRefs2="a6 a5" order="1"/>
+            <bond atomRefs2="a16 a14" order="1"/>
+            <bond atomRefs2="a17 a14" order="1"/>
+            <bond atomRefs2="a7 a5" order="1"/>
+            <bond atomRefs2="a5 a1" order="1"/>
+            <bond atomRefs2="a14 a15" order="1"/>
+            <bond atomRefs2="a1 a4" order="1"/>
+            <bond atomRefs2="a1 a2" order="1"/>
+            <bond atomRefs2="a1 a3" order="1"/>
+          </bondArray>
+        </Molecule>
+      </Molecules>
+      <Methods>
+        <Method Hamiltonian="AMBER_ff03" CategoryOfHamiltonian="forcefield" Basis="nobasis" CategoryOfBasis="unclassified" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-1.01"/>
+        </Method>
+        <Method Hamiltonian="CCSD(T)" CategoryOfHamiltonian="wavefunction" Basis="CBS" CategoryOfBasis="unclassified" CounterpoiseCorrection="CP">
+          <Result CalculatedValue="-1.08"/>
+        </Method>
+        <Method Hamiltonian="TPSS" CategoryOfHamiltonian="meta-GGA" Basis="TZVP" CategoryOfBasis="Ahlrichs" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="0.11"/>
+        </Method>
+        <Method Hamiltonian="TPSS-D" CategoryOfHamiltonian="hybrid-GGA" Basis="TZVP" CategoryOfBasis="Ahlrichs" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-1.34"/>
+        </Method>
+        <Method Hamiltonian="DFT-SAPT PBE0AC" CategoryOfHamiltonian="undefined" Basis="aug-cc-pVDZ" CategoryOfBasis="Dunnings" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-0.04"/>
+        </Method>
+        <Method Hamiltonian="DFT-SAPT PBE0AC" CategoryOfHamiltonian="undefined" Basis="aug-cc-pVDZ" CategoryOfBasis="Dunnings" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-0.97"/>
+        </Method>
+        <Method Hamiltonian="OPLS-AA" CategoryOfHamiltonian="forcefield" Basis="L" CategoryOfBasis="unclassified" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-0.81"/>
+        </Method>
+        <Method Hamiltonian="RI-TPSS-D" CategoryOfHamiltonian="meta-GGA" Basis="TZVP" CategoryOfBasis="Ahlrichs" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-1.33"/>
+        </Method>
+        <Method Hamiltonian="RI-MP2" CategoryOfHamiltonian="wavefunction" Basis="aug-cc-pVDZ" CategoryOfBasis="Dunnings" CounterpoiseCorrection="CP">
+          <Result CalculatedValue="-0.94"/>
+        </Method>
+        <Method Hamiltonian="RI-MP2" CategoryOfHamiltonian="wavefunction" Basis="aug-cc-pVTZ" CategoryOfBasis="Dunnings" CounterpoiseCorrection="CP">
+          <Result CalculatedValue="-1.01"/>
+        </Method>
+        <Method Hamiltonian="SCS-MI-MP2" CategoryOfHamiltonian="wavefunction" Basis="cc-pVTZ" CategoryOfBasis="Dunnings" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-0.81"/>
+        </Method>
+      </Methods>
+      <ReferenceResult>
+        <ReferenceMethod Hamiltonian="CCSD(T)" CategoryOfHamiltonian="wavefunction" Basis="CBS" CategoryOfBasis="unclassified" CounterpoiseCorrection="CP"/>
+        <ReferenceValue Value="-1.08"/>
+      </ReferenceResult>
+    </System>
+    <System Name="VV1">
+      <Molecules>
+        <Molecule Name="VV1" SmileString="CC(C)C.CC(C)C">
+          <atomArray>
+            <atom id="a1" elementType="C" x3="0.436000" y3="1.619000" z3="5.114000"/>
+            <atom id="a2" elementType="H" x3="1.104000" y3="1.263000" z3="5.907000"/>
+            <atom id="a3" elementType="H" x3="0.425000" y3="0.860000" z3="4.322000"/>
+            <atom id="a4" elementType="H" x3="-0.576000" y3="1.683000" z3="5.530000"/>
+            <atom id="a5" elementType="C" x3="0.903000" y3="2.970000" z3="4.558000"/>
+            <atom id="a6" elementType="C" x3="-0.063000" y3="3.477000" z3="3.495000"/>
+            <atom id="a7" elementType="H" x3="-1.080000" y3="3.567000" z3="3.894000"/>
+            <atom id="a8" elementType="H" x3="0.238000" y3="4.461000" z3="3.116000"/>
+            <atom id="a9" elementType="H" x3="-0.101000" y3="2.791000" z3="2.640000"/>
+            <atom id="a10" elementType="H" x3="0.898000" y3="3.691000" z3="5.389000"/>
+            <atom id="a11" elementType="C" x3="2.325000" y3="2.848000" z3="4.050000"/>
+            <atom id="a12" elementType="H" x3="2.389000" y3="2.122000" z3="3.228000"/>
+            <atom id="a13" elementType="H" x3="2.706000" y3="3.805000" z3="3.672000"/>
+            <atom id="a14" elementType="H" x3="3.002000" y3="2.510000" z3="4.844000"/>
+            <atom id="a15" elementType="C" x3="-0.035000" y3="-0.946000" z3="1.208000"/>
+            <atom id="a16" elementType="H" x3="-0.925000" y3="-1.586000" z3="1.183000"/>
+            <atom id="a17" elementType="H" x3="-0.059000" y3="-0.375000" z3="2.144000"/>
+            <atom id="a18" elementType="H" x3="0.847000" y3="-1.597000" z3="1.237000"/>
+            <atom id="a19" elementType="C" x3="0.000000" y3="0.000000" z3="0.000000"/>
+            <atom id="a20" elementType="C" x3="1.266000" y3="0.861000" z3="0.000000"/>
+            <atom id="a21" elementType="H" x3="2.170000" y3="0.241000" z3="0.003000"/>
+            <atom id="a22" elementType="H" x3="1.305000" y3="1.508000" z3="-0.884000"/>
+            <atom id="a23" elementType="H" x3="1.299000" y3="1.506000" z3="0.887000"/>
+            <atom id="a24" elementType="H" x3="0.004000" y3="-0.613000" z3="-0.913000"/>
+            <atom id="a25" elementType="C" x3="-1.259000" y3="0.856000" z3="0.000000"/>
+            <atom id="a26" elementType="H" x3="-1.308000" y3="1.478000" z3="0.903000"/>
+            <atom id="a27" elementType="H" x3="-1.293000" y3="1.528000" z3="-0.867000"/>
+            <atom id="a28" elementType="H" x3="-2.163000" y3="0.235000" z3="-0.025000"/>
+          </atomArray>
+          <bondArray>
+            <bond atomRefs2="a24 a19" order="1"/>
+            <bond atomRefs2="a22 a20" order="1"/>
+            <bond atomRefs2="a27 a25" order="1"/>
+            <bond atomRefs2="a28 a25" order="1"/>
+            <bond atomRefs2="a25 a19" order="1"/>
+            <bond atomRefs2="a25 a26" order="1"/>
+            <bond atomRefs2="a20 a19" order="1"/>
+            <bond atomRefs2="a20 a21" order="1"/>
+            <bond atomRefs2="a20 a23" order="1"/>
+            <bond atomRefs2="a19 a15" order="1"/>
+            <bond atomRefs2="a16 a15" order="1"/>
+            <bond atomRefs2="a15 a18" order="1"/>
+            <bond atomRefs2="a15 a17" order="1"/>
+            <bond atomRefs2="a9 a6" order="1"/>
+            <bond atomRefs2="a8 a6" order="1"/>
+            <bond atomRefs2="a12 a11" order="1"/>
+            <bond atomRefs2="a6 a7" order="1"/>
+            <bond atomRefs2="a6 a5" order="1"/>
+            <bond atomRefs2="a13 a11" order="1"/>
+            <bond atomRefs2="a11 a5" order="1"/>
+            <bond atomRefs2="a11 a14" order="1"/>
+            <bond atomRefs2="a3 a1" order="1"/>
+            <bond atomRefs2="a5 a1" order="1"/>
+            <bond atomRefs2="a5 a10" order="1"/>
+            <bond atomRefs2="a1 a4" order="1"/>
+            <bond atomRefs2="a1 a2" order="1"/>
+          </bondArray>
+        </Molecule>
+      </Molecules>
+      <Methods>
+        <Method Hamiltonian="AMBER_ff03" CategoryOfHamiltonian="forcefield" Basis="nobasis" CategoryOfBasis="unclassified" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-1.4"/>
+        </Method>
+        <Method Hamiltonian="CCSD(T)" CategoryOfHamiltonian="wavefunction" Basis="CBS" CategoryOfBasis="unclassified" CounterpoiseCorrection="CP">
+          <Result CalculatedValue="-1.39"/>
+        </Method>
+        <Method Hamiltonian="TPSS" CategoryOfHamiltonian="meta-GGA" Basis="TZVP" CategoryOfBasis="Ahlrichs" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="0.44"/>
+        </Method>
+        <Method Hamiltonian="TPSS-D" CategoryOfHamiltonian="hybrid-GGA" Basis="TZVP" CategoryOfBasis="Ahlrichs" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-1.79"/>
+        </Method>
+        <Method Hamiltonian="DFT-SAPT PBE0AC" CategoryOfHamiltonian="undefined" Basis="aug-cc-pVDZ" CategoryOfBasis="Dunnings" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-0.12"/>
+        </Method>
+        <Method Hamiltonian="DFT-SAPT PBE0AC" CategoryOfHamiltonian="undefined" Basis="aug-cc-pVDZ" CategoryOfBasis="Dunnings" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-1.18"/>
+        </Method>
+        <Method Hamiltonian="OPLS-AA" CategoryOfHamiltonian="forcefield" Basis="L" CategoryOfBasis="unclassified" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-1.36"/>
+        </Method>
+        <Method Hamiltonian="RI-TPSS-D" CategoryOfHamiltonian="meta-GGA" Basis="TZVP" CategoryOfBasis="Ahlrichs" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-1.83"/>
+        </Method>
+        <Method Hamiltonian="RI-MP2" CategoryOfHamiltonian="wavefunction" Basis="aug-cc-pVDZ" CategoryOfBasis="Dunnings" CounterpoiseCorrection="CP">
+          <Result CalculatedValue="-1.14"/>
+        </Method>
+        <Method Hamiltonian="RI-MP2" CategoryOfHamiltonian="wavefunction" Basis="aug-cc-pVTZ" CategoryOfBasis="Dunnings" CounterpoiseCorrection="CP">
+          <Result CalculatedValue="-1.28"/>
+        </Method>
+        <Method Hamiltonian="SCS-MI-MP2" CategoryOfHamiltonian="wavefunction" Basis="cc-pVTZ" CategoryOfBasis="Dunnings" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-0.96"/>
+        </Method>
+      </Methods>
+      <ReferenceResult>
+        <ReferenceMethod Hamiltonian="CCSD(T)" CategoryOfHamiltonian="wavefunction" Basis="CBS" CategoryOfBasis="unclassified" CounterpoiseCorrection="CP"/>
+        <ReferenceValue Value="-1.39"/>
+      </ReferenceResult>
+    </System>
+    <System Name="YP1">
+      <Molecules>
+        <Molecule Name="YP1" SmileString="N1CCCC1.CCc1ccc(cc1)O">
+          <atomArray>
+            <atom id="a1" elementType="N" x3="3.513000" y3="0.123000" z3="-2.950000"/>
+            <atom id="a2" elementType="H" x3="4.145000" y3="-0.486000" z3="-3.457000"/>
+            <atom id="a3" elementType="C" x3="2.353000" y3="0.514000" z3="-3.776000"/>
+            <atom id="a4" elementType="H" x3="1.467000" y3="-0.074000" z3="-3.519000"/>
+            <atom id="a5" elementType="H" x3="2.550000" y3="0.377000" z3="-4.851000"/>
+            <atom id="a6" elementType="C" x3="4.230000" y3="1.332000" z3="-2.433000"/>
+            <atom id="a7" elementType="H" x3="5.301000" y3="1.278000" z3="-2.659000"/>
+            <atom id="a8" elementType="H" x3="4.130000" y3="1.372000" z3="-1.339000"/>
+            <atom id="a9" elementType="C" x3="2.161000" y3="2.008000" z3="-3.444000"/>
+            <atom id="a10" elementType="H" x3="1.702000" y3="2.556000" z3="-4.274000"/>
+            <atom id="a11" elementType="H" x3="1.492000" y3="2.103000" z3="-2.583000"/>
+            <atom id="a12" elementType="C" x3="3.544000" y3="2.525000" z3="-3.091000"/>
+            <atom id="a13" elementType="H" x3="4.084000" y3="2.811000" z3="-4.003000"/>
+            <atom id="a14" elementType="H" x3="3.512000" y3="3.408000" z3="-2.443000"/>
+            <atom id="a15" elementType="C" x3="-0.051000" y3="-2.049000" z3="-1.514000"/>
+            <atom id="a16" elementType="H" x3="-0.107000" y3="-3.144000" z3="-1.517000"/>
+            <atom id="a17" elementType="H" x3="-0.926000" y3="-1.666000" z3="-2.051000"/>
+            <atom id="a18" elementType="H" x3="0.844000" y3="-1.755000" z3="-2.073000"/>
+            <atom id="a19" elementType="C" x3="0.000000" y3="-1.514000" z3="-0.093000"/>
+            <atom id="a20" elementType="H" x3="-0.858000" y3="-1.902000" z3="0.471000"/>
+            <atom id="a21" elementType="H" x3="0.898000" y3="-1.896000" z3="0.407000"/>
+            <atom id="a22" elementType="C" x3="0.000000" y3="0.000000" z3="0.000000"/>
+            <atom id="a23" elementType="C" x3="-1.211000" y3="0.747000" z3="0.000000"/>
+            <atom id="a24" elementType="H" x3="-2.164000" y3="0.223000" z3="-0.024000"/>
+            <atom id="a25" elementType="C" x3="1.169000" y3="0.717000" z3="0.000000"/>
+            <atom id="a26" elementType="H" x3="2.121000" y3="0.190000" z3="-0.042000"/>
+            <atom id="a27" elementType="C" x3="-1.211000" y3="2.140000" z3="0.114000"/>
+            <atom id="a28" elementType="H" x3="-2.146000" y3="2.691000" z3="0.154000"/>
+            <atom id="a29" elementType="C" x3="1.180000" y3="2.098000" z3="0.093000"/>
+            <atom id="a30" elementType="H" x3="2.127000" y3="2.635000" z3="0.122000"/>
+            <atom id="a31" elementType="C" x3="-0.020000" y3="2.807000" z3="0.144000"/>
+            <atom id="a32" elementType="O" x3="0.020000" y3="4.220000" z3="0.275000"/>
+            <atom id="a33" elementType="H" x3="0.956000" y3="4.475000" z3="0.309000"/>
+          </atomArray>
+          <bondArray>
+            <bond atomRefs2="a5 a3" order="1"/>
+            <bond atomRefs2="a10 a9" order="1"/>
+            <bond atomRefs2="a13 a12" order="1"/>
+            <bond atomRefs2="a3 a4" order="1"/>
+            <bond atomRefs2="a3 a9" order="1"/>
+            <bond atomRefs2="a3 a1" order="1"/>
+            <bond atomRefs2="a2 a1" order="1"/>
+            <bond atomRefs2="a9 a12" order="1"/>
+            <bond atomRefs2="a9 a11" order="1"/>
+            <bond atomRefs2="a12 a14" order="1"/>
+            <bond atomRefs2="a12 a6" order="1"/>
+            <bond atomRefs2="a1 a6" order="1"/>
+            <bond atomRefs2="a7 a6" order="1"/>
+            <bond atomRefs2="a6 a8" order="1"/>
+            <bond atomRefs2="a18 a15" order="1"/>
+            <bond atomRefs2="a17 a15" order="1"/>
+            <bond atomRefs2="a16 a15" order="1"/>
+            <bond atomRefs2="a15 a19" order="1"/>
+            <bond atomRefs2="a19 a22" order="1"/>
+            <bond atomRefs2="a19 a21" order="1"/>
+            <bond atomRefs2="a19 a20" order="1"/>
+            <bond atomRefs2="a26 a25" order="1"/>
+            <bond atomRefs2="a24 a23" order="1"/>
+            <bond atomRefs2="a25 a22" order="2"/>
+            <bond atomRefs2="a25 a29" order="1"/>
+            <bond atomRefs2="a23 a22" order="1"/>
+            <bond atomRefs2="a23 a27" order="2"/>
+            <bond atomRefs2="a29 a30" order="1"/>
+            <bond atomRefs2="a29 a31" order="2"/>
+            <bond atomRefs2="a27 a31" order="1"/>
+            <bond atomRefs2="a27 a28" order="1"/>
+            <bond atomRefs2="a31 a32" order="1"/>
+            <bond atomRefs2="a32 a33" order="1"/>
+          </bondArray>
+        </Molecule>
+      </Molecules>
+      <Methods>
+        <Method Hamiltonian="AMBER_ff03" CategoryOfHamiltonian="forcefield" Basis="nobasis" CategoryOfBasis="unclassified" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-3.09"/>
+        </Method>
+        <Method Hamiltonian="CCSD(T)" CategoryOfHamiltonian="wavefunction" Basis="CBS" CategoryOfBasis="unclassified" CounterpoiseCorrection="CP">
+          <Result CalculatedValue="-3.79"/>
+        </Method>
+        <Method Hamiltonian="TPSS" CategoryOfHamiltonian="meta-GGA" Basis="TZVP" CategoryOfBasis="Ahlrichs" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="0.44"/>
+        </Method>
+        <Method Hamiltonian="TPSS-D" CategoryOfHamiltonian="hybrid-GGA" Basis="TZVP" CategoryOfBasis="Ahlrichs" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-4.06"/>
+        </Method>
+        <Method Hamiltonian="DFT-SAPT PBE0AC" CategoryOfHamiltonian="undefined" Basis="aug-cc-pVDZ" CategoryOfBasis="Dunnings" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-0.44"/>
+        </Method>
+        <Method Hamiltonian="DFT-SAPT PBE0AC" CategoryOfHamiltonian="undefined" Basis="aug-cc-pVDZ" CategoryOfBasis="Dunnings" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-3.34"/>
+        </Method>
+        <Method Hamiltonian="OPLS-AA" CategoryOfHamiltonian="forcefield" Basis="L" CategoryOfBasis="unclassified" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-3.05"/>
+        </Method>
+        <Method Hamiltonian="RI-TPSS-D" CategoryOfHamiltonian="meta-GGA" Basis="TZVP" CategoryOfBasis="Ahlrichs" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-4.09"/>
+        </Method>
+        <Method Hamiltonian="RI-MP2" CategoryOfHamiltonian="wavefunction" Basis="aug-cc-pVDZ" CategoryOfBasis="Dunnings" CounterpoiseCorrection="CP">
+          <Result CalculatedValue="-3.78"/>
+        </Method>
+        <Method Hamiltonian="RI-MP2" CategoryOfHamiltonian="wavefunction" Basis="aug-cc-pVTZ" CategoryOfBasis="Dunnings" CounterpoiseCorrection="CP">
+          <Result CalculatedValue="-4.11"/>
+        </Method>
+        <Method Hamiltonian="SCS-MI-MP2" CategoryOfHamiltonian="wavefunction" Basis="cc-pVTZ" CategoryOfBasis="Dunnings" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-3.32"/>
+        </Method>
+      </Methods>
+      <ReferenceResult>
+        <ReferenceMethod Hamiltonian="CCSD(T)" CategoryOfHamiltonian="wavefunction" Basis="CBS" CategoryOfBasis="unclassified" CounterpoiseCorrection="CP"/>
+        <ReferenceValue Value="-3.79"/>
+      </ReferenceResult>
+    </System>
+    <System Name="YY1">
+      <Molecules>
+        <Molecule Name="YY1" SmileString="c1c(CC)ccc(O)c1.c1c(CC)ccc(O)c1">
+          <atomArray>
+            <atom id="a1" elementType="C" x3="-0.494000" y3="1.775000" z3="5.675000"/>
+            <atom id="a2" elementType="H" x3="-1.052000" y3="1.071000" z3="6.288000"/>
+            <atom id="a3" elementType="C" x3="-0.274000" y3="1.515000" z3="4.318000"/>
+            <atom id="a4" elementType="C" x3="-0.782000" y3="0.203000" z3="3.688000"/>
+            <atom id="a5" elementType="C" x3="0.281000" y3="-0.909000" z3="3.647000"/>
+            <atom id="a6" elementType="H" x3="-0.125000" y3="-1.823000" z3="3.202000"/>
+            <atom id="a7" elementType="H" x3="0.632000" y3="-1.150000" z3="4.657000"/>
+            <atom id="a8" elementType="H" x3="1.150000" y3="-0.597000" z3="3.059000"/>
+            <atom id="a9" elementType="H" x3="-1.129000" y3="0.411000" z3="2.671000"/>
+            <atom id="a10" elementType="H" x3="-1.650000" y3="-0.147000" z3="4.259000"/>
+            <atom id="a11" elementType="C" x3="0.434000" y3="2.435000" z3="3.581000"/>
+            <atom id="a12" elementType="H" x3="0.622000" y3="2.259000" z3="2.527000"/>
+            <atom id="a13" elementType="C" x3="0.932000" y3="3.624000" z3="4.169000"/>
+            <atom id="a14" elementType="H" x3="1.483000" y3="4.341000" z3="3.563000"/>
+            <atom id="a15" elementType="C" x3="0.697000" y3="3.857000" z3="5.525000"/>
+            <atom id="a16" elementType="O" x3="1.186000" y3="4.970000" z3="6.166000"/>
+            <atom id="a17" elementType="H" x3="1.675000" y3="5.511000" z3="5.526000"/>
+            <atom id="a18" elementType="C" x3="0.008000" y3="2.959000" z3="6.269000"/>
+            <atom id="a19" elementType="H" x3="-0.161000" y3="3.156000" z3="7.324000"/>
+            <atom id="a20" elementType="C" x3="1.177000" y3="0.707000" z3="0.000000"/>
+            <atom id="a21" elementType="H" x3="2.127000" y3="0.176000" z3="0.006000"/>
+            <atom id="a22" elementType="C" x3="0.000000" y3="0.000000" z3="0.000000"/>
+            <atom id="a23" elementType="C" x3="0.016000" y3="-1.505000" z3="0.045000"/>
+            <atom id="a24" elementType="C" x3="-0.096000" y3="-2.199000" z3="-1.339000"/>
+            <atom id="a25" elementType="H" x3="-0.079000" y3="-3.288000" z3="-1.222000"/>
+            <atom id="a26" elementType="H" x3="0.734000" y3="-1.909000" z3="-1.992000"/>
+            <atom id="a27" elementType="H" x3="-1.030000" y3="-1.922000" z3="-1.840000"/>
+            <atom id="a28" elementType="H" x3="-0.814000" y3="-1.857000" z3="0.670000"/>
+            <atom id="a29" elementType="H" x3="0.939000" y3="-1.840000" z3="0.533000"/>
+            <atom id="a30" elementType="C" x3="-1.215000" y3="0.731000" z3="0.000000"/>
+            <atom id="a31" elementType="H" x3="-2.166000" y3="0.204000" z3="0.008000"/>
+            <atom id="a32" elementType="C" x3="-1.206000" y3="2.137000" z3="0.013000"/>
+            <atom id="a33" elementType="H" x3="-2.153000" y3="2.677000" z3="0.029000"/>
+            <atom id="a34" elementType="C" x3="-0.018000" y3="2.827000" z3="0.026000"/>
+            <atom id="a35" elementType="O" x3="0.009000" y3="4.208000" z3="0.052000"/>
+            <atom id="a36" elementType="H" x3="-0.906000" y3="4.530000" z3="0.099000"/>
+            <atom id="a37" elementType="C" x3="1.205000" y3="2.114000" z3="0.003000"/>
+            <atom id="a38" elementType="H" x3="2.143000" y3="2.660000" z3="0.008000"/>
+          </atomArray>
+          <bondArray>
+            <bond atomRefs2="a26 a24" order="1"/>
+            <bond atomRefs2="a27 a24" order="1"/>
+            <bond atomRefs2="a24 a25" order="1"/>
+            <bond atomRefs2="a24 a23" order="1"/>
+            <bond atomRefs2="a30 a22" order="2"/>
+            <bond atomRefs2="a30 a31" order="1"/>
+            <bond atomRefs2="a30 a32" order="1"/>
+            <bond atomRefs2="a22 a20" order="1"/>
+            <bond atomRefs2="a22 a23" order="1"/>
+            <bond atomRefs2="a20 a37" order="2"/>
+            <bond atomRefs2="a20 a21" order="1"/>
+            <bond atomRefs2="a37 a38" order="1"/>
+            <bond atomRefs2="a37 a34" order="1"/>
+            <bond atomRefs2="a32 a34" order="2"/>
+            <bond atomRefs2="a32 a33" order="1"/>
+            <bond atomRefs2="a34 a35" order="1"/>
+            <bond atomRefs2="a23 a29" order="1"/>
+            <bond atomRefs2="a23 a28" order="1"/>
+            <bond atomRefs2="a35 a36" order="1"/>
+            <bond atomRefs2="a12 a11" order="1"/>
+            <bond atomRefs2="a9 a4" order="1"/>
+            <bond atomRefs2="a8 a5" order="1"/>
+            <bond atomRefs2="a6 a5" order="1"/>
+            <bond atomRefs2="a14 a13" order="1"/>
+            <bond atomRefs2="a11 a13" order="2"/>
+            <bond atomRefs2="a11 a3" order="1"/>
+            <bond atomRefs2="a5 a4" order="1"/>
+            <bond atomRefs2="a5 a7" order="1"/>
+            <bond atomRefs2="a4 a10" order="1"/>
+            <bond atomRefs2="a4 a3" order="1"/>
+            <bond atomRefs2="a13 a15" order="1"/>
+            <bond atomRefs2="a3 a1" order="2"/>
+            <bond atomRefs2="a15 a16" order="1"/>
+            <bond atomRefs2="a15 a18" order="2"/>
+            <bond atomRefs2="a17 a16" order="1"/>
+            <bond atomRefs2="a1 a18" order="1"/>
+            <bond atomRefs2="a1 a2" order="1"/>
+            <bond atomRefs2="a18 a19" order="1"/>
+          </bondArray>
+        </Molecule>
+      </Molecules>
+      <Methods>
+        <Method Hamiltonian="AMBER_ff03" CategoryOfHamiltonian="forcefield" Basis="nobasis" CategoryOfBasis="unclassified" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-3.62"/>
+        </Method>
+        <Method Hamiltonian="CCSD(T)" CategoryOfHamiltonian="wavefunction" Basis="CBS" CategoryOfBasis="unclassified" CounterpoiseCorrection="CP">
+          <Result CalculatedValue="-4.66"/>
+        </Method>
+        <Method Hamiltonian="TPSS" CategoryOfHamiltonian="meta-GGA" Basis="TZVP" CategoryOfBasis="Ahlrichs" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="1.35"/>
+        </Method>
+        <Method Hamiltonian="TPSS-D" CategoryOfHamiltonian="hybrid-GGA" Basis="TZVP" CategoryOfBasis="Ahlrichs" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-4.35"/>
+        </Method>
+        <Method Hamiltonian="DFT-SAPT PBE0AC" CategoryOfHamiltonian="undefined" Basis="aug-cc-pVDZ" CategoryOfBasis="Dunnings" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-0.79"/>
+        </Method>
+        <Method Hamiltonian="DFT-SAPT PBE0AC" CategoryOfHamiltonian="undefined" Basis="aug-cc-pVDZ" CategoryOfBasis="Dunnings" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-3.94"/>
+        </Method>
+        <Method Hamiltonian="OPLS-AA" CategoryOfHamiltonian="forcefield" Basis="L" CategoryOfBasis="unclassified" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-3.84"/>
+        </Method>
+        <Method Hamiltonian="RI-TPSS-D" CategoryOfHamiltonian="meta-GGA" Basis="TZVP" CategoryOfBasis="Ahlrichs" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-4.31"/>
+        </Method>
+        <Method Hamiltonian="RI-MP2" CategoryOfHamiltonian="wavefunction" Basis="aug-cc-pVDZ" CategoryOfBasis="Dunnings" CounterpoiseCorrection="CP">
+          <Result CalculatedValue="-4.99"/>
+        </Method>
+        <Method Hamiltonian="RI-MP2" CategoryOfHamiltonian="wavefunction" Basis="aug-cc-pVTZ" CategoryOfBasis="Dunnings" CounterpoiseCorrection="CP">
+          <Result CalculatedValue="-5.51"/>
+        </Method>
+        <Method Hamiltonian="SCS-MI-MP2" CategoryOfHamiltonian="wavefunction" Basis="cc-pVTZ" CategoryOfBasis="Dunnings" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-4.49"/>
+        </Method>
+      </Methods>
+      <ReferenceResult>
+        <ReferenceMethod Hamiltonian="CCSD(T)" CategoryOfHamiltonian="wavefunction" Basis="CBS" CategoryOfBasis="unclassified" CounterpoiseCorrection="CP"/>
+        <ReferenceValue Value="-4.66"/>
+      </ReferenceResult>
+    </System>
+    <System Name="AL1">
+      <Molecules>
+        <Molecule Name="AL1" SmileString="CCC(C)C.CC">
+          <atomArray>
+            <atom id="a1" elementType="C" x3="1.833000" y3="2.891000" z3="-6.306000"/>
+            <atom id="a2" elementType="H" x3="2.737000" y3="3.490000" z3="-6.155000"/>
+            <atom id="a3" elementType="H" x3="1.060000" y3="3.555000" z3="-6.708000"/>
+            <atom id="a4" elementType="H" x3="2.056000" y3="2.136000" z3="-7.071000"/>
+            <atom id="a5" elementType="C" x3="1.402000" y3="2.244000" z3="-4.985000"/>
+            <atom id="a6" elementType="H" x3="2.257000" y3="1.683000" z3="-4.579000"/>
+            <atom id="a7" elementType="H" x3="1.210000" y3="3.049000" z3="-4.258000"/>
+            <atom id="a8" elementType="C" x3="0.179000" y3="1.323000" z3="-4.976000"/>
+            <atom id="a9" elementType="C" x3="-0.101000" y3="0.897000" z3="-3.541000"/>
+            <atom id="a10" elementType="H" x3="-0.317000" y3="1.773000" z3="-2.917000"/>
+            <atom id="a11" elementType="H" x3="-0.965000" y3="0.224000" z3="-3.482000"/>
+            <atom id="a12" elementType="H" x3="0.760000" y3="0.377000" z3="-3.105000"/>
+            <atom id="a13" elementType="H" x3="0.388000" y3="0.433000" z3="-5.587000"/>
+            <atom id="a14" elementType="C" x3="-1.039000" y3="2.051000" z3="-5.561000"/>
+            <atom id="a15" elementType="H" x3="-0.882000" y3="2.341000" z3="-6.605000"/>
+            <atom id="a16" elementType="H" x3="-1.935000" y3="1.418000" z3="-5.524000"/>
+            <atom id="a17" elementType="H" x3="-1.252000" y3="2.961000" z3="-4.985000"/>
+            <atom id="a18" elementType="C" x3="0.000000" y3="0.000000" z3="0.000000"/>
+            <atom id="a19" elementType="H" x3="-0.913000" y3="0.606000" z3="-0.019000"/>
+            <atom id="a20" elementType="H" x3="-0.025000" y3="-0.663000" z3="-0.871000"/>
+            <atom id="a21" elementType="H" x3="-0.040000" y3="-0.630000" z3="0.896000"/>
+            <atom id="a22" elementType="C" x3="1.249000" y3="0.878000" z3="0.000000"/>
+            <atom id="a23" elementType="H" x3="1.283000" y3="1.517000" z3="0.890000"/>
+            <atom id="a24" elementType="H" x3="2.162000" y3="0.271000" z3="-0.003000"/>
+            <atom id="a25" elementType="H" x3="1.282000" y3="1.530000" z3="-0.878000"/>
+          </atomArray>
+          <bondArray>
+            <bond atomRefs2="a4 a1" order="1"/>
+            <bond atomRefs2="a3 a1" order="1"/>
+            <bond atomRefs2="a15 a14" order="1"/>
+            <bond atomRefs2="a1 a2" order="1"/>
+            <bond atomRefs2="a1 a5" order="1"/>
+            <bond atomRefs2="a13 a8" order="1"/>
+            <bond atomRefs2="a14 a16" order="1"/>
+            <bond atomRefs2="a14 a17" order="1"/>
+            <bond atomRefs2="a14 a8" order="1"/>
+            <bond atomRefs2="a5 a8" order="1"/>
+            <bond atomRefs2="a5 a6" order="1"/>
+            <bond atomRefs2="a5 a7" order="1"/>
+            <bond atomRefs2="a8 a9" order="1"/>
+            <bond atomRefs2="a9 a11" order="1"/>
+            <bond atomRefs2="a9 a12" order="1"/>
+            <bond atomRefs2="a9 a10" order="1"/>
+            <bond atomRefs2="a25 a22" order="1"/>
+            <bond atomRefs2="a20 a18" order="1"/>
+            <bond atomRefs2="a19 a18" order="1"/>
+            <bond atomRefs2="a24 a22" order="1"/>
+            <bond atomRefs2="a18 a22" order="1"/>
+            <bond atomRefs2="a18 a21" order="1"/>
+            <bond atomRefs2="a22 a23" order="1"/>
+          </bondArray>
+        </Molecule>
+      </Molecules>
+      <Methods>
+        <Method Hamiltonian="CCSD(T)" CategoryOfHamiltonian="wavefunction" Basis="CBS" CategoryOfBasis="unclassified" CounterpoiseCorrection="CP">
+          <Result CalculatedValue="-1.07"/>
+        </Method>
+        <Method Hamiltonian="TPSS" CategoryOfHamiltonian="meta-GGA" Basis="TZVP" CategoryOfBasis="Ahlrichs" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="0.71"/>
+        </Method>
+        <Method Hamiltonian="TPSS-D" CategoryOfHamiltonian="hybrid-GGA" Basis="TZVP" CategoryOfBasis="Ahlrichs" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-1.31"/>
+        </Method>
+        <Method Hamiltonian="DFT-SAPT PBE0AC" CategoryOfHamiltonian="undefined" Basis="aug-cc-pVDZ" CategoryOfBasis="Dunnings" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-0.1"/>
+        </Method>
+        <Method Hamiltonian="DFT-SAPT PBE0AC" CategoryOfHamiltonian="undefined" Basis="aug-cc-pVDZ" CategoryOfBasis="Dunnings" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-0.82"/>
+        </Method>
+        <Method Hamiltonian="OPLS-AA" CategoryOfHamiltonian="forcefield" Basis="L" CategoryOfBasis="unclassified" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-1"/>
+        </Method>
+        <Method Hamiltonian="RI-TPSS-D" CategoryOfHamiltonian="meta-GGA" Basis="TZVP" CategoryOfBasis="Ahlrichs" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-1.32"/>
+        </Method>
+        <Method Hamiltonian="RI-MP2" CategoryOfHamiltonian="wavefunction" Basis="aug-cc-pVDZ" CategoryOfBasis="Dunnings" CounterpoiseCorrection="CP">
+          <Result CalculatedValue="-0.76"/>
+        </Method>
+        <Method Hamiltonian="RI-MP2" CategoryOfHamiltonian="wavefunction" Basis="aug-cc-pVTZ" CategoryOfBasis="Dunnings" CounterpoiseCorrection="CP">
+          <Result CalculatedValue="-0.93"/>
+        </Method>
+        <Method Hamiltonian="SCS-MI-MP2" CategoryOfHamiltonian="wavefunction" Basis="cc-pVTZ" CategoryOfBasis="Dunnings" CounterpoiseCorrection="noCP">
+          <Result CalculatedValue="-0.6"/>
+        </Method>
+      </Methods>
+      <ReferenceResult>
+        <ReferenceMethod Hamiltonian="CCSD(T)" CategoryOfHamiltonian="wavefunction" Basis="CBS" CategoryOfBasis="unclassified" CounterpoiseCorrection="CP"/>
+        <ReferenceValue Value="-1.07"/>
+      </ReferenceResult>
+    </System>
+  </Dataset>
+</Jacob>

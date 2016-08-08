@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.neo4j:neo4j-ogm-api:2.0.4">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.neo4j/neo4j-ogm-api/2.0.4/dce386c02892fa09476c91cc7613e44f51a8fb6f/neo4j-ogm-api-2.0.4.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.neo4j/neo4j-ogm-api/2.0.4/f4bcd7f686f3e8d71b627fff57d2b1928ca0c39e/neo4j-ogm-api-2.0.4-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

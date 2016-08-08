@@ -1,0 +1,18 @@
+package org.wallerlab.jacob
+
+import spock.lang.Specification
+
+
+class AtomSpec extends Specification{
+
+    def "Molecule domain model"(){
+        when:
+        def molecule = new Molecule("Benzene","cccccc")
+
+        then:
+        atom.getNAme() == "Benzene"
+        molecule.getSmiles() == "cccccc"
+        atom.toString()
+    }
+
+}

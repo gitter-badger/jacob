@@ -12,4 +12,4 @@ cache:
 
 install: echo "skip 'gradle assemble' step"
 #script: cd jacob-core && ./gradlew clean build jacocoRootReport coveralls --continue
-script: cd jacob-web/ && ./gradlew clean  && ./gradlew test && ./gradlew war 
+script: cd jacob-web/ && ./gradlew clean  && ./gradlew test && ./gradlew assemble

@@ -5,6 +5,7 @@ import spock.lang.*
 
 @TestFor(HamiltonianController)
 @Mock(Hamiltonian)
+ @Ignore   
 class HamiltonianControllerSpec extends Specification {
 
     def populateValidParams(params) {

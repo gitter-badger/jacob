@@ -14,21 +14,20 @@ buildscript {
 version = '0.1-SNAPSHOT'
 group = 'org.wallerlab'
 
-
 apply plugin: 'java'
 apply plugin: 'groovy'
-apply plugin: 'eclipse'
-apply plugin: 'idea'
 apply plugin: 'spring-boot'
-apply plugin: 'io.spring.dependency-management'
 apply plugin: 'jacoco'
+apply plugin: 'io.spring.dependency-management'
 apply plugin: 'com.github.kt3k.coveralls'
-
+apply plugin: 'idea'
+apply plugin: 'eclipse'
 
 jar {
     baseName = 'jacob-core'
     version = '0.0.1-SNAPSHOT'
 }
+
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
@@ -39,7 +38,6 @@ repositories {
     maven { url 'https://repo.spring.io/libs-snapshot' }
 }
 
-
 dependencyManagement {
     imports {
         mavenBom 'io.spring.platform:platform-bom:2.0.6.RELEASE'
@@ -47,29 +45,24 @@ dependencyManagement {
 }
 
 dependencies {
-
     compile 'org.codehaus.groovy:groovy-all:2.4.7'
-
-
     compile 'org.springframework.boot:spring-boot-starter'
     compile 'org.springframework.boot:spring-boot-starter-batch'
     compile 'org.springframework:spring-oxm'
     compile 'org.springframework.data:spring-data-neo4j:4.2.0.BUILD-SNAPSHOT'
-
-    compile group: 'org.neo4j', name: 'neo4j-ogm-core', version: '2.0.4'
+    compile 'org.neo4j:neo4j-ogm-core:2.0.4'
     compile 'org.neo4j:neo4j-ogm-embedded-driver:2.0.4'
-    compile group: 'org.neo4j', name: 'neo4j-ogm-http-driver', version: '2.0.4'
+    compile 'org.neo4j:neo4j-ogm-http-driver:2.0.4'
 
-
-    testCompile 'org.spockframework:spock-core:1.1-groovy-2.4-rc-1'
     testCompile 'org.springframework:spring-test'
+    testCompile 'org.spockframework:spock-core:1.1-groovy-2.4-rc-1'
     testCompile 'org.spockframework:spock-spring:1.1-groovy-2.4-rc-1'
     testCompile 'org.springframework.boot:spring-boot-starter-test'
     testCompile 'junit:junit'
 }
 
 task wrapper(type: Wrapper) {
-    gradleVersion = '3.0'
+    gradleVersion = '3.1'
 }
 
 task jacocoRootReport(type: org.gradle.testing.jacoco.tasks.JacocoReport) {

@@ -5,6 +5,8 @@ import spock.lang.*
 
 @TestFor(JacobController)
 @Mock(Jacob)
+ @Ignore   
+
 class JacobControllerSpec extends Specification {
 
     def populateValidParams(params) {

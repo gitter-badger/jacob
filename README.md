@@ -1,5 +1,7 @@
 # [`jacob.wallerlab.org`](http://jacob.wallerlab.org)
 
+[![Join the chat at https://gitter.im/wallerlab/jacob](https://badges.gitter.im/wallerlab/jacob.svg)](https://gitter.im/wallerlab/jacob?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
  [ ![Download](https://api.bintray.com/packages/wallerlab/releases/jacob/images/download.svg) ](https://bintray.com/wallerlab/releases/jacob/_latestVersion)
  [![Apache License](http://img.shields.io/badge/license-APACHE2-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0.html)
 [![Build Status](https://travis-ci.org/wallerlab/jacob.svg?branch=master)](https://travis-ci.org/wallerlab/jacob)

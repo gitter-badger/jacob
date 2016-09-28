@@ -5,6 +5,8 @@ import spock.lang.*
 
 @TestFor(MoleculeController)
 @Mock(Molecule)
+ @Ignore   
+
 class MoleculeControllerSpec extends Specification {
 
     def populateValidParams(params) {

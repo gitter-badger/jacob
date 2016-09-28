@@ -11,5 +11,5 @@ cache:
     - $HOME/.gradle/wrapper/
 
 install: echo "skip 'gradle assemble' step"
-script: cd jacob-core && ./gradlew clean build jacocoRootReport coveralls --continue
-#script: cd jacob-web/ && ./grailsw clean && ./grailsw refresh-dependencies && ./grailsw test-app
+#script: cd jacob-core && ./gradlew clean build jacocoRootReport coveralls --continue
+script: cd jacob-web/ && ./grailsw clean && ./grailsw refresh-dependencies && ./grailsw test-app

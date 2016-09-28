@@ -5,6 +5,7 @@ import spock.lang.*
 
 @TestFor(DatasetController)
 @Mock(Dataset)
+ @Ignore   
 class DatasetControllerSpec extends Specification {
 
     def populateValidParams(params) {

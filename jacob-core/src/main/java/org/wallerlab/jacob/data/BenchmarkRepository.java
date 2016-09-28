@@ -5,4 +5,6 @@ import org.springframework.stereotype.Repository;
 import org.wallerlab.jacob.domain.Benchmark;
 
 @Repository
-public interface BenchmarkRepository extends Neo4jRepository<Benchmark> {}
+public interface BenchmarkRepository extends Neo4jRepository<Benchmark> {
+
+}

@@ -5,6 +5,7 @@ import spock.lang.*
 
 @TestFor(ResultController)
 @Mock(Result)
+@Ignore
 class ResultControllerSpec extends Specification {
 
     def populateValidParams(params) {

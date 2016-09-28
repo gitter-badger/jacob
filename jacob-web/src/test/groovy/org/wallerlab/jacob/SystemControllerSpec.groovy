@@ -5,6 +5,7 @@ import spock.lang.*
 
 @TestFor(SystemController)
 @Mock(System)
+ @Ignore   
 class SystemControllerSpec extends Specification {
 
     def populateValidParams(params) {

@@ -16,3 +16,7 @@ JACOB: A Dynamic Database for Computational Chemistry Benchmarking
 J. Chem. Inf. Model. (2012) 52, 3255-3262 
 
 DOI:10.1021/ci300374g
+
+# Contact us
+
+wallerlab@protonmail.com
